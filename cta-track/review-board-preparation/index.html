@@ -1,0 +1,3308 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://salesforce-atlas.github.io/cta-track/review-board-preparation/">
+      
+      
+        <link rel="prev" href="../tools-and-devops-practices/">
+      
+      
+        <link rel="next" href="../../interview-preparation/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Review Board Preparation - Salesforce Atlas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#review-board-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Salesforce Atlas" class="md-header__button md-logo" aria-label="Salesforce Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Salesforce Atlas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Review Board Preparation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/baskarm/Salesforce" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../products/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Products & Ecosystem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  CTA Track
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../interview-preparation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Interview Preparation
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Salesforce Atlas" class="md-nav__button md-logo" aria-label="Salesforce Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Salesforce Atlas
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/baskarm/Salesforce" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Products & Ecosystem
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Products & Ecosystem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/sales-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sales Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/service-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Service Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/marketing-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Marketing Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/cpq-revenue-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CPQ & Revenue Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/experience-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Experience Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/integration-mulesoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration & MuleSoft
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/analytics-tableau/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analytics & Tableau
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/pdi-fuels-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PDI Platform
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CTA Track
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            CTA Track
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture & Design
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture & Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture-design-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Design Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-modeling-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Modeling & Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration-and-api-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration & API Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-and-compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Security & Compliance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Delivery & Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Delivery & Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solution-delivery-and-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Solution Delivery & Lifecycle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../communication-and-stakeholder-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communication & Stakeholder Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leadership-and-project-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Project Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Advanced Topics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Topics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-cloud-specializations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Cloud Specializations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-and-devops-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tools & DevOps Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Review Board
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Review Board
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Review Board Preparation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Review Board Preparation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#review-board-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review Board Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review Board Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format &amp; Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-analysis-phase-75-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario Analysis Phase (75 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario Analysis Phase (75 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-to-expect" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Expect
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation-phase-30-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation Phase (30 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation Phase (30 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whiteboard-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboard Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentation-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Messages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation-phase-15-20-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Phase (15-20 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation Phase (15-20 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#delivery-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delivery Tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qa-defense-phase-55-60-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q&amp;A / Defense Phase (55-60 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q&amp;A / Defense Phase (55-60 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-difficult-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Difficult Questions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#study-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Study Approach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-review-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mock Review Boards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whiteboarding-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboarding Practice
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-of-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day-Of Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day-Of Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-the-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before the Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-the-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      During the Review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#after-the-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      After the Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="After the Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-you-dont-pass" class="md-nav__link">
+    <span class="md-ellipsis">
+      If You Don't Pass
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Factors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Success Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Skills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Skills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mindset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mindset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Pitfalls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#over-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Over-Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#under-explaining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Under-Explaining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignoring-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignoring Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poor-time-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poor Time Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defensive-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defensive Behavior
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#official-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Official Resources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#study-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Study Groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-scenarios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-review-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mock Review Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#books" class="md-nav__link">
+    <span class="md-ellipsis">
+      Books
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-advice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Advice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#good-luck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Good Luck!
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../interview-preparation/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Interview Preparation
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Interview Preparation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Question Banks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Question Banks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/general-questions-for-admin-devs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/sales-service-cloud-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sales & Service Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/marketing-and-cpq-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Marketing & CPQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/integration-and-api-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration & APIs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/data-governance-and-security-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data & Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/leadership-and-delivery-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/pdi-platform-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Platform Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview-preparation/scenario-based-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scenario-Based
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#review-board-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review Board Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review Board Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format &amp; Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-analysis-phase-75-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario Analysis Phase (75 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario Analysis Phase (75 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-to-expect" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Expect
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation-phase-30-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation Phase (30 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation Phase (30 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whiteboard-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboard Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentation-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Messages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation-phase-15-20-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Phase (15-20 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation Phase (15-20 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#delivery-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delivery Tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qa-defense-phase-55-60-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q&amp;A / Defense Phase (55-60 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q&amp;A / Defense Phase (55-60 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-difficult-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Difficult Questions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#study-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Study Approach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-review-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mock Review Boards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whiteboarding-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboarding Practice
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-of-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day-Of Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day-Of Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-the-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before the Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-the-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      During the Review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#after-the-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      After the Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="After the Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-you-dont-pass" class="md-nav__link">
+    <span class="md-ellipsis">
+      If You Don't Pass
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Factors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Success Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Skills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Skills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mindset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mindset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Pitfalls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#over-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Over-Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#under-explaining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Under-Explaining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignoring-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignoring Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poor-time-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poor Time Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defensive-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defensive Behavior
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#official-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Official Resources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#study-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Study Groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-scenarios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-review-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mock Review Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#books" class="md-nav__link">
+    <span class="md-ellipsis">
+      Books
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-advice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Advice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#good-luck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Good Luck!
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="review-board-preparation">Review Board Preparation<a class="headerlink" href="#review-board-preparation" title="Permanent link">&para;</a></h1>
+<h2 id="review-board-overview">Review Board Overview<a class="headerlink" href="#review-board-overview" title="Permanent link">&para;</a></h2>
+<h3 id="format-structure">Format &amp; Structure<a class="headerlink" href="#format-structure" title="Permanent link">&para;</a></h3>
+<h4 id="timeline">Timeline<a class="headerlink" href="#timeline" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Total Duration</strong>: ~3 hours</li>
+<li><strong>Scenario Analysis</strong>: 75 minutes</li>
+<li><strong>Preparation</strong>: 30 minutes</li>
+<li><strong>Presentation</strong>: 15-20 minutes</li>
+<li><strong>Q&amp;A/Defense</strong>: 55-60 minutes</li>
+</ul>
+<h4 id="panel-composition">Panel Composition<a class="headerlink" href="#panel-composition" title="Permanent link">&para;</a></h4>
+<ul>
+<li>5-6 Salesforce CTAs</li>
+<li>Diverse expertise (technical, industry, clouds)</li>
+<li>Global representation</li>
+</ul>
+<h3 id="evaluation-criteria">Evaluation Criteria<a class="headerlink" href="#evaluation-criteria" title="Permanent link">&para;</a></h3>
+<h4 id="solution-design-30">Solution Design (30%)<a class="headerlink" href="#solution-design-30" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Architecture quality</li>
+<li>Scalability</li>
+<li>Best practices</li>
+<li>Trade-off decisions</li>
+<li>Completeness</li>
+</ul>
+<h4 id="communication-25">Communication (25%)<a class="headerlink" href="#communication-25" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Clarity of presentation</li>
+<li>Whiteboarding skills</li>
+<li>Handling questions</li>
+<li>Professional demeanor</li>
+</ul>
+<h4 id="depth-of-knowledge-25">Depth of Knowledge (25%)<a class="headerlink" href="#depth-of-knowledge-25" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Technical expertise</li>
+<li>Platform understanding</li>
+<li>Industry knowledge</li>
+<li>Breadth across clouds</li>
+</ul>
+<h4 id="leadership-20">Leadership (20%)<a class="headerlink" href="#leadership-20" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Strategic thinking</li>
+<li>Decision-making</li>
+<li>Risk assessment</li>
+<li>Stakeholder management</li>
+</ul>
+<h2 id="scenario-analysis-phase-75-minutes">Scenario Analysis Phase (75 minutes)<a class="headerlink" href="#scenario-analysis-phase-75-minutes" title="Permanent link">&para;</a></h2>
+<h3 id="what-to-expect">What to Expect<a class="headerlink" href="#what-to-expect" title="Permanent link">&para;</a></h3>
+<h4 id="scenario-packet">Scenario Packet<a class="headerlink" href="#scenario-packet" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Business context and requirements</li>
+<li>Current state description</li>
+<li>Constraints and assumptions</li>
+<li>Stakeholder information</li>
+<li>Technical environment</li>
+<li>Success criteria</li>
+</ul>
+<h4 id="analysis-focus-areas">Analysis Focus Areas<a class="headerlink" href="#analysis-focus-areas" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Business Requirements</strong></li>
+<li>Identify key requirements</li>
+<li>Prioritize must-haves vs. nice-to-haves</li>
+<li>
+<p>Note ambiguities for clarification</p>
+</li>
+<li>
+<p><strong>Technical Requirements</strong></p>
+</li>
+<li>Data model needs</li>
+<li>Integration points</li>
+<li>Security requirements</li>
+<li>
+<p>Performance needs</p>
+</li>
+<li>
+<p><strong>Constraints</strong></p>
+</li>
+<li>Budget limitations</li>
+<li>Timeline constraints</li>
+<li>Resource availability</li>
+<li>
+<p>Technical limitations</p>
+</li>
+<li>
+<p><strong>Assumptions</strong></p>
+</li>
+<li>What's explicitly stated</li>
+<li>What's implied</li>
+<li>
+<p>What needs clarification</p>
+</li>
+<li>
+<p><strong>Risks</strong></p>
+</li>
+<li>Technical risks</li>
+<li>Business risks</li>
+<li>Mitigation strategies</li>
+</ol>
+<h3 id="analysis-strategy">Analysis Strategy<a class="headerlink" href="#analysis-strategy" title="Permanent link">&para;</a></h3>
+<h4 id="read-through-15-minutes">Read Through (15 minutes)<a class="headerlink" href="#read-through-15-minutes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>First pass: Overall understanding</li>
+<li>Highlight key points</li>
+<li>Note questions</li>
+</ul>
+<h4 id="deep-dive-30-minutes">Deep Dive (30 minutes)<a class="headerlink" href="#deep-dive-30-minutes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Identify stakeholders</li>
+<li>Map requirements</li>
+<li>Data model sketch</li>
+<li>Integration points</li>
+<li>Security model</li>
+</ul>
+<h4 id="solution-design-20-minutes">Solution Design (20 minutes)<a class="headerlink" href="#solution-design-20-minutes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>High-level architecture</li>
+<li>Key design decisions</li>
+<li>Trade-offs</li>
+<li>Risks and mitigations</li>
+</ul>
+<h4 id="final-review-10-minutes">Final Review (10 minutes)<a class="headerlink" href="#final-review-10-minutes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Completeness check</li>
+<li>Key messages</li>
+<li>Anticipated questions</li>
+</ul>
+<h2 id="preparation-phase-30-minutes">Preparation Phase (30 minutes)<a class="headerlink" href="#preparation-phase-30-minutes" title="Permanent link">&para;</a></h2>
+<h3 id="whiteboard-planning">Whiteboard Planning<a class="headerlink" href="#whiteboard-planning" title="Permanent link">&para;</a></h3>
+<h4 id="layout-strategy">Layout Strategy<a class="headerlink" href="#layout-strategy" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>┌────────────────────────────────────┐
+│  Title &amp; High-Level Architecture   │
+├────────────────────────────────────┤
+│  Data Model                        │
+├────────────────────────────────────┤
+│  Integration Architecture          │
+├────────────────────────────────────┤
+│  Security Model                    │
+└────────────────────────────────────┘
+</code></pre></div></td></tr></table></div>
+<h4 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Plan board real estate</li>
+<li>Define legend/symbols</li>
+<li>Logical flow (left to right)</li>
+<li>Clear labeling</li>
+<li>Use colors (if available)</li>
+<li>Leave space for additions</li>
+</ul>
+<h3 id="presentation-structure">Presentation Structure<a class="headerlink" href="#presentation-structure" title="Permanent link">&para;</a></h3>
+<h4 id="recommended-flow">Recommended Flow<a class="headerlink" href="#recommended-flow" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Introduction</strong> (2 minutes)</li>
+<li>Understanding of business</li>
+<li>Key requirements</li>
+<li>
+<p>Success criteria</p>
+</li>
+<li>
+<p><strong>Solution Architecture</strong> (8 minutes)</p>
+</li>
+<li>High-level architecture</li>
+<li>Data model</li>
+<li>Integration approach</li>
+<li>
+<p>Security model</p>
+</li>
+<li>
+<p><strong>Key Design Decisions</strong> (3 minutes)</p>
+</li>
+<li>Critical choices made</li>
+<li>Trade-offs considered</li>
+<li>
+<p>Rationale</p>
+</li>
+<li>
+<p><strong>Risks &amp; Mitigations</strong> (2 minutes)</p>
+</li>
+<li>Identified risks</li>
+<li>Mitigation strategies</li>
+<li>
+<p>Contingency plans</p>
+</li>
+<li>
+<p><strong>Conclusion</strong> (&lt; 1 minute)</p>
+</li>
+<li>Summary</li>
+<li>Open for questions</li>
+</ol>
+<h3 id="key-messages">Key Messages<a class="headerlink" href="#key-messages" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Identify 3-5 key messages</li>
+<li>Reinforce throughout</li>
+<li>Tie to business value</li>
+<li>Support with evidence</li>
+</ul>
+<h2 id="presentation-phase-15-20-minutes">Presentation Phase (15-20 minutes)<a class="headerlink" href="#presentation-phase-15-20-minutes" title="Permanent link">&para;</a></h2>
+<h3 id="delivery-tips">Delivery Tips<a class="headerlink" href="#delivery-tips" title="Permanent link">&para;</a></h3>
+<h4 id="start-strong">Start Strong<a class="headerlink" href="#start-strong" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Confident introduction</li>
+<li>Show you understand the business</li>
+<li>Set the context</li>
+<li>Outline your approach</li>
+</ul>
+<h4 id="whiteboard-technique">Whiteboard Technique<a class="headerlink" href="#whiteboard-technique" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Face the panel (not the board)</li>
+<li>Explain as you draw</li>
+<li>Point and reference</li>
+<li>Use consistent notation</li>
+<li>Don't block the view</li>
+</ul>
+<h4 id="pacing">Pacing<a class="headerlink" href="#pacing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Not too fast (nervous energy)</li>
+<li>Not too slow (lose attention)</li>
+<li>Pause for emphasis</li>
+<li>Check for understanding</li>
+</ul>
+<h4 id="body-language">Body Language<a class="headerlink" href="#body-language" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Confident posture</li>
+<li>Eye contact with panel</li>
+<li>Natural gestures</li>
+<li>Avoid fidgeting</li>
+<li>Move purposefully</li>
+</ul>
+<h3 id="common-mistakes">Common Mistakes<a class="headerlink" href="#common-mistakes" title="Permanent link">&para;</a></h3>
+<p>❌ <strong>Avoid:</strong>
+- Reading from whiteboard
+- Too much detail
+- Ignoring requirements
+- Over-architecting
+- Defensive tone
+- Dismissing questions</p>
+<p>✅ <strong>Do:</strong>
+- Engage with panel
+- Right level of detail
+- Address all requirements
+- Right-sized solution
+- Welcome questions
+- Acknowledge uncertainty</p>
+<h2 id="qa-defense-phase-55-60-minutes">Q&amp;A / Defense Phase (55-60 minutes)<a class="headerlink" href="#qa-defense-phase-55-60-minutes" title="Permanent link">&para;</a></h2>
+<h3 id="question-types">Question Types<a class="headerlink" href="#question-types" title="Permanent link">&para;</a></h3>
+<h4 id="clarification-questions">Clarification Questions<a class="headerlink" href="#clarification-questions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>"Can you explain...?"</li>
+<li>"What did you mean by...?"</li>
+<li>"Walk us through..."</li>
+</ul>
+<p><strong>Response Strategy:</strong>
+- Clarify succinctly
+- Use whiteboard to illustrate
+- Check for understanding</p>
+<h4 id="probing-questions">Probing Questions<a class="headerlink" href="#probing-questions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>"Why did you choose...?"</li>
+<li>"Have you considered...?"</li>
+<li>"What if...?"</li>
+</ul>
+<p><strong>Response Strategy:</strong>
+- Explain rationale
+- Acknowledge alternatives
+- Discuss trade-offs
+- Be open to feedback</p>
+<h4 id="challenge-questions">Challenge Questions<a class="headerlink" href="#challenge-questions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>"This won't work because..."</li>
+<li>"You missed...?"</li>
+<li>"What about...?"</li>
+</ul>
+<p><strong>Response Strategy:</strong>
+- Listen fully
+- Don't be defensive
+- Consider the point
+- Adjust if needed
+- Explain reasoning</p>
+<h4 id="scenario-extensions">Scenario Extensions<a class="headerlink" href="#scenario-extensions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>"What if the requirement changes to...?"</li>
+<li>"How would you handle...?"</li>
+<li>"The business now wants...?"</li>
+</ul>
+<p><strong>Response Strategy:</strong>
+- Think through impact
+- Identify what changes
+- Propose adjustments
+- Discuss implications</p>
+<h3 id="handling-difficult-questions">Handling Difficult Questions<a class="headerlink" href="#handling-difficult-questions" title="Permanent link">&para;</a></h3>
+<h4 id="i-dont-know">"I Don't Know"<a class="headerlink" href="#i-dont-know" title="Permanent link">&para;</a></h4>
+<ul>
+<li>It's okay to not know everything</li>
+<li>Don't make up answers</li>
+<li>Say how you'd find out</li>
+<li>Show problem-solving approach</li>
+</ul>
+<h4 id="multiple-panel-members-asking">Multiple Panel Members Asking<a class="headerlink" href="#multiple-panel-members-asking" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Address questioner by name</li>
+<li>One question at a time</li>
+<li>"Let me address that, then I'll come back to your question"</li>
+</ul>
+<h4 id="disagreement-with-panel">Disagreement with Panel<a class="headerlink" href="#disagreement-with-panel" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Listen to their perspective</li>
+<li>Acknowledge the point</li>
+<li>Explain your reasoning</li>
+<li>Be willing to adjust</li>
+<li>Don't be defensive</li>
+</ul>
+<h4 id="time-management">Time Management<a class="headerlink" href="#time-management" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Monitor time</li>
+<li>Prioritize questions</li>
+<li>Concise answers</li>
+<li>Offer to go deeper if time</li>
+</ul>
+<h2 id="preparation-strategies">Preparation Strategies<a class="headerlink" href="#preparation-strategies" title="Permanent link">&para;</a></h2>
+<h3 id="study-approach">Study Approach<a class="headerlink" href="#study-approach" title="Permanent link">&para;</a></h3>
+<h4 id="6-12-month-plan">6-12 Month Plan<a class="headerlink" href="#6-12-month-plan" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Months 1-3</strong>: Foundation certifications</li>
+<li><strong>Months 4-6</strong>: Architect certifications</li>
+<li><strong>Months 7-9</strong>: Scenario practice</li>
+<li><strong>Months 10-12</strong>: Mock reviews</li>
+</ul>
+<h4 id="weekly-study">Weekly Study<a class="headerlink" href="#weekly-study" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Study groups</li>
+<li>Practice scenarios</li>
+<li>Whiteboarding</li>
+<li>Read scenario reviews</li>
+<li>Stay current with releases</li>
+</ul>
+<h3 id="practice-scenarios">Practice Scenarios<a class="headerlink" href="#practice-scenarios" title="Permanent link">&para;</a></h3>
+<h4 id="where-to-find">Where to Find<a class="headerlink" href="#where-to-find" title="Permanent link">&para;</a></h4>
+<ul>
+<li>CTA study groups</li>
+<li>Salesforce forums</li>
+<li>Paid review services</li>
+<li>Create your own</li>
+<li>Real project experience</li>
+</ul>
+<h4 id="practice-strategy">Practice Strategy<a class="headerlink" href="#practice-strategy" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Timed practice (75 minutes)</li>
+<li>Solo analysis first</li>
+<li>Group discussion</li>
+<li>Mock presentations</li>
+<li>Peer feedback</li>
+</ul>
+<h3 id="mock-review-boards">Mock Review Boards<a class="headerlink" href="#mock-review-boards" title="Permanent link">&para;</a></h3>
+<h4 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Experience the pressure</li>
+<li>Practice presentation</li>
+<li>Get feedback</li>
+<li>Identify gaps</li>
+<li>Build confidence</li>
+</ul>
+<h4 id="find-mock-reviews">Find Mock Reviews<a class="headerlink" href="#find-mock-reviews" title="Permanent link">&para;</a></h4>
+<ul>
+<li>CTA study groups</li>
+<li>Salesforce community</li>
+<li>Paid services</li>
+<li>Internal company practice</li>
+</ul>
+<h3 id="whiteboarding-practice">Whiteboarding Practice<a class="headerlink" href="#whiteboarding-practice" title="Permanent link">&para;</a></h3>
+<h4 id="regular-practice">Regular Practice<a class="headerlink" href="#regular-practice" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Practice drawing architectures</li>
+<li>Consistent notation</li>
+<li>Speed and clarity</li>
+<li>Different scenarios</li>
+<li>Teach others</li>
+</ul>
+<h4 id="feedback">Feedback<a class="headerlink" href="#feedback" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Record yourself</li>
+<li>Peer review</li>
+<li>Improve over time</li>
+</ul>
+<h2 id="day-of-tips">Day-Of Tips<a class="headerlink" href="#day-of-tips" title="Permanent link">&para;</a></h2>
+<h3 id="before-the-review">Before the Review<a class="headerlink" href="#before-the-review" title="Permanent link">&para;</a></h3>
+<h4 id="mental-preparation">Mental Preparation<a class="headerlink" href="#mental-preparation" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Good night's sleep</li>
+<li>Arrive early</li>
+<li>Calm and focused</li>
+<li>Positive mindset</li>
+<li>Confidence in preparation</li>
+</ul>
+<h4 id="physical-preparation">Physical Preparation<a class="headerlink" href="#physical-preparation" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Professional attire</li>
+<li>Water available</li>
+<li>Markers/whiteboard check</li>
+<li>Comfortable temperature</li>
+<li>Minimize distractions</li>
+</ul>
+<h3 id="during-the-review">During the Review<a class="headerlink" href="#during-the-review" title="Permanent link">&para;</a></h3>
+<h4 id="analysis-phase">Analysis Phase<a class="headerlink" href="#analysis-phase" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Manage time (check clock)</li>
+<li>Don't panic if stuck</li>
+<li>Make progress, not perfection</li>
+<li>Note questions for later</li>
+</ul>
+<h4 id="presentation">Presentation<a class="headerlink" href="#presentation" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Breathe</li>
+<li>Smile</li>
+<li>Engage with panel</li>
+<li>Show enthusiasm</li>
+<li>Be yourself</li>
+</ul>
+<h4 id="qa">Q&amp;A<a class="headerlink" href="#qa" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Listen carefully</li>
+<li>Pause before answering</li>
+<li>It's okay to think</li>
+<li>Ask for clarification</li>
+<li>Stay composed</li>
+</ul>
+<h2 id="after-the-review">After the Review<a class="headerlink" href="#after-the-review" title="Permanent link">&para;</a></h2>
+<h3 id="reflection">Reflection<a class="headerlink" href="#reflection" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Note what went well</li>
+<li>Areas for improvement</li>
+<li>Questions asked</li>
+<li>Learn from experience</li>
+</ul>
+<h3 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Notified in 2-3 weeks</li>
+<li>Pass or fail (no scores)</li>
+<li>Feedback provided (if fail)</li>
+<li>Can reapply after 30 days</li>
+</ul>
+<h3 id="if-you-dont-pass">If You Don't Pass<a class="headerlink" href="#if-you-dont-pass" title="Permanent link">&para;</a></h3>
+<h4 id="its-common">It's Common<a class="headerlink" href="#its-common" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Many CTAs don't pass first time</li>
+<li>Average 2-3 attempts</li>
+<li>Learn from feedback</li>
+<li>Adjust preparation</li>
+<li>Try again</li>
+</ul>
+<h4 id="feedback-analysis">Feedback Analysis<a class="headerlink" href="#feedback-analysis" title="Permanent link">&para;</a></h4>
+<ul>
+<li>What areas to improve?</li>
+<li>Practice those areas</li>
+<li>Seek additional help</li>
+<li>Mock reviews</li>
+<li>Reapply when ready</li>
+</ul>
+<h2 id="success-factors">Success Factors<a class="headerlink" href="#success-factors" title="Permanent link">&para;</a></h2>
+<h3 id="technical-skills">Technical Skills<a class="headerlink" href="#technical-skills" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Deep Salesforce knowledge</li>
+<li>Multi-cloud experience</li>
+<li>Integration expertise</li>
+<li>Architecture patterns</li>
+<li>Best practices</li>
+</ul>
+<h3 id="soft-skills">Soft Skills<a class="headerlink" href="#soft-skills" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Communication clarity</li>
+<li>Whiteboarding ability</li>
+<li>Handling pressure</li>
+<li>Confidence</li>
+<li>Humility</li>
+</ul>
+<h3 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Sufficient study time</li>
+<li>Practice scenarios</li>
+<li>Mock reviews</li>
+<li>Whiteboarding practice</li>
+<li>Current with platform</li>
+</ul>
+<h3 id="mindset">Mindset<a class="headerlink" href="#mindset" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Growth mindset</li>
+<li>Learn from failures</li>
+<li>Persistent</li>
+<li>Confident but humble</li>
+<li>Genuine passion</li>
+</ul>
+<h2 id="common-pitfalls">Common Pitfalls<a class="headerlink" href="#common-pitfalls" title="Permanent link">&para;</a></h2>
+<h3 id="over-engineering">Over-Engineering<a class="headerlink" href="#over-engineering" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Unnecessarily complex</li>
+<li>Too many components</li>
+<li>Gold-plating</li>
+<li><strong>Solution</strong>: Right-size for requirements</li>
+</ul>
+<h3 id="under-explaining">Under-Explaining<a class="headerlink" href="#under-explaining" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Assumptions without explanation</li>
+<li>Skipping rationale</li>
+<li>Too high-level</li>
+<li><strong>Solution</strong>: Explain your thinking</li>
+</ul>
+<h3 id="ignoring-requirements">Ignoring Requirements<a class="headerlink" href="#ignoring-requirements" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Missing key requirements</li>
+<li>Misinterpreting scenario</li>
+<li>Focusing on wrong things</li>
+<li><strong>Solution</strong>: Map solution to requirements</li>
+</ul>
+<h3 id="poor-time-management">Poor Time Management<a class="headerlink" href="#poor-time-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Rushing presentation</li>
+<li>Not finishing analysis</li>
+<li>Unbalanced coverage</li>
+<li><strong>Solution</strong>: Practice with timer</li>
+</ul>
+<h3 id="defensive-behavior">Defensive Behavior<a class="headerlink" href="#defensive-behavior" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Arguing with panel</li>
+<li>Dismissing feedback</li>
+<li>Rigid thinking</li>
+<li><strong>Solution</strong>: Open mindset, collaborative</li>
+</ul>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<h3 id="official-resources">Official Resources<a class="headerlink" href="#official-resources" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://architect.salesforce.com/credentials/cta">CTA Handbook</a></li>
+<li><a href="https://architect.salesforce.com/credentials/cta/exam-guide">CTA Exam Guide</a></li>
+<li>Salesforce Architect forums</li>
+</ul>
+<h3 id="study-groups">Study Groups<a class="headerlink" href="#study-groups" title="Permanent link">&para;</a></h3>
+<ul>
+<li>CTA Study Group (various platforms)</li>
+<li>Local user groups</li>
+<li>Salesforce Success Community</li>
+</ul>
+<h3 id="practice-scenarios_1">Practice Scenarios<a class="headerlink" href="#practice-scenarios_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>CTA candidate scenarios (shared in study groups)</li>
+<li>Real project experience</li>
+<li>Create your own scenarios</li>
+</ul>
+<h3 id="mock-review-services">Mock Review Services<a class="headerlink" href="#mock-review-services" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Various paid services available</li>
+<li>Check Salesforce Architect forum for recommendations</li>
+</ul>
+<h3 id="books">Books<a class="headerlink" href="#books" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Enterprise Integration Patterns</li>
+<li>Domain-Driven Design</li>
+<li>Design Patterns (Gang of Four)</li>
+<li>The Phoenix Project</li>
+</ul>
+<h2 id="final-advice">Final Advice<a class="headerlink" href="#final-advice" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Be Yourself</strong>: Authentic beats perfect</li>
+<li><strong>Show Your Work</strong>: Explain your thinking</li>
+<li><strong>It's a Conversation</strong>: Engage with panel</li>
+<li><strong>Learn from Everything</strong>: Every scenario is practice</li>
+<li><strong>Don't Give Up</strong>: Persistence pays off</li>
+<li><strong>Enjoy the Journey</strong>: You've come this far!</li>
+</ol>
+<h2 id="good-luck">Good Luck!<a class="headerlink" href="#good-luck" title="Permanent link">&para;</a></h2>
+<p>Remember: The CTA review board is not just a test of knowledge, but a demonstration of your ability to think architecturally, communicate effectively, and make sound decisions under pressure. You've got this!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../tools-and-devops-practices/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tools &amp; DevOps Practices">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Tools & DevOps Practices
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../interview-preparation/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.footer", "search.suggest", "search.highlight", "content.code.annotate", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
