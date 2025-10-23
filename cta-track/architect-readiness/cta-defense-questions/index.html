@@ -2858,7 +2858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview-preparation/scenario-based-questions/" class="md-nav__link">
+      <a href="../../../interview-preparation/scenario-based-questions.md" class="md-nav__link">
         
   
   
@@ -3766,13 +3766,15 @@ documentation and Salesforce support. What&#39;s the recommended approach here?&
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;Why did you choose to build a custom integration instead of using
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;Why did you choose to build a custom integration instead of using
 MuleSoft Composer?&quot;
 
 You: &quot;That&#39;s a great question about build vs. buy. I chose a custom
 integration for several reasons:
 
 Trade-offs I considered:
+
 - Composer is faster to implement (+) but less flexible for complex transformations (-)
 - Custom code requires more maintenance (-) but gives us complete control (+)
 - Composer has lower upfront cost (+) but recurring licensing (-)
@@ -3888,7 +3890,10 @@ handle the audit requirement that you&#39;d recommend?&quot;
 <span class="normal">29</span>
 <span class="normal">30</span>
 <span class="normal">31</span>
-<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;How would you handle a scenario where the integration needs to be
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;How would you handle a scenario where the integration needs to be
 bidirectional, and both systems can update the same record simultaneously?&quot;
 
 You: &quot;Okay, so we&#39;re looking at a potential race condition and data conflicts.
@@ -3898,16 +3903,19 @@ First, I need to determine the source of truth. Is one system authoritative,
 or are different fields owned by different systems?
 
 If one system is authoritative, we could:
+
 - Implement a last-write-wins approach with timestamps
 - Use that system as the master and make the other read-only
 - Queue updates and process them in order
 
 If both can update different fields:
+
 - We need field-level change tracking
 - Could use external IDs and a middleware layer to merge changes
 - Might need a conflict resolution UI for manual review
 
 The risk with simultaneous updates is data loss or inconsistency. We&#39;d need:
+
 - Optimistic locking using version numbers or timestamps
 - A retry mechanism with conflict detection
 - Clear SLAs on which system wins in a conflict
@@ -4061,46 +4069,62 @@ Does that reasoning align with how you&#39;d evaluate the trade-off?&quot;
 <span class="normal">44</span>
 <span class="normal">45</span>
 <span class="normal">46</span>
-<span class="normal">47</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;How will this solution scale as they grow from 50,000 to 5 million cases per year?&quot;
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;How will this solution scale as they grow from 50,000 to 5 million cases per year?&quot;
 
 You: &quot;Great question on scalability. Let me walk through how I&#39;ve designed for that growth:
 
 Current state (50K cases/year):
+
 - ~200 cases per day
 - Comfortably handled by scheduled flows and standard indexing
 
 At 5M cases/year:
+
 - ~15,000 cases per day
 - This changes our approach significantly
 
 Scaling strategies I&#39;ve built in:
 
 1. Data Architecture:
+
    - Cases older than 2 years archived to Big Objects
    - Indexes on most-queried fields (Status, Owner, Account)
    - Reduced number of formula fields (moved complex calculations to scheduled batch)
 
 2. Automation:
+
    - Converted record-triggered flows to platform events where possible
    - Implemented bulkification best practices (no SOQL in loops)
    - Used batch apex for mass updates instead of workflow rules
 
 3. Integration:
+
    - Async patterns for all external system calls
    - Platform events with retry logic instead of synchronous callouts
    - Middleware handles rate limiting
 
 4. Reporting/Analytics:
+
    - Report snapshots for trending data
    - Tableau CRM for complex dashboards over large datasets
    - Offload historical analytics to data warehouse
 
 5. Monitoring:
+
    - Event Monitoring to track API usage
    - Platform event metrics for integration health
    - Scheduled monitoring of batch job success rates
 
 Thresholds that would trigger architecture changes:
+
 - &gt;10M API calls per day → need API gateway with intelligent routing
 - &gt;50M cases total → need to revisit retention and archiving strategy
 - &gt;1M cases per year needing real-time sync → explore platform events vs batch
@@ -4163,46 +4187,60 @@ evolutionary, not revolutionary.&quot;
 <span class="normal">43</span>
 <span class="normal">44</span>
 <span class="normal">45</span>
-<span class="normal">46</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;Walk me through your security model for this customer portal.&quot;
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;Walk me through your security model for this customer portal.&quot;
 
 You: &quot;Security for this portal follows a defense-in-depth approach:
 
 Authentication Layer:
+
 - Self-registration with email verification
 - Multi-factor authentication required for sensitive actions (payment, profile changes)
 - Password policies enforcing complexity and rotation
 - Session timeout set to 30 minutes for compliance
 
 Authorization Layer:
+
 - External users access through a Lightning Experience site
 - Custom profile with restrictive permissions (no view all, modify all)
 - Sharing sets grant access only to their own accounts and related cases
 - Explicit sharing rules for partner visibility of opportunities
 
 Data Security:
+
 - Field-level security restricts PII fields to authorized community members
 - Sensitive fields (SSN, payment info) are encrypted at rest
 - Platform Shield for encrypted data in healthcare fields
 - Record access limited by sharing model (Private with explicit shares)
 
 Integration Security:
+
 - Named credentials for external system authentication
 - All API callouts use TLS 1.2+
 - OAuth 2.0 for third-party integrations
 - IP restrictions on the community for admin access
 
 Compliance:
+
 - GDPR right to be forgotten implemented via data deletion jobs
 - Audit trail enabled for all sensitive objects
 - Shield Event Monitoring for anomaly detection
 - Regular security reviews and penetration testing
 
 Network Security:
+
 - Community enabled only on custom domain with valid SSL certificate
 - Login IP ranges for internal users
 - API access restricted to whitelisted IPs for batch integrations
 
 Data Classification:
+
 - Confidential: SSN, payment info → encrypted
 - Private: Email, phone → field-level security
 - Public: Product catalog → no restrictions
@@ -4349,25 +4387,38 @@ aspect makes you think Flow would work here?&quot;
 <span class="normal">60</span>
 <span class="normal">61</span>
 <span class="normal">62</span>
-<span class="normal">63</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;Walk me through what happens when a customer places an order on the website.&quot;
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span></pre></div></td><td class="code"><div><pre><span></span><code>Panel: &quot;Walk me through what happens when a customer places an order on the website.&quot;
 
 You [using whiteboard]: &quot;Let me map this out step by step.
 
 Step 1: Customer submits order on website
+
 - E-commerce platform (Shopify) validates inventory
 - Order created in Shopify with status &#39;Pending&#39;
 
 Step 2: Integration trigger
+
 - Shopify webhook fires on order creation
 - MuleSoft listens for webhook event
 
 Step 3: Data transformation in middleware
+
 - MuleSoft transforms Shopify JSON to Salesforce object format
 - Maps Shopify product SKU to Salesforce Product2 ID
 - Performs currency conversion if needed
 - Adds enrichment data (customer segment from data warehouse)
 
 Step 4: Upsert to Salesforce
+
 - MuleSoft calls Salesforce REST API
 - Composite API creates/updates:
   a. Account (if new customer)
@@ -4376,22 +4427,26 @@ Step 4: Upsert to Salesforce
   d. Order Product records (line items)
 
 Step 5: Salesforce automation
+
 - Record-triggered Flow on Order
   - Checks inventory in custom Inventory object
   - If available: Status → &#39;Confirmed&#39;
   - If not available: Status → &#39;Backorder&#39;, creates Case for fulfillment team
 
 Step 6: Fulfillment system sync
+
 - Platform Event publishes Order Confirmed event
 - Warehouse Management System (WMS) subscribes to event
 - WMS picks inventory and updates shipping status
 
 Step 7: Customer notification
+
 - Process Builder triggers on Order Status change to &#39;Shipped&#39;
 - Sends email via Marketing Cloud (connected app)
 - Updates customer portal (Experience Cloud)
 
 Step 8: Billing
+
 - Nightly batch process (Scheduled Apex)
 - Queries all Shipped orders without invoices
 - Creates Invoice records
@@ -4399,6 +4454,7 @@ Step 8: Billing
 - Updates Order.Payment_Status
 
 Error handling at each step:
+
 - Webhook failures → MuleSoft retry 3x, then DLQ
 - Salesforce API errors → Log to error object, alert team
 - Inventory issues → Case creation for manual review
@@ -4792,11 +4848,13 @@ in each region and hands-on training sessions.&quot;
 <h3 id="3-know-your-weak-spots">3. Know Your Weak Spots<a class="headerlink" href="#3-know-your-weak-spots" title="Permanent link">&para;</a></h3>
 <p>If you haven't used Manufacturing Cloud or CPQ deeply, practice questions in those areas. Don't avoid weaknesses.</p>
 <h3 id="4-build-a-mental-framework">4. Build a Mental Framework<a class="headerlink" href="#4-build-a-mental-framework" title="Permanent link">&para;</a></h3>
-<p>Have go-to frameworks for common questions:
-- <strong>Integration</strong>: Request-Reply, Fire-and-Forget, Batch, Pub-Sub
-- <strong>Security</strong>: Authentication, Authorization, Audit, Encryption
-- <strong>Scalability</strong>: Data volume, User concurrency, API limits, Processing time
-- <strong>Data Model</strong>: Normalize vs. Denormalize, Master-Detail vs. Lookup, Custom Objects vs. Standard</p>
+<p>Have go-to frameworks for common questions:</p>
+<ul>
+<li><strong>Integration</strong>: Request-Reply, Fire-and-Forget, Batch, Pub-Sub</li>
+<li><strong>Security</strong>: Authentication, Authorization, Audit, Encryption</li>
+<li><strong>Scalability</strong>: Data volume, User concurrency, API limits, Processing time</li>
+<li><strong>Data Model</strong>: Normalize vs. Denormalize, Master-Detail vs. Lookup, Custom Objects vs. Standard</li>
+</ul>
 <h3 id="5-review-real-scenarios">5. Review Real Scenarios<a class="headerlink" href="#5-review-real-scenarios" title="Permanent link">&para;</a></h3>
 <p>Read Trailhead's CTA scenarios. Analyze others' solutions. Think about what you'd defend and why.</p>
 <h3 id="6-stay-current-on-releases">6. Stay Current on Releases<a class="headerlink" href="#6-stay-current-on-releases" title="Permanent link">&para;</a></h3>
@@ -4812,17 +4870,21 @@ in each region and hands-on training sessions.&quot;
 <li>Smile—show you're enjoying the challenge</li>
 </ul>
 <h3 id="9-simulate-stress">9. Simulate Stress<a class="headerlink" href="#9-simulate-stress" title="Permanent link">&para;</a></h3>
-<p>Have your practice partners be intentionally challenging. Get used to:
-- Rapid-fire questions
-- Interruptions mid-answer
-- Questions about things you didn't prepare for
-- Being told you're wrong (even when you're right)</p>
+<p>Have your practice partners be intentionally challenging. Get used to:</p>
+<ul>
+<li>Rapid-fire questions</li>
+<li>Interruptions mid-answer</li>
+<li>Questions about things you didn't prepare for</li>
+<li>Being told you're wrong (even when you're right)</li>
+</ul>
 <h3 id="10-learn-from-each-question">10. Learn from Each Question<a class="headerlink" href="#10-learn-from-each-question" title="Permanent link">&para;</a></h3>
-<p>After a practice session or the real board, reflect:
-- What caught me off guard?
-- Where did I hesitate?
-- What concepts do I need to study more?
-- What did I explain well?</p>
+<p>After a practice session or the real board, reflect:</p>
+<ul>
+<li>What caught me off guard?</li>
+<li>Where did I hesitate?</li>
+<li>What concepts do I need to study more?</li>
+<li>What did I explain well?</li>
+</ul>
 <hr />
 <h2 id="final-thoughts">Final Thoughts<a class="headerlink" href="#final-thoughts" title="Permanent link">&para;</a></h2>
 <p>The CTA board defense phase is as much about demonstrating <strong>professional maturity</strong> as it is about technical knowledge. The panel wants to see that you can:</p>
