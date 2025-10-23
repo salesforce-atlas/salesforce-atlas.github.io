@@ -1,0 +1,341 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 950">
+  <!-- Background -->
+  <rect width="1400" height="950" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    OAuth 2.0 Authentication Flows for Salesforce
+  </text>
+  
+  <!-- Flow 1: Web Server Flow -->
+  <rect x="50" y="80" width="420" height="240" fill="#e3f2fd" stroke="#2196f3" stroke-width="3" rx="10"/>
+  <text x="260" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565c0">
+    1️⃣ Web Server Flow (Authorization Code)
+  </text>
+  
+  <rect x="70" y="130" width="120" height="40" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="130" y="155" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#0d47a1">
+    User Browser
+  </text>
+  
+  <rect x="330" y="130" width="120" height="40" fill="#90caf9" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="390" y="155" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#0d47a1">
+    Salesforce
+  </text>
+  
+  <!-- Steps -->
+  <text x="70" y="195" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Steps:</tspan>
+  </text>
+  <text x="70" y="213" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    1. Redirect to Salesforce login
+  </text>
+  <text x="70" y="229" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    2. User authenticates
+  </text>
+  <text x="70" y="245" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    3. Receive authorization code
+  </text>
+  <text x="70" y="261" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    4. Exchange code for access token
+  </text>
+  <text x="70" y="277" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    5. Access Salesforce APIs
+  </text>
+  
+  <text x="70" y="300" font-family="Arial, sans-serif" font-size="12" fill="#1565c0" font-weight="bold">
+    ✓ Best for: Web applications
+  </text>
+  
+  <!-- Flow 2: User-Agent Flow -->
+  <rect x="490" y="80" width="420" height="240" fill="#e8f5e9" stroke="#4caf50" stroke-width="3" rx="10"/>
+  <text x="700" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    2️⃣ User-Agent Flow (Implicit)
+  </text>
+  
+  <rect x="510" y="130" width="120" height="40" fill="#c8e6c9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="570" y="155" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b5e20">
+    Browser/SPA
+  </text>
+  
+  <rect x="770" y="130" width="120" height="40" fill="#81c784" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="830" y="155" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b5e20">
+    Salesforce
+  </text>
+  
+  <!-- Steps -->
+  <text x="510" y="195" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Steps:</tspan>
+  </text>
+  <text x="510" y="213" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    1. Redirect to Salesforce login
+  </text>
+  <text x="510" y="229" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    2. User authenticates
+  </text>
+  <text x="510" y="245" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    3. Receive access token in URL
+  </text>
+  <text x="510" y="261" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    4. Access Salesforce APIs
+  </text>
+  <text x="510" y="277" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    (No refresh token provided)
+  </text>
+  
+  <text x="510" y="300" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold">
+    ✓ Best for: Single-page apps
+  </text>
+  
+  <!-- Flow 3: JWT Bearer Flow -->
+  <rect x="930" y="80" width="420" height="240" fill="#fff3e0" stroke="#ff9800" stroke-width="3" rx="10"/>
+  <text x="1140" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">
+    3️⃣ JWT Bearer Flow
+  </text>
+  
+  <rect x="950" y="130" width="120" height="40" fill="#ffe0b2" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="1010" y="155" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#bf360c">
+    Server App
+  </text>
+  
+  <rect x="1210" y="130" width="120" height="40" fill="#ffb74d" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="1270" y="155" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#bf360c">
+    Salesforce
+  </text>
+  
+  <!-- Steps -->
+  <text x="950" y="195" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Steps:</tspan>
+  </text>
+  <text x="950" y="213" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    1. Create JWT with certificate
+  </text>
+  <text x="950" y="229" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    2. Sign JWT with private key
+  </text>
+  <text x="950" y="245" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    3. POST JWT to token endpoint
+  </text>
+  <text x="950" y="261" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    4. Receive access token
+  </text>
+  <text x="950" y="277" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    (No user interaction required)
+  </text>
+  
+  <text x="950" y="300" font-family="Arial, sans-serif" font-size="12" fill="#e65100" font-weight="bold">
+    ✓ Best for: Server-to-server
+  </text>
+  
+  <!-- Flow 4: Username-Password Flow -->
+  <rect x="50" y="340" width="420" height="240" fill="#f3e5f5" stroke="#9c27b0" stroke-width="3" rx="10"/>
+  <text x="260" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6a1b9a">
+    4️⃣ Username-Password Flow
+  </text>
+  
+  <rect x="70" y="390" width="120" height="40" fill="#e1bee7" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="130" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#4a148c">
+    Client App
+  </text>
+  
+  <rect x="330" y="390" width="120" height="40" fill="#ce93d8" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="390" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#4a148c">
+    Salesforce
+  </text>
+  
+  <!-- Steps -->
+  <text x="70" y="455" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Steps:</tspan>
+  </text>
+  <text x="70" y="473" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    1. POST credentials to token endpoint
+  </text>
+  <text x="70" y="489" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    2. Include username + password
+  </text>
+  <text x="70" y="505" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    3. Receive access token immediately
+  </text>
+  <text x="70" y="521" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    4. Access Salesforce APIs
+  </text>
+  
+  <text x="70" y="545" font-family="Arial, sans-serif" font-size="12" fill="#c62828" font-weight="bold">
+    ⚠ Use sparingly (less secure)
+  </text>
+  <text x="70" y="565" font-family="Arial, sans-serif" font-size="11" fill="#6a1b9a" font-weight="bold">
+    ✓ Best for: Trusted apps only
+  </text>
+  
+  <!-- Flow 5: Refresh Token Flow -->
+  <rect x="490" y="340" width="420" height="240" fill="#e1f5fe" stroke="#03a9f4" stroke-width="3" rx="10"/>
+  <text x="700" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#01579b">
+    5️⃣ Refresh Token Flow
+  </text>
+  
+  <rect x="510" y="390" width="120" height="40" fill="#b3e5fc" stroke="#0288d1" stroke-width="2" rx="5"/>
+  <text x="570" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#01579b">
+    Application
+  </text>
+  
+  <rect x="770" y="390" width="120" height="40" fill="#4fc3f7" stroke="#0288d1" stroke-width="2" rx="5"/>
+  <text x="830" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#01579b">
+    Salesforce
+  </text>
+  
+  <!-- Steps -->
+  <text x="510" y="455" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Steps:</tspan>
+  </text>
+  <text x="510" y="473" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    1. Access token expires
+  </text>
+  <text x="510" y="489" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    2. POST refresh token to endpoint
+  </text>
+  <text x="510" y="505" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    3. Receive new access token
+  </text>
+  <text x="510" y="521" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    4. Continue API access
+  </text>
+  <text x="510" y="537" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    (No user re-authentication needed)
+  </text>
+  
+  <text x="510" y="560" font-family="Arial, sans-serif" font-size="12" fill="#01579b" font-weight="bold">
+    ✓ Best for: Long-lived sessions
+  </text>
+  
+  <!-- Flow 6: Device Authentication Flow -->
+  <rect x="930" y="340" width="420" height="240" fill="#ffebee" stroke="#f44336" stroke-width="3" rx="10"/>
+  <text x="1140" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c62828">
+    6️⃣ Device Authentication Flow
+  </text>
+  
+  <rect x="950" y="390" width="120" height="40" fill="#ffcdd2" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <text x="1010" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#b71c1c">
+    IoT Device
+  </text>
+  
+  <rect x="1210" y="390" width="120" height="40" fill="#ef9a9a" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <text x="1270" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#b71c1c">
+    Salesforce
+  </text>
+  
+  <!-- Steps -->
+  <text x="950" y="455" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Steps:</tspan>
+  </text>
+  <text x="950" y="473" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    1. Request device code
+  </text>
+  <text x="950" y="489" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    2. Display user code to user
+  </text>
+  <text x="950" y="505" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    3. User enters code on another device
+  </text>
+  <text x="950" y="521" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    4. Poll for access token
+  </text>
+  <text x="950" y="537" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    5. Receive token when approved
+  </text>
+  
+  <text x="950" y="560" font-family="Arial, sans-serif" font-size="12" fill="#c62828" font-weight="bold">
+    ✓ Best for: Limited input devices
+  </text>
+  
+  <!-- Security Best Practices Section -->
+  <rect x="50" y="600" width="650" height="310" fill="#fffde7" stroke="#fbc02d" stroke-width="3" rx="10"/>
+  <text x="375" y="635" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#f57f17">
+    🔒 Security Best Practices
+  </text>
+  
+  <text x="70" y="670" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Always use HTTPS for all OAuth communications
+  </text>
+  
+  <text x="70" y="695" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Store client secrets securely (never in client-side code)
+  </text>
+  
+  <text x="70" y="720" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Implement token refresh before expiration
+  </text>
+  
+  <text x="70" y="745" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Use state parameter to prevent CSRF attacks
+  </text>
+  
+  <text x="70" y="770" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Validate redirect URIs (exact match required)
+  </text>
+  
+  <text x="70" y="795" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Revoke tokens when no longer needed
+  </text>
+  
+  <text x="70" y="820" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Use shortest token lifetime appropriate for use case
+  </text>
+  
+  <text x="70" y="845" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Prefer JWT Bearer flow for server-to-server
+  </text>
+  
+  <text x="70" y="870" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">
+    ✓ Monitor API usage and implement rate limiting
+  </text>
+  
+  <text x="70" y="895" font-family="Arial, sans-serif" font-size="14" fill="#c62828" font-weight="bold">
+    ⚠ Avoid Username-Password flow in production when possible
+  </text>
+  
+  <!-- Named Credentials Section -->
+  <rect x="720" y="600" width="630" height="310" fill="#e8eaf6" stroke="#3f51b5" stroke-width="3" rx="10"/>
+  <text x="1035" y="635" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a237e">
+    🔑 Named Credentials
+  </text>
+  
+  <text x="740" y="665" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    <tspan font-weight="bold">Named Credentials simplify authentication in Salesforce:</tspan>
+  </text>
+  
+  <rect x="740" y="680" width="590" height="60" fill="white" stroke="#5c6bc0" stroke-width="2" rx="5"/>
+  <text x="750" y="700" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Benefits:</tspan>
+  </text>
+  <text x="750" y="716" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    • Centralized credential management
+  </text>
+  <text x="750" y="730" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    • No hardcoded credentials in code
+  </text>
+  
+  <rect x="740" y="755" width="590" height="75" fill="white" stroke="#5c6bc0" stroke-width="2" rx="5"/>
+  <text x="750" y="775" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <tspan font-weight="bold">Supported Authentication Types:</tspan>
+  </text>
+  <text x="750" y="791" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    • OAuth 2.0 (all flows)
+  </text>
+  <text x="750" y="805" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    • Password Authentication
+  </text>
+  <text x="750" y="819" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    • AWS Signature Version 4
+  </text>
+  
+  <rect x="740" y="845" width="590" height="55" fill="#c5cae9" stroke="#3f51b5" stroke-width="2" rx="5"/>
+  <text x="1035" y="865" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a237e">
+    Usage in Apex
+  </text>
+  <text x="750" y="883" font-family="Courier New, monospace" font-size="10" fill="#1a237e">
+    HttpRequest req = new HttpRequest();
+  </text>
+  <text x="750" y="895" font-family="Courier New, monospace" font-size="10" fill="#1a237e">
+    req.setEndpoint('callout:MyNamedCredential/api/v1/data');
+  </text>
+</svg>

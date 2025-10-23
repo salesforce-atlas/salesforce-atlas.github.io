@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <!-- Title -->
+  <text x="700" y="60" font-size="36" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Salesforce Governor Limits - Per Transaction
+  </text>
+  
+  <!-- Synchronous Apex Limits Section -->
+  <g>
+    <text x="350" y="140" font-size="26" font-weight="bold" text-anchor="middle" fill="#2563EB">
+      Synchronous Apex Limits
+    </text>
+    
+    <!-- SOQL Queries -->
+    <rect x="100" y="180" width="500" height="120" fill="white" stroke="#3B82F6" stroke-width="3" rx="10"/>
+    <circle cx="190" cy="240" r="45" fill="#2563EB"/>
+    <text x="190" y="250" font-size="28" font-weight="bold" text-anchor="middle" fill="white">100</text>
+    
+    <text x="260" y="215" font-size="18" font-weight="bold" fill="#2563EB">SOQL Queries</text>
+    <text x="260" y="240" font-size="13" fill="#4B5563">Maximum queries per transaction</text>
+    
+    <!-- Progress bar for SOQL -->
+    <rect x="260" y="255" width="320" height="35" fill="#E0E7FF" rx="5"/>
+    <rect x="260" y="255" width="256" height="35" fill="#60A5FA" rx="5"/>
+    <text x="420" y="278" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 80 queries</text>
+    
+    <!-- DML Statements -->
+    <rect x="100" y="320" width="500" height="120" fill="white" stroke="#3B82F6" stroke-width="3" rx="10"/>
+    <circle cx="190" cy="380" r="45" fill="#2563EB"/>
+    <text x="190" y="390" font-size="28" font-weight="bold" text-anchor="middle" fill="white">150</text>
+    
+    <text x="260" y="355" font-size="18" font-weight="bold" fill="#2563EB">DML Statements</text>
+    <text x="260" y="380" font-size="13" fill="#4B5563">Insert, Update, Delete, Undelete</text>
+    
+    <!-- Progress bar for DML -->
+    <rect x="260" y="395" width="320" height="35" fill="#E0E7FF" rx="5"/>
+    <rect x="260" y="395" width="256" height="35" fill="#60A5FA" rx="5"/>
+    <text x="420" y="418" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 120 statements</text>
+    
+    <!-- CPU Time -->
+    <rect x="100" y="460" width="500" height="120" fill="white" stroke="#3B82F6" stroke-width="3" rx="10"/>
+    <circle cx="190" cy="520" r="45" fill="#2563EB"/>
+    <text x="190" y="520" font-size="18" font-weight="bold" text-anchor="middle" fill="white">10,000</text>
+    <text x="190" y="535" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ms</text>
+    
+    <text x="260" y="495" font-size="18" font-weight="bold" fill="#2563EB">CPU Time</text>
+    <text x="260" y="520" font-size="13" fill="#4B5563">Total CPU time per transaction</text>
+    
+    <!-- Progress bar for CPU -->
+    <rect x="260" y="535" width="320" height="35" fill="#E0E7FF" rx="5"/>
+    <rect x="260" y="535" width="256" height="35" fill="#60A5FA" rx="5"/>
+    <text x="420" y="558" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 8,000 ms</text>
+    
+    <!-- Heap Size -->
+    <rect x="100" y="600" width="500" height="120" fill="white" stroke="#3B82F6" stroke-width="3" rx="10"/>
+    <circle cx="190" cy="660" r="45" fill="#2563EB"/>
+    <text x="190" y="670" font-size="24" font-weight="bold" text-anchor="middle" fill="white">6 MB</text>
+    
+    <text x="260" y="635" font-size="18" font-weight="bold" fill="#2563EB">Heap Size</text>
+    <text x="260" y="660" font-size="13" fill="#4B5563">Maximum memory allocation</text>
+    
+    <!-- Progress bar for Heap -->
+    <rect x="260" y="675" width="320" height="35" fill="#E0E7FF" rx="5"/>
+    <rect x="260" y="675" width="256" height="35" fill="#60A5FA" rx="5"/>
+    <text x="420" y="698" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 4.8 MB</text>
+  </g>
+  
+  <!-- Asynchronous Apex Limits Section -->
+  <g>
+    <text x="1050" y="140" font-size="26" font-weight="bold" text-anchor="middle" fill="#059669">
+      Asynchronous Apex Limits
+    </text>
+    
+    <!-- SOQL Queries -->
+    <rect x="800" y="180" width="500" height="120" fill="white" stroke="#10B981" stroke-width="3" rx="10"/>
+    <circle cx="890" cy="240" r="45" fill="#059669"/>
+    <text x="890" y="250" font-size="28" font-weight="bold" text-anchor="middle" fill="white">200</text>
+    
+    <text x="960" y="215" font-size="18" font-weight="bold" fill="#059669">SOQL Queries</text>
+    <text x="960" y="240" font-size="13" fill="#4B5563">Maximum queries per transaction</text>
+    
+    <!-- Progress bar for SOQL -->
+    <rect x="960" y="255" width="320" height="35" fill="#D1FAE5" rx="5"/>
+    <rect x="960" y="255" width="256" height="35" fill="#34D399" rx="5"/>
+    <text x="1120" y="278" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 160 queries</text>
+    
+    <!-- DML Statements -->
+    <rect x="800" y="320" width="500" height="120" fill="white" stroke="#10B981" stroke-width="3" rx="10"/>
+    <circle cx="890" cy="380" r="45" fill="#059669"/>
+    <text x="890" y="390" font-size="28" font-weight="bold" text-anchor="middle" fill="white">150</text>
+    
+    <text x="960" y="355" font-size="18" font-weight="bold" fill="#059669">DML Statements</text>
+    <text x="960" y="380" font-size="13" fill="#4B5563">Insert, Update, Delete, Undelete</text>
+    
+    <!-- Progress bar for DML -->
+    <rect x="960" y="395" width="320" height="35" fill="#D1FAE5" rx="5"/>
+    <rect x="960" y="395" width="256" height="35" fill="#34D399" rx="5"/>
+    <text x="1120" y="418" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 120 statements</text>
+    
+    <!-- CPU Time -->
+    <rect x="800" y="460" width="500" height="120" fill="white" stroke="#10B981" stroke-width="3" rx="10"/>
+    <circle cx="890" cy="520" r="45" fill="#059669"/>
+    <text x="890" y="520" font-size="18" font-weight="bold" text-anchor="middle" fill="white">60,000</text>
+    <text x="890" y="535" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ms</text>
+    
+    <text x="960" y="495" font-size="18" font-weight="bold" fill="#059669">CPU Time</text>
+    <text x="960" y="520" font-size="13" fill="#4B5563">Total CPU time per transaction</text>
+    
+    <!-- Progress bar for CPU -->
+    <rect x="960" y="535" width="320" height="35" fill="#D1FAE5" rx="5"/>
+    <rect x="960" y="535" width="256" height="35" fill="#34D399" rx="5"/>
+    <text x="1120" y="558" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 48,000 ms</text>
+    
+    <!-- Heap Size -->
+    <rect x="800" y="600" width="500" height="120" fill="white" stroke="#10B981" stroke-width="3" rx="10"/>
+    <circle cx="890" cy="660" r="45" fill="#059669"/>
+    <text x="890" y="670" font-size="22" font-weight="bold" text-anchor="middle" fill="white">12 MB</text>
+    
+    <text x="960" y="635" font-size="18" font-weight="bold" fill="#059669">Heap Size</text>
+    <text x="960" y="660" font-size="13" fill="#4B5563">Maximum memory allocation</text>
+    
+    <!-- Progress bar for Heap -->
+    <rect x="960" y="675" width="320" height="35" fill="#D1FAE5" rx="5"/>
+    <rect x="960" y="675" width="256" height="35" fill="#34D399" rx="5"/>
+    <text x="1120" y="698" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80% = 9.6 MB</text>
+  </g>
+  
+  <!-- Additional Limits Section -->
+  <g>
+    <rect x="50" y="760" width="1300" height="120" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2" rx="10"/>
+    <text x="700" y="795" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      Additional Important Limits
+    </text>
+    
+    <text x="100" y="825" font-size="13" fill="#4B5563">
+      • Total number of records retrieved by SOQL queries: <tspan font-weight="bold" fill="#1F2937">50,000</tspan>
+    </text>
+    <text x="100" y="850" font-size="13" fill="#4B5563">
+      • Total number of records processed by DML: <tspan font-weight="bold" fill="#1F2937">10,000</tspan>
+    </text>
+    
+    <text x="750" y="825" font-size="13" fill="#4B5563">
+      • Total heap size for async: <tspan font-weight="bold" fill="#1F2937">12 MB</tspan>
+    </text>
+    <text x="750" y="850" font-size="13" fill="#4B5563">
+      • Maximum execution time: <tspan font-weight="bold" fill="#1F2937">10 minutes (async)</tspan>
+    </text>
+  </g>
+</svg>

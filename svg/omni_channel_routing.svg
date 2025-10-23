@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #032e61; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; fill: #333333; }
+      .channel-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+      .agent-text { font-family: Arial, sans-serif; font-size: 13px; fill: #ffffff; }
+      .label-text { font-family: Arial, sans-serif; font-size: 12px; fill: #333333; }
+      .arrow { stroke: #0070d2; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .routing-arrow { stroke: #e67e22; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead-orange); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#0070d2" />
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e67e22" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" class="title">Omni-Channel Routing System</text>
+  <text x="600" y="65" text-anchor="middle" class="subtitle">Intelligent Work Distribution Across Multiple Channels</text>
+  
+  <!-- Customer Channels (Left Side) -->
+  <text x="150" y="110" class="subtitle" font-weight="bold">Customer Channels</text>
+  
+  <!-- Email Channel -->
+  <rect x="50" y="130" width="200" height="60" fill="#3498db" rx="8"/>
+  <text x="150" y="155" text-anchor="middle" class="channel-text">📧 Email</text>
+  <text x="150" y="178" text-anchor="middle" class="channel-text" font-size="11">support@company.com</text>
+  
+  <!-- Phone Channel -->
+  <rect x="50" y="210" width="200" height="60" fill="#3498db" rx="8"/>
+  <text x="150" y="235" text-anchor="middle" class="channel-text">📞 Phone</text>
+  <text x="150" y="258" text-anchor="middle" class="channel-text" font-size="11">1-800-SUPPORT</text>
+  
+  <!-- Chat Channel -->
+  <rect x="50" y="290" width="200" height="60" fill="#3498db" rx="8"/>
+  <text x="150" y="315" text-anchor="middle" class="channel-text">💬 Live Chat</text>
+  <text x="150" y="338" text-anchor="middle" class="channel-text" font-size="11">Website Widget</text>
+  
+  <!-- Social Media -->
+  <rect x="50" y="370" width="200" height="60" fill="#3498db" rx="8"/>
+  <text x="150" y="395" text-anchor="middle" class="channel-text">🌐 Social Media</text>
+  <text x="150" y="418" text-anchor="middle" class="channel-text" font-size="11">Twitter, Facebook</text>
+  
+  <!-- SMS/Messaging -->
+  <rect x="50" y="450" width="200" height="60" fill="#3498db" rx="8"/>
+  <text x="150" y="475" text-anchor="middle" class="channel-text">📱 SMS/WhatsApp</text>
+  <text x="150" y="498" text-anchor="middle" class="channel-text" font-size="11">Mobile Messaging</text>
+  
+  <!-- Web Forms -->
+  <rect x="50" y="530" width="200" height="60" fill="#3498db" rx="8"/>
+  <text x="150" y="555" text-anchor="middle" class="channel-text">🌐 Web Forms</text>
+  <text x="150" y="578" text-anchor="middle" class="channel-text" font-size="11">Web-to-Case</text>
+  
+  <!-- Arrows from channels to routing engine -->
+  <line x1="250" y1="160" x2="380" y2="350" class="arrow"/>
+  <line x1="250" y1="240" x2="380" y2="360" class="arrow"/>
+  <line x1="250" y1="320" x2="380" y2="370" class="arrow"/>
+  <line x1="250" y1="400" x2="380" y2="380" class="arrow"/>
+  <line x1="250" y1="480" x2="380" y2="390" class="arrow"/>
+  <line x1="250" y1="560" x2="380" y2="400" class="arrow"/>
+  
+  <!-- Omni-Channel Routing Engine (Center) -->
+  <ellipse cx="520" cy="375" rx="140" ry="130" fill="#e67e22" stroke="#d35400" stroke-width="3"/>
+  <text x="520" y="340" text-anchor="middle" class="channel-text" font-size="18">Omni-Channel</text>
+  <text x="520" y="362" text-anchor="middle" class="channel-text" font-size="18">Routing Engine</text>
+  <text x="520" y="395" text-anchor="middle" class="channel-text" font-size="12">Skills-Based</text>
+  <text x="520" y="413" text-anchor="middle" class="channel-text" font-size="12">Load Balancing</text>
+  <text x="520" y="431" text-anchor="middle" class="channel-text" font-size="12">Priority Routing</text>
+  
+  <!-- Routing Criteria Box -->
+  <rect x="380" y="520" width="280" height="110" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="8"/>
+  <text x="520" y="545" text-anchor="middle" class="label-text" font-weight="bold">Routing Criteria:</text>
+  <text x="520" y="567" text-anchor="middle" class="label-text">• Agent skills &amp; certifications</text>
+  <text x="520" y="587" text-anchor="middle" class="label-text">• Current workload &amp; capacity</text>
+  <text x="520" y="607" text-anchor="middle" class="label-text">• Language proficiency</text>
+  
+  <!-- Service Agents (Right Side) -->
+  <text x="950" y="110" text-anchor="middle" class="subtitle" font-weight="bold">Service Agents</text>
+  
+  <!-- Agent 1 -->
+  <rect x="820" y="130" width="260" height="80" fill="#27ae60" rx="8"/>
+  <text x="950" y="155" text-anchor="middle" class="agent-text">Agent 1 - Available</text>
+  <text x="950" y="177" text-anchor="middle" class="agent-text" font-size="11">Skills: Billing, Technical</text>
+  <text x="950" y="194" text-anchor="middle" class="agent-text" font-size="11">Capacity: 3/5 | Lang: EN, ES</text>
+  
+  <!-- Agent 2 -->
+  <rect x="820" y="230" width="260" height="80" fill="#27ae60" rx="8"/>
+  <text x="950" y="255" text-anchor="middle" class="agent-text">Agent 2 - Available</text>
+  <text x="950" y="277" text-anchor="middle" class="agent-text" font-size="11">Skills: Sales, Support</text>
+  <text x="950" y="294" text-anchor="middle" class="agent-text" font-size="11">Capacity: 1/5 | Lang: EN, FR</text>
+  
+  <!-- Agent 3 -->
+  <rect x="820" y="330" width="260" height="80" fill="#f39c12" rx="8"/>
+  <text x="950" y="355" text-anchor="middle" class="agent-text">Agent 3 - At Capacity</text>
+  <text x="950" y="377" text-anchor="middle" class="agent-text" font-size="11">Skills: Technical, Escalation</text>
+  <text x="950" y="394" text-anchor="middle" class="agent-text" font-size="11">Capacity: 5/5 | Lang: EN</text>
+  
+  <!-- Agent 4 -->
+  <rect x="820" y="430" width="260" height="80" fill="#27ae60" rx="8"/>
+  <text x="950" y="455" text-anchor="middle" class="agent-text">Agent 4 - Available</text>
+  <text x="950" y="477" text-anchor="middle" class="agent-text" font-size="11">Skills: Product Expert</text>
+  <text x="950" y="494" text-anchor="middle" class="agent-text" font-size="11">Capacity: 2/5 | Lang: EN, DE</text>
+  
+  <!-- Agent 5 -->
+  <rect x="820" y="530" width="260" height="80" fill="#e74c3c" rx="8"/>
+  <text x="950" y="555" text-anchor="middle" class="agent-text">Agent 5 - Offline</text>
+  <text x="950" y="577" text-anchor="middle" class="agent-text" font-size="11">Skills: Account Management</text>
+  <text x="950" y="594" text-anchor="middle" class="agent-text" font-size="11">Break Time (15 min)</text>
+  
+  <!-- Routing arrows from engine to agents -->
+  <line x1="660" y1="340" x2="820" y2="170" class="routing-arrow"/>
+  <line x1="660" y1="360" x2="820" y2="270" class="routing-arrow"/>
+  <line x1="660" y1="380" x2="820" y2="470" class="routing-arrow"/>
+  
+  <!-- Queue indicator -->
+  <rect x="380" y="650" width="280" height="80" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2" rx="8"/>
+  <text x="520" y="680" text-anchor="middle" class="channel-text">Queue Status</text>
+  <text x="520" y="702" text-anchor="middle" class="channel-text" font-size="12">Waiting: 7 items</text>
+  <text x="520" y="720" text-anchor="middle" class="channel-text" font-size="12">Avg Wait: 2m 15s</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="650" width="280" height="140" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="8"/>
+  <text x="190" y="675" text-anchor="middle" class="label-text" font-weight="bold">Agent Status Legend:</text>
+  <rect x="80" y="685" width="30" height="20" fill="#27ae60" rx="3"/>
+  <text x="120" y="700" class="label-text">Available - Ready for work</text>
+  <rect x="80" y="715" width="30" height="20" fill="#f39c12" rx="3"/>
+  <text x="120" y="730" class="label-text">At Capacity - Maximum load</text>
+  <rect x="80" y="745" width="30" height="20" fill="#e74c3c" rx="3"/>
+  <text x="120" y="760" class="label-text">Offline - Break or unavailable</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="820" y="650" width="260" height="140" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="8"/>
+  <text x="950" y="675" text-anchor="middle" class="label-text" font-weight="bold">Real-Time Metrics:</text>
+  <text x="950" y="700" text-anchor="middle" class="label-text">Active Agents: 4/5 (80%)</text>
+  <text x="950" y="720" text-anchor="middle" class="label-text">Avg Handle Time: 8m 30s</text>
+  <text x="950" y="740" text-anchor="middle" class="label-text">Service Level: 92%</text>
+  <text x="950" y="760" text-anchor="middle" class="label-text">First Contact Resolution: 78%</text>
+  
+  <!-- Bottom timestamp -->
+  <text x="600" y="820" text-anchor="middle" class="label-text" font-style="italic">Real-time routing ensures optimal agent utilization and customer satisfaction</text>
+</svg>

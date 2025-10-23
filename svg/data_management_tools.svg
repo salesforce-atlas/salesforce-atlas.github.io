@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="500" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#032e61">
+    Salesforce Data Management Tools
+  </text>
+  
+  <!-- Import Tools Section -->
+  <text x="250" y="75" font-size="20" font-weight="bold" text-anchor="middle" fill="#27ae60">
+    📥 Import Tools
+  </text>
+  
+  <!-- Data Import Wizard -->
+  <g id="import-wizard">
+    <rect x="50" y="90" width="400" height="140" fill="#3498db" opacity="0.15" stroke="#2980b9" stroke-width="2" rx="8"/>
+    <text x="250" y="120" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">
+      Data Import Wizard
+    </text>
+    
+    <!-- Details -->
+    <text x="70" y="150" font-size="14" font-weight="bold" fill="#2c3e50">Capacity:</text>
+    <text x="150" y="150" font-size="14" fill="#2c3e50">Up to 50,000 records</text>
+    
+    <text x="70" y="175" font-size="14" font-weight="bold" fill="#2c3e50">Interface:</text>
+    <text x="150" y="175" font-size="14" fill="#2c3e50">GUI-based, user-friendly</text>
+    
+    <text x="70" y="200" font-size="14" font-weight="bold" fill="#2c3e50">Objects:</text>
+    <text x="150" y="200" font-size="14" fill="#2c3e50">Limited (Accounts, Contacts, Leads)</text>
+    
+    <rect x="70" y="210" width="360" height="10" fill="#27ae60" opacity="0.3" rx="5"/>
+    <text x="250" y="220" font-size="12" text-anchor="middle" fill="#27ae60">✓ Best for: Simple imports by admins</text>
+  </g>
+  
+  <!-- Data Loader -->
+  <g id="data-loader">
+    <rect x="50" y="250" width="400" height="180" fill="#e74c3c" opacity="0.15" stroke="#c0392b" stroke-width="2" rx="8"/>
+    <text x="250" y="280" font-size="18" font-weight="bold" text-anchor="middle" fill="#c0392b">
+      Data Loader
+    </text>
+    
+    <!-- Details -->
+    <text x="70" y="310" font-size="14" font-weight="bold" fill="#2c3e50">Capacity:</text>
+    <text x="150" y="310" font-size="14" fill="#2c3e50">Up to 5 million records</text>
+    
+    <text x="70" y="335" font-size="14" font-weight="bold" fill="#2c3e50">Interface:</text>
+    <text x="150" y="335" font-size="14" fill="#2c3e50">Desktop app + command-line</text>
+    
+    <text x="70" y="360" font-size="14" font-weight="bold" fill="#2c3e50">Objects:</text>
+    <text x="150" y="360" font-size="14" fill="#2c3e50">All standard and custom objects</text>
+    
+    <text x="70" y="385" font-size="14" font-weight="bold" fill="#2c3e50">Operations:</text>
+    <text x="150" y="385" font-size="14" fill="#2c3e50">Insert, Update, Upsert, Delete, Export</text>
+    
+    <rect x="70" y="395" width="360" height="25" fill="#f39c12" opacity="0.3" rx="5"/>
+    <text x="250" y="408" font-size="12" text-anchor="middle" fill="#d68910">✓ Best for: Bulk operations, migrations,</text>
+    <text x="250" y="423" font-size="12" text-anchor="middle" fill="#d68910">scheduled automation via command-line</text>
+  </g>
+  
+  <!-- Bulk API -->
+  <g id="bulk-api">
+    <rect x="50" y="450" width="400" height="140" fill="#9b59b6" opacity="0.15" stroke="#8e44ad" stroke-width="2" rx="8"/>
+    <text x="250" y="480" font-size="18" font-weight="bold" text-anchor="middle" fill="#8e44ad">
+      Bulk API
+    </text>
+    
+    <!-- Details -->
+    <text x="70" y="510" font-size="14" font-weight="bold" fill="#2c3e50">Capacity:</text>
+    <text x="150" y="510" font-size="14" fill="#2c3e50">Millions of records</text>
+    
+    <text x="70" y="535" font-size="14" font-weight="bold" fill="#2c3e50">Interface:</text>
+    <text x="150" y="535" font-size="14" fill="#2c3e50">Programmatic (API)</text>
+    
+    <text x="70" y="560" font-size="14" font-weight="bold" fill="#2c3e50">Processing:</text>
+    <text x="150" y="560" font-size="14" fill="#2c3e50">Asynchronous batch processing</text>
+    
+    <rect x="70" y="570" width="360" height="10" fill="#e74c3c" opacity="0.3" rx="5"/>
+    <text x="250" y="580" font-size="12" text-anchor="middle" fill="#c0392b">✓ Best for: Large-scale integrations</text>
+  </g>
+  
+  <!-- Export Tools Section -->
+  <text x="750" y="75" font-size="20" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+    📤 Export Tools
+  </text>
+  
+  <!-- Export via Data Loader -->
+  <g id="export-loader">
+    <rect x="550" y="90" width="400" height="120" fill="#3498db" opacity="0.15" stroke="#2980b9" stroke-width="2" rx="8"/>
+    <text x="750" y="120" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">
+      Data Loader Export
+    </text>
+    
+    <text x="570" y="150" font-size="14" font-weight="bold" fill="#2c3e50">On-Demand:</text>
+    <text x="670" y="150" font-size="14" fill="#2c3e50">Export any time</text>
+    
+    <text x="570" y="175" font-size="14" font-weight="bold" fill="#2c3e50">Format:</text>
+    <text x="670" y="175" font-size="14" fill="#2c3e50">CSV files</text>
+    
+    <rect x="570" y="185" width="360" height="15" fill="#27ae60" opacity="0.3" rx="5"/>
+    <text x="750" y="197" font-size="12" text-anchor="middle" fill="#27ae60">✓ Best for: Custom queries and filters</text>
+  </g>
+  
+  <!-- Weekly/Monthly Export -->
+  <g id="scheduled-export">
+    <rect x="550" y="230" width="400" height="140" fill="#27ae60" opacity="0.15" stroke="#1e8449" stroke-width="2" rx="8"/>
+    <text x="750" y="260" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">
+      Weekly/Monthly Export
+    </text>
+    
+    <text x="570" y="290" font-size="14" font-weight="bold" fill="#2c3e50">Schedule:</text>
+    <text x="670" y="290" font-size="14" fill="#2c3e50">Automated full data export</text>
+    
+    <text x="570" y="315" font-size="14" font-weight="bold" fill="#2c3e50">Format:</text>
+    <text x="670" y="315" font-size="14" fill="#2c3e50">CSV files (by object)</text>
+    
+    <text x="570" y="340" font-size="14" font-weight="bold" fill="#2c3e50">Storage:</text>
+    <text x="670" y="340" font-size="14" fill="#2c3e50">48-hour download window</text>
+    
+    <rect x="570" y="350" width="360" height="10" fill="#f39c12" opacity="0.3" rx="5"/>
+    <text x="750" y="360" font-size="12" text-anchor="middle" fill="#d68910">✓ Best for: Backups and archival</text>
+  </g>
+  
+  <!-- Reports Export -->
+  <g id="report-export">
+    <rect x="550" y="390" width="400" height="120" fill="#f39c12" opacity="0.15" stroke="#d68910" stroke-width="2" rx="8"/>
+    <text x="750" y="420" font-size="18" font-weight="bold" text-anchor="middle" fill="#d68910">
+      Report Export
+    </text>
+    
+    <text x="570" y="450" font-size="14" font-weight="bold" fill="#2c3e50">Format:</text>
+    <text x="670" y="450" font-size="14" fill="#2c3e50">Excel, CSV, PDF</text>
+    
+    <text x="570" y="475" font-size="14" font-weight="bold" fill="#2c3e50">Limit:</text>
+    <text x="670" y="475" font-size="14" fill="#2c3e50">Up to 2,000 rows visible</text>
+    
+    <rect x="570" y="485" width="360" height="15" fill="#3498db" opacity="0.3" rx="5"/>
+    <text x="750" y="497" font-size="12" text-anchor="middle" fill="#2980b9">✓ Best for: Formatted business reports</text>
+  </g>
+  
+  <!-- Tool Selection Guide -->
+  <rect x="50" y="610" width="900" height="70" fill="#34495e" opacity="0.1" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="500" y="640" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    📊 Tool Selection Guide
+  </text>
+  <text x="70" y="665" font-size="13" fill="#2c3e50">
+    <tspan x="70">Small dataset (&lt;50K records) → Data Import Wizard   |   </tspan>
+    <tspan>Large dataset (&gt;50K records) → Data Loader   |   </tspan>
+    <tspan>Millions of records → Bulk API</tspan>
+  </text>
+  
+  <!-- Best Practices -->
+  <rect x="550" y="530" width="400" height="60" fill="#e74c3c" opacity="0.1" stroke="#c0392b" stroke-width="2" rx="8"/>
+  <text x="750" y="555" font-size="14" font-weight="bold" text-anchor="middle" fill="#c0392b">
+    ⚠️ Best Practices
+  </text>
+  <text x="570" y="577" font-size="12" fill="#2c3e50">• Always backup before bulk operations</text>
+  <text x="570" y="592" font-size="12" fill="#2c3e50">• Test in sandbox first • Use batch processing for large volumes</text>
+</svg>

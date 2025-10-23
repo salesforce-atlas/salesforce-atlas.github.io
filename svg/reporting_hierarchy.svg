@@ -1,0 +1,172 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Salesforce Reporting Hierarchy
+  </text>
+  
+  <!-- Data Objects Layer -->
+  <rect x="50" y="80" width="1100" height="140" rx="10" fill="#e3f2fd" stroke="#0176d3" stroke-width="2"/>
+  <text x="600" y="115" font-size="20" font-weight="bold" text-anchor="middle" fill="#0176d3">
+    Data Layer: Salesforce Objects
+  </text>
+  
+  <rect x="100" y="145" width="150" height="50" rx="5" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="175" y="175" font-size="12" text-anchor="middle" fill="#1a1a1a">Accounts</text>
+  
+  <rect x="280" y="145" width="150" height="50" rx="5" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="355" y="175" font-size="12" text-anchor="middle" fill="#1a1a1a">Opportunities</text>
+  
+  <rect x="460" y="145" width="150" height="50" rx="5" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="535" y="175" font-size="12" text-anchor="middle" fill="#1a1a1a">Contacts</text>
+  
+  <rect x="640" y="145" width="150" height="50" rx="5" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="715" y="175" font-size="12" text-anchor="middle" fill="#1a1a1a">Cases</text>
+  
+  <rect x="820" y="145" width="150" height="50" rx="5" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="895" y="175" font-size="12" text-anchor="middle" fill="#1a1a1a">Leads</text>
+  
+  <rect x="1000" y="145" width="150" height="50" rx="5" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="1075" y="175" font-size="12" text-anchor="middle" fill="#1a1a1a">Custom Objects</text>
+  
+  <!-- Report Types Layer -->
+  <rect x="50" y="260" width="1100" height="240" rx="10" fill="#fff3e0" stroke="#e97627" stroke-width="2"/>
+  <text x="600" y="295" font-size="20" font-weight="bold" text-anchor="middle" fill="#e97627">
+    Report Types
+  </text>
+  
+  <!-- Tabular Reports -->
+  <rect x="100" y="325" width="230" height="150" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+  <text x="215" y="355" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Tabular Reports
+  </text>
+  <text x="110" y="380" font-size="11" fill="#1a1a1a">Characteristics:</text>
+  <text x="110" y="398" font-size="10" fill="#555">• Simple list format</text>
+  <text x="110" y="413" font-size="10" fill="#555">• No grouping</text>
+  <text x="110" y="428" font-size="10" fill="#555">• Fast performance</text>
+  <text x="110" y="443" font-size="10" fill="#555">• Export-friendly</text>
+  <text x="110" y="458" font-size="10" fill="#555">• Cannot add charts</text>
+  
+  <!-- Summary Reports -->
+  <rect x="360" y="325" width="230" height="150" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+  <text x="475" y="355" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Summary Reports
+  </text>
+  <text x="370" y="380" font-size="11" fill="#1a1a1a">Characteristics:</text>
+  <text x="370" y="398" font-size="10" fill="#555">• Up to 3 grouping levels</text>
+  <text x="370" y="413" font-size="10" fill="#555">• Subtotals/aggregations</text>
+  <text x="370" y="428" font-size="10" fill="#555">• Charts supported</text>
+  <text x="370" y="443" font-size="10" fill="#555">• Most common type</text>
+  <text x="370" y="458" font-size="10" fill="#555">• Formulas allowed</text>
+  
+  <!-- Matrix Reports -->
+  <rect x="620" y="325" width="230" height="150" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+  <text x="735" y="355" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Matrix Reports
+  </text>
+  <text x="630" y="380" font-size="11" fill="#1a1a1a">Characteristics:</text>
+  <text x="630" y="398" font-size="10" fill="#555">• Row and column grouping</text>
+  <text x="630" y="413" font-size="10" fill="#555">• Cross-tabulation</text>
+  <text x="630" y="428" font-size="10" fill="#555">• Grand totals</text>
+  <text x="630" y="443" font-size="10" fill="#555">• Complex analysis</text>
+  <text x="630" y="458" font-size="10" fill="#555">• Slower performance</text>
+  
+  <!-- Joined Reports -->
+  <rect x="880" y="325" width="230" height="150" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+  <text x="995" y="355" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Joined Reports
+  </text>
+  <text x="890" y="380" font-size="11" fill="#1a1a1a">Characteristics:</text>
+  <text x="890" y="398" font-size="10" fill="#555">• Multiple report blocks</text>
+  <text x="890" y="413" font-size="10" fill="#555">• Different objects</text>
+  <text x="890" y="428" font-size="10" fill="#555">• Independent filters</text>
+  <text x="890" y="443" font-size="10" fill="#555">• Side-by-side view</text>
+  <text x="890" y="458" font-size="10" fill="#555">• Complex comparisons</text>
+  
+  <!-- Arrows from Objects to Reports -->
+  <path d="M 400 220 L 215 325" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)" stroke-dasharray="5,5"/>
+  <path d="M 500 220 L 475 325" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)" stroke-dasharray="5,5"/>
+  <path d="M 600 220 L 735 325" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)" stroke-dasharray="5,5"/>
+  <path d="M 700 220 L 995 325" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)" stroke-dasharray="5,5"/>
+  
+  <!-- Dashboards Layer -->
+  <rect x="50" y="540" width="1100" height="180" rx="10" fill="#e8f5e9" stroke="#00d4ff" stroke-width="2"/>
+  <text x="600" y="575" font-size="20" font-weight="bold" text-anchor="middle" fill="#00a3bf">
+    Dashboard Layer
+  </text>
+  
+  <!-- Dashboard Components -->
+  <rect x="100" y="605" width="200" height="90" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="200" y="635" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Charts and Graphs
+  </text>
+  <text x="110" y="660" font-size="10" fill="#555">• Bar, Line, Pie charts</text>
+  <text x="110" y="675" font-size="10" fill="#555">• Gauges and Metrics</text>
+  <text x="110" y="690" font-size="10" fill="#555">• Funnels and Scatter</text>
+  
+  <rect x="330" y="605" width="200" height="90" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="430" y="635" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Tables and Lists
+  </text>
+  <text x="340" y="660" font-size="10" fill="#555">• Top performers</text>
+  <text x="340" y="675" font-size="10" fill="#555">• Recent records</text>
+  <text x="340" y="690" font-size="10" fill="#555">• Summary data</text>
+  
+  <rect x="560" y="605" width="200" height="90" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="660" y="635" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Custom Components
+  </text>
+  <text x="570" y="660" font-size="10" fill="#555">• Visualforce pages</text>
+  <text x="570" y="675" font-size="10" fill="#555">• Lightning components</text>
+  <text x="570" y="690" font-size="10" fill="#555">• Einstein Analytics</text>
+  
+  <rect x="790" y="605" width="200" height="90" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="890" y="635" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Interactive Features
+  </text>
+  <text x="800" y="660" font-size="10" fill="#555">• Cross-filtering</text>
+  <text x="800" y="675" font-size="10" fill="#555">• Drill-down</text>
+  <text x="800" y="690" font-size="10" fill="#555">• Dynamic dashboards</text>
+  
+  <!-- Arrows from Reports to Dashboards -->
+  <path d="M 215 500 L 200 605" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)"/>
+  <path d="M 475 500 L 430 605" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)"/>
+  <path d="M 735 500 L 660 605" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)"/>
+  <path d="M 995 500 L 890 605" stroke="#999" stroke-width="2" fill="none" marker-end="url(#arrowgray)"/>
+  
+  <!-- End Users -->
+  <rect x="350" y="760" width="500" height="100" rx="10" fill="#032d60" stroke="#001f3f" stroke-width="2"/>
+  <text x="600" y="795" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    End Users and Stakeholders
+  </text>
+  <text x="370" y="825" font-size="12" fill="white">• Sales Managers</text>
+  <text x="370" y="843" font-size="12" fill="white">• Service Managers</text>
+  <text x="540" y="825" font-size="12" fill="white">• Marketing Teams</text>
+  <text x="540" y="843" font-size="12" fill="white">• Executives</text>
+  <text x="710" y="825" font-size="12" fill="white">• Operations</text>
+  <text x="710" y="843" font-size="12" fill="white">• Analysts</text>
+  
+  <!-- Arrow to End Users -->
+  <path d="M 600 720 L 600 760" stroke="#032d60" stroke-width="3" fill="none" marker-end="url(#arrowdark)"/>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 850)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#1a1a1a">Data Flow</text>
+    <line x1="0" y1="10" x2="50" y2="10" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="55" y="15" font-size="11" fill="#666">Object to Report</text>
+    <line x1="150" y1="10" x2="200" y2="10" stroke="#999" stroke-width="2"/>
+    <text x="205" y="15" font-size="11" fill="#666">Report to Dashboard</text>
+  </g>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrowgray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#999"/>
+    </marker>
+    <marker id="arrowdark" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#032d60"/>
+    </marker>
+  </defs>
+</svg>

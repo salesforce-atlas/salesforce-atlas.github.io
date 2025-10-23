@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #032e61; }
+      .layer-title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .component-text { font-family: Arial, sans-serif; font-size: 14px; fill: #ffffff; }
+      .label-text { font-family: Arial, sans-serif; font-size: 12px; fill: #333333; }
+      .arrow { stroke: #666666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" class="title">Service Cloud Architecture</text>
+  
+  <!-- Presentation Layer -->
+  <rect x="100" y="80" width="1000" height="100" fill="#0070d2" rx="8"/>
+  <text x="600" y="110" text-anchor="middle" class="layer-title">Presentation Layer</text>
+  <rect x="140" y="125" width="180" height="40" fill="#0176d3" rx="5"/>
+  <text x="230" y="150" text-anchor="middle" class="component-text">Service Console</text>
+  <rect x="360" y="125" width="180" height="40" fill="#0176d3" rx="5"/>
+  <text x="450" y="150" text-anchor="middle" class="component-text">Communities</text>
+  <rect x="580" y="125" width="180" height="40" fill="#0176d3" rx="5"/>
+  <text x="670" y="150" text-anchor="middle" class="component-text">Mobile Apps</text>
+  <rect x="800" y="125" width="180" height="40" fill="#0176d3" rx="5"/>
+  <text x="890" y="150" text-anchor="middle" class="component-text">Embedded Service</text>
+  
+  <!-- Application Layer -->
+  <rect x="100" y="220" width="1000" height="120" fill="#006dcc" rx="8"/>
+  <text x="600" y="250" text-anchor="middle" class="layer-title">Application Layer</text>
+  <rect x="140" y="265" width="140" height="40" fill="#0176d3" rx="5"/>
+  <text x="210" y="290" text-anchor="middle" class="component-text">Case Mgmt</text>
+  <rect x="310" y="265" width="140" height="40" fill="#0176d3" rx="5"/>
+  <text x="380" y="290" text-anchor="middle" class="component-text">Knowledge</text>
+  <rect x="480" y="265" width="140" height="40" fill="#0176d3" rx="5"/>
+  <text x="550" y="290" text-anchor="middle" class="component-text">Omni-Channel</text>
+  <rect x="650" y="265" width="140" height="40" fill="#0176d3" rx="5"/>
+  <text x="720" y="290" text-anchor="middle" class="component-text">Live Agent</text>
+  <rect x="820" y="265" width="140" height="40" fill="#0176d3" rx="5"/>
+  <text x="890" y="290" text-anchor="middle" class="component-text">Field Service</text>
+  
+  <!-- Intelligence Layer -->
+  <rect x="100" y="380" width="1000" height="100" fill="#005fb2" rx="8"/>
+  <text x="600" y="410" text-anchor="middle" class="layer-title">Intelligence Layer (Einstein AI)</text>
+  <rect x="180" y="425" width="170" height="40" fill="#0176d3" rx="5"/>
+  <text x="265" y="450" text-anchor="middle" class="component-text">Case Classification</text>
+  <rect x="390" y="425" width="170" height="40" fill="#0176d3" rx="5"/>
+  <text x="475" y="450" text-anchor="middle" class="component-text">Article Recommend</text>
+  <rect x="600" y="425" width="170" height="40" fill="#0176d3" rx="5"/>
+  <text x="685" y="450" text-anchor="middle" class="component-text">Reply Recommend</text>
+  <rect x="810" y="425" width="170" height="40" fill="#0176d3" rx="5"/>
+  <text x="895" y="450" text-anchor="middle" class="component-text">Einstein Bots</text>
+  
+  <!-- Integration Layer -->
+  <rect x="100" y="520" width="1000" height="100" fill="#004a99" rx="8"/>
+  <text x="600" y="550" text-anchor="middle" class="layer-title">Integration Layer</text>
+  <rect x="140" y="565" width="150" height="40" fill="#0176d3" rx="5"/>
+  <text x="215" y="590" text-anchor="middle" class="component-text">REST/SOAP API</text>
+  <rect x="320" y="565" width="150" height="40" fill="#0176d3" rx="5"/>
+  <text x="395" y="590" text-anchor="middle" class="component-text">Platform Events</text>
+  <rect x="500" y="565" width="150" height="40" fill="#0176d3" rx="5"/>
+  <text x="575" y="590" text-anchor="middle" class="component-text">Connect</text>
+  <rect x="680" y="565" width="150" height="40" fill="#0176d3" rx="5"/>
+  <text x="755" y="590" text-anchor="middle" class="component-text">MuleSoft</text>
+  <rect x="860" y="565" width="120" height="40" fill="#0176d3" rx="5"/>
+  <text x="920" y="590" text-anchor="middle" class="component-text">CTI</text>
+  
+  <!-- Data Layer -->
+  <rect x="100" y="660" width="1000" height="100" fill="#003a75" rx="8"/>
+  <text x="600" y="690" text-anchor="middle" class="layer-title">Data Layer</text>
+  <rect x="200" y="705" width="160" height="40" fill="#0176d3" rx="5"/>
+  <text x="280" y="730" text-anchor="middle" class="component-text">Standard Objects</text>
+  <rect x="400" y="705" width="160" height="40" fill="#0176d3" rx="5"/>
+  <text x="480" y="730" text-anchor="middle" class="component-text">Custom Objects</text>
+  <rect x="600" y="705" width="160" height="40" fill="#0176d3" rx="5"/>
+  <text x="680" y="730" text-anchor="middle" class="component-text">External Data</text>
+  <rect x="800" y="705" width="160" height="40" fill="#0176d3" rx="5"/>
+  <text x="880" y="730" text-anchor="middle" class="component-text">Big Objects</text>
+  
+  <!-- Arrows connecting layers -->
+  <line x1="600" y1="180" x2="600" y2="220" class="arrow"/>
+  <line x1="600" y1="340" x2="600" y2="380" class="arrow"/>
+  <line x1="600" y1="480" x2="600" y2="520" class="arrow"/>
+  <line x1="600" y1="620" x2="600" y2="660" class="arrow"/>
+</svg>

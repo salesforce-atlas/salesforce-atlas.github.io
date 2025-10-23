@@ -1,0 +1,205 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Salesforce Marketing Cloud Architecture
+  </text>
+  
+  <!-- Core Platform Layer -->
+  <rect x="50" y="80" width="1100" height="180" fill="#0176d3" stroke="#014486" stroke-width="2" rx="8"/>
+  <text x="600" y="110" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Core Platform
+  </text>
+  
+  <!-- Core Components -->
+  <g>
+    <rect x="80" y="130" width="200" height="110" fill="#ffffff" stroke="#014486" stroke-width="2" rx="6"/>
+    <text x="180" y="160" font-size="14" font-weight="bold" text-anchor="middle" fill="#0176d3">Contact Builder</text>
+    <text x="180" y="180" font-size="11" text-anchor="middle" fill="#333">Unified Customer Data</text>
+    <text x="180" y="200" font-size="11" text-anchor="middle" fill="#333">Identity Resolution</text>
+    <text x="180" y="220" font-size="11" text-anchor="middle" fill="#333">Data Extensions</text>
+  </g>
+  
+  <g>
+    <rect x="310" y="130" width="200" height="110" fill="#ffffff" stroke="#014486" stroke-width="2" rx="6"/>
+    <text x="410" y="160" font-size="14" font-weight="bold" text-anchor="middle" fill="#0176d3">Automation Studio</text>
+    <text x="410" y="180" font-size="11" text-anchor="middle" fill="#333">Workflow Automation</text>
+    <text x="410" y="200" font-size="11" text-anchor="middle" fill="#333">Data Processing</text>
+    <text x="410" y="220" font-size="11" text-anchor="middle" fill="#333">Scheduled Tasks</text>
+  </g>
+  
+  <g>
+    <rect x="540" y="130" width="200" height="110" fill="#ffffff" stroke="#014486" stroke-width="2" rx="6"/>
+    <text x="640" y="160" font-size="14" font-weight="bold" text-anchor="middle" fill="#0176d3">Analytics Builder</text>
+    <text x="640" y="180" font-size="11" text-anchor="middle" fill="#333">Campaign Analytics</text>
+    <text x="640" y="200" font-size="11" text-anchor="middle" fill="#333">Customer Insights</text>
+    <text x="640" y="220" font-size="11" text-anchor="middle" fill="#333">Attribution Tracking</text>
+  </g>
+  
+  <g>
+    <rect x="770" y="130" width="200" height="110" fill="#ffffff" stroke="#014486" stroke-width="2" rx="6"/>
+    <text x="870" y="160" font-size="14" font-weight="bold" text-anchor="middle" fill="#0176d3">Einstein AI</text>
+    <text x="870" y="180" font-size="11" text-anchor="middle" fill="#333">Predictive Scoring</text>
+    <text x="870" y="200" font-size="11" text-anchor="middle" fill="#333">Recommendations</text>
+    <text x="870" y="220" font-size="11" text-anchor="middle" fill="#333">Send Time Optimization</text>
+  </g>
+  
+  <!-- Studios Layer -->
+  <text x="600" y="300" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Marketing Studios
+  </text>
+  
+  <!-- Email Studio -->
+  <g>
+    <rect x="80" y="320" width="200" height="140" fill="#00a1e0" stroke="#0176d3" stroke-width="2" rx="6"/>
+    <text x="180" y="350" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Email Studio</text>
+    <text x="180" y="375" font-size="11" text-anchor="middle" fill="#ffffff">Campaign Creation</text>
+    <text x="180" y="395" font-size="11" text-anchor="middle" fill="#ffffff">A/B Testing</text>
+    <text x="180" y="415" font-size="11" text-anchor="middle" fill="#ffffff">Personalization</text>
+    <text x="180" y="435" font-size="11" text-anchor="middle" fill="#ffffff">Triggered Sends</text>
+  </g>
+  
+  <!-- Journey Builder -->
+  <g>
+    <rect x="310" y="320" width="200" height="140" fill="#00a1e0" stroke="#0176d3" stroke-width="2" rx="6"/>
+    <text x="410" y="350" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Journey Builder</text>
+    <text x="410" y="375" font-size="11" text-anchor="middle" fill="#ffffff">Multi-Channel Journeys</text>
+    <text x="410" y="395" font-size="11" text-anchor="middle" fill="#ffffff">Decision Splits</text>
+    <text x="410" y="415" font-size="11" text-anchor="middle" fill="#ffffff">Wait Activities</text>
+    <text x="410" y="435" font-size="11" text-anchor="middle" fill="#ffffff">Goal Tracking</text>
+  </g>
+  
+  <!-- Mobile Studio -->
+  <g>
+    <rect x="540" y="320" width="200" height="140" fill="#00a1e0" stroke="#0176d3" stroke-width="2" rx="6"/>
+    <text x="640" y="350" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Mobile Studio</text>
+    <text x="640" y="375" font-size="11" text-anchor="middle" fill="#ffffff">SMS/MMS</text>
+    <text x="640" y="395" font-size="11" text-anchor="middle" fill="#ffffff">Push Notifications</text>
+    <text x="640" y="415" font-size="11" text-anchor="middle" fill="#ffffff">Mobile Analytics</text>
+    <text x="640" y="435" font-size="11" text-anchor="middle" fill="#ffffff">Location-Based</text>
+  </g>
+  
+  <!-- Social Studio -->
+  <g>
+    <rect x="770" y="320" width="180" height="140" fill="#00a1e0" stroke="#0176d3" stroke-width="2" rx="6"/>
+    <text x="860" y="350" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Social Studio</text>
+    <text x="860" y="375" font-size="11" text-anchor="middle" fill="#ffffff">Social Listening</text>
+    <text x="860" y="395" font-size="11" text-anchor="middle" fill="#ffffff">Content Publishing</text>
+    <text x="860" y="415" font-size="11" text-anchor="middle" fill="#ffffff">Engagement</text>
+    <text x="860" y="435" font-size="11" text-anchor="middle" fill="#ffffff">Customer Service</text>
+  </g>
+  
+  <!-- Advertising Studio -->
+  <g>
+    <rect x="980" y="320" width="170" height="140" fill="#00a1e0" stroke="#0176d3" stroke-width="2" rx="6"/>
+    <text x="1065" y="350" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Advertising</text>
+    <text x="1065" y="370" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Studio</text>
+    <text x="1065" y="395" font-size="11" text-anchor="middle" fill="#ffffff">Digital Ads</text>
+    <text x="1065" y="415" font-size="11" text-anchor="middle" fill="#ffffff">CRM Targeting</text>
+    <text x="1065" y="435" font-size="11" text-anchor="middle" fill="#ffffff">Cross-Channel</text>
+  </g>
+  
+  <!-- Integration Layer -->
+  <text x="600" y="510" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Integration &amp; Data Layer
+  </text>
+  
+  <g>
+    <rect x="80" y="530" width="240" height="100" fill="#54698d" stroke="#2c3e50" stroke-width="2" rx="6"/>
+    <text x="200" y="560" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Marketing Cloud Connect</text>
+    <text x="200" y="585" font-size="11" text-anchor="middle" fill="#ffffff">Sales Cloud Integration</text>
+    <text x="200" y="605" font-size="11" text-anchor="middle" fill="#ffffff">Service Cloud Integration</text>
+  </g>
+  
+  <g>
+    <rect x="360" y="530" width="240" height="100" fill="#54698d" stroke="#2c3e50" stroke-width="2" rx="6"/>
+    <text x="480" y="560" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Data Extensions</text>
+    <text x="480" y="585" font-size="11" text-anchor="middle" fill="#ffffff">Customer Data Storage</text>
+    <text x="480" y="605" font-size="11" text-anchor="middle" fill="#ffffff">Relational Data Model</text>
+  </g>
+  
+  <g>
+    <rect x="640" y="530" width="240" height="100" fill="#54698d" stroke="#2c3e50" stroke-width="2" rx="6"/>
+    <text x="760" y="560" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">API &amp; Integration</text>
+    <text x="760" y="585" font-size="11" text-anchor="middle" fill="#ffffff">REST/SOAP APIs</text>
+    <text x="760" y="605" font-size="11" text-anchor="middle" fill="#ffffff">External Systems</text>
+  </g>
+  
+  <g>
+    <rect x="920" y="530" width="230" height="100" fill="#54698d" stroke="#2c3e50" stroke-width="2" rx="6"/>
+    <text x="1035" y="560" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Data Security</text>
+    <text x="1035" y="585" font-size="11" text-anchor="middle" fill="#ffffff">Encryption &amp; Compliance</text>
+    <text x="1035" y="605" font-size="11" text-anchor="middle" fill="#ffffff">Access Control</text>
+  </g>
+  
+  <!-- Customer Touchpoints -->
+  <text x="600" y="680" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Customer Touchpoints
+  </text>
+  
+  <g>
+    <ellipse cx="150" cy="750" rx="80" ry="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="150" y="745" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Email</text>
+    <text x="150" y="765" font-size="11" text-anchor="middle" fill="#ffffff">Inbox Delivery</text>
+  </g>
+  
+  <g>
+    <ellipse cx="310" cy="750" rx="80" ry="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="310" y="745" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Mobile</text>
+    <text x="310" y="765" font-size="11" text-anchor="middle" fill="#ffffff">SMS &amp; Push</text>
+  </g>
+  
+  <g>
+    <ellipse cx="470" cy="750" rx="80" ry="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="470" y="745" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Social</text>
+    <text x="470" y="765" font-size="11" text-anchor="middle" fill="#ffffff">Social Media</text>
+  </g>
+  
+  <g>
+    <ellipse cx="630" cy="750" rx="80" ry="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="630" y="745" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Web</text>
+    <text x="630" y="765" font-size="11" text-anchor="middle" fill="#ffffff">Website</text>
+  </g>
+  
+  <g>
+    <ellipse cx="790" cy="750" rx="80" ry="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="790" y="745" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Advertising</text>
+    <text x="790" y="765" font-size="11" text-anchor="middle" fill="#ffffff">Digital Ads</text>
+  </g>
+  
+  <g>
+    <ellipse cx="950" cy="750" rx="80" ry="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="950" y="745" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">In-Store</text>
+    <text x="950" y="765" font-size="11" text-anchor="middle" fill="#ffffff">Physical</text>
+  </g>
+  
+  <g>
+    <ellipse cx="1080" cy="750" rx="80" ry="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="1080" y="745" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Events</text>
+    <text x="1080" y="765" font-size="11" text-anchor="middle" fill="#ffffff">Conferences</text>
+  </g>
+  
+  <!-- Customer at bottom -->
+  <g>
+    <circle cx="600" cy="860" r="35" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="600" y="870" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Customer</text>
+  </g>
+  
+  <!-- Arrows from touchpoints to customer -->
+  <line x1="150" y1="810" x2="570" y2="840" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="310" y1="810" x2="580" y2="840" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="470" y1="810" x2="590" y2="840" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="630" y1="810" x2="600" y2="825" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="790" y1="810" x2="610" y2="840" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="810" x2="620" y2="840" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="1080" y1="810" x2="630" y2="840" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#95a5a6"/>
+    </marker>
+  </defs>
+</svg>

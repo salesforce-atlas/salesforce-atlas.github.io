@@ -1,0 +1,174 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Tableau CRM vs Tableau Comparison
+  </text>
+  
+  <!-- Tableau CRM Column -->
+  <rect x="50" y="80" width="500" height="740" rx="10" fill="#00d4ff" opacity="0.05" stroke="#00d4ff" stroke-width="3"/>
+  <text x="300" y="120" font-size="24" font-weight="bold" text-anchor="middle" fill="#00a3bf">
+    Tableau CRM
+  </text>
+  <text x="300" y="145" font-size="14" text-anchor="middle" fill="#666">
+    (Einstein Analytics)
+  </text>
+  
+  <!-- Tableau Column -->
+  <rect x="650" y="80" width="500" height="740" rx="10" fill="#e97627" opacity="0.05" stroke="#e97627" stroke-width="3"/>
+  <text x="900" y="120" font-size="24" font-weight="bold" text-anchor="middle" fill="#e97627">
+    Tableau
+  </text>
+  <text x="900" y="145" font-size="14" text-anchor="middle" fill="#666">
+    Desktop and Server
+  </text>
+  
+  <!-- Section 1: Primary Use Case -->
+  <g transform="translate(0, 180)">
+    <text x="300" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Primary Use Case
+    </text>
+    <rect x="80" y="15" width="440" height="70" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+    <text x="300" y="40" font-size="13" text-anchor="middle" fill="#1a1a1a">
+      Salesforce-Native CRM Analytics
+    </text>
+    <text x="100" y="62" font-size="11" fill="#555">• Embedded in Salesforce workflows</text>
+    <text x="100" y="77" font-size="11" fill="#555">• Sales, Service, Marketing focus</text>
+    
+    <text x="900" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Primary Use Case
+    </text>
+    <rect x="680" y="15" width="440" height="70" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+    <text x="900" y="40" font-size="13" text-anchor="middle" fill="#1a1a1a">
+      Enterprise Business Intelligence
+    </text>
+    <text x="700" y="62" font-size="11" fill="#555">• Cross-functional analytics platform</text>
+    <text x="700" y="77" font-size="11" fill="#555">• All departments and data sources</text>
+  </g>
+  
+  <!-- Section 2: Data Sources -->
+  <g transform="translate(0, 290)">
+    <text x="300" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Data Sources
+    </text>
+    <rect x="80" y="15" width="440" height="85" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+    <text x="100" y="40" font-size="11" fill="#555">• Primarily Salesforce objects</text>
+    <text x="100" y="55" font-size="11" fill="#555">• Limited external connectors</text>
+    <text x="100" y="70" font-size="11" fill="#555">• CSV uploads</text>
+    <text x="100" y="85" font-size="11" fill="#555">• Data recipes for transformation</text>
+    
+    <text x="900" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Data Sources
+    </text>
+    <rect x="680" y="15" width="440" height="85" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+    <text x="700" y="40" font-size="11" fill="#555">• 500+ native connectors</text>
+    <text x="700" y="55" font-size="11" fill="#555">• Any database or cloud service</text>
+    <text x="700" y="70" font-size="11" fill="#555">• Salesforce (via connector)</text>
+    <text x="700" y="85" font-size="11" fill="#555">• Tableau Prep for ETL</text>
+  </g>
+  
+  <!-- Section 3: AI and ML -->
+  <g transform="translate(0, 395)">
+    <text x="300" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      AI and Machine Learning
+    </text>
+    <rect x="80" y="15" width="440" height="85" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+    <text x="100" y="40" font-size="11" fill="#555">• Einstein Discovery (built-in)</text>
+    <text x="100" y="55" font-size="11" fill="#555">• Automated insights and predictions</text>
+    <text x="100" y="70" font-size="11" fill="#555">• No coding required</text>
+    <text x="100" y="85" font-size="11" fill="#555">• What-if scenario modeling</text>
+    
+    <text x="900" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      AI and Machine Learning
+    </text>
+    <rect x="680" y="15" width="440" height="85" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+    <text x="700" y="40" font-size="11" fill="#555">• TabPy for Python integration</text>
+    <text x="700" y="55" font-size="11" fill="#555">• R integration for statistics</text>
+    <text x="700" y="70" font-size="11" fill="#555">• Custom ML model deployment</text>
+    <text x="700" y="85" font-size="11" fill="#555">• Requires data science expertise</text>
+  </g>
+  
+  <!-- Section 4: User Interface -->
+  <g transform="translate(0, 500)">
+    <text x="300" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      User Interface
+    </text>
+    <rect x="80" y="15" width="440" height="70" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+    <text x="100" y="40" font-size="11" fill="#555">• Embedded in Salesforce Lightning</text>
+    <text x="100" y="55" font-size="11" fill="#555">• No context switching</text>
+    <text x="100" y="70" font-size="11" fill="#555">• Mobile-first design</text>
+    
+    <text x="900" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      User Interface
+    </text>
+    <rect x="680" y="15" width="440" height="70" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+    <text x="700" y="40" font-size="11" fill="#555">• Standalone application</text>
+    <text x="700" y="55" font-size="11" fill="#555">• Desktop + Web + Mobile</text>
+    <text x="700" y="70" font-size="11" fill="#555">• Powerful authoring environment</text>
+  </g>
+  
+  <!-- Section 5: Licensing and Cost -->
+  <g transform="translate(0, 590)">
+    <text x="300" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Licensing Model
+    </text>
+    <rect x="80" y="15" width="440" height="85" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+    <text x="100" y="40" font-size="11" fill="#555">• Per user ($75-$150/month)</text>
+    <text x="100" y="55" font-size="11" fill="#555">• Requires Salesforce licenses</text>
+    <text x="100" y="70" font-size="11" fill="#555">• Cloud-only deployment</text>
+    <text x="100" y="85" font-size="11" fill="#555">• Einstein Discovery add-on</text>
+    
+    <text x="900" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Licensing Model
+    </text>
+    <rect x="680" y="15" width="440" height="85" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+    <text x="700" y="40" font-size="11" fill="#555">• Per user ($70-$150/month)</text>
+    <text x="700" y="55" font-size="11" fill="#555">• Standalone or Creator licenses</text>
+    <text x="700" y="70" font-size="11" fill="#555">• Desktop, Server, or Cloud options</text>
+    <text x="700" y="85" font-size="11" fill="#555">• Flexible deployment models</text>
+  </g>
+  
+  <!-- Section 6: Best For -->
+  <g transform="translate(0, 695)">
+    <text x="300" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Best For
+    </text>
+    <rect x="80" y="15" width="440" height="100" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+    <text x="100" y="40" font-size="11" fill="#555">• Salesforce-centric organizations</text>
+    <text x="100" y="55" font-size="11" fill="#555">• Sales, service, marketing users</text>
+    <text x="100" y="70" font-size="11" fill="#555">• Embedded analytics needs</text>
+    <text x="100" y="85" font-size="11" fill="#555">• Quick time-to-value</text>
+    <text x="100" y="100" font-size="11" fill="#555">• AI-first approach</text>
+    
+    <text x="900" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+      Best For
+    </text>
+    <rect x="680" y="15" width="440" height="100" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+    <text x="700" y="40" font-size="11" fill="#555">• Enterprise-wide analytics</text>
+    <text x="700" y="55" font-size="11" fill="#555">• Multi-source data integration</text>
+    <text x="700" y="70" font-size="11" fill="#555">• Complex visualizations</text>
+    <text x="700" y="85" font-size="11" fill="#555">• Data analyst/scientist teams</text>
+    <text x="700" y="100" font-size="11" fill="#555">• Advanced customization</text>
+  </g>
+  
+  <!-- Integration Bridge -->
+  <g transform="translate(250, 835)">
+    <rect x="0" y="0" width="700" height="50" rx="8" fill="#16325c" stroke="#0c1b33" stroke-width="2"/>
+    <text x="350" y="30" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+      Hybrid Approach: Many organizations use BOTH for complementary needs
+    </text>
+  </g>
+  
+  <!-- Comparison Arrows -->
+  <path d="M 575 400 L 625 400" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowgray)"/>
+  <path d="M 625 400 L 575 400" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowgray)"/>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrowgray" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L7,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

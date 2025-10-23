@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800">
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Salesforce Platform Development Approaches
+  </text>
+  
+  <!-- Declarative Development Section -->
+  <rect x="50" y="80" width="650" height="650" fill="#e8f5e9" stroke="#4caf50" stroke-width="3" rx="10"/>
+  <text x="375" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    Declarative Development
+  </text>
+  <text x="375" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555" font-style="italic">
+    (Low-Code/No-Code)
+  </text>
+  
+  <!-- Lightning App Builder -->
+  <rect x="80" y="170" width="280" height="160" fill="white" stroke="#66bb6a" stroke-width="2" rx="8"/>
+  <text x="220" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    Lightning App Builder
+  </text>
+  <text x="90" y="220" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Drag-and-drop interface
+  </text>
+  <text x="90" y="240" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Lightning components
+  </text>
+  <text x="90" y="260" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Record, App, and Home pages
+  </text>
+  <text x="90" y="280" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Reusable templates
+  </text>
+  <text x="90" y="300" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Visual page design
+  </text>
+  <rect x="90" y="310" width="250" height="12" fill="#81c784" rx="3"/>
+  <text x="215" y="320" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    USER FRIENDLY
+  </text>
+  
+  <!-- Flow Builder -->
+  <rect x="380" y="170" width="280" height="160" fill="white" stroke="#66bb6a" stroke-width="2" rx="8"/>
+  <text x="520" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    Flow Builder
+  </text>
+  <text x="390" y="220" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Process automation
+  </text>
+  <text x="390" y="240" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Screen flows (UI)
+  </text>
+  <text x="390" y="260" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Auto-launched flows
+  </text>
+  <text x="390" y="280" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Record-triggered flows
+  </text>
+  <text x="390" y="300" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Scheduled flows
+  </text>
+  <rect x="390" y="310" width="250" height="12" fill="#81c784" rx="3"/>
+  <text x="515" y="320" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    NO CODE
+  </text>
+  
+  <!-- Custom Objects &amp; Fields -->
+  <rect x="80" y="350" width="280" height="180" fill="white" stroke="#66bb6a" stroke-width="2" rx="8"/>
+  <text x="220" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    Custom Objects &amp; Fields
+  </text>
+  <text x="90" y="400" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Custom objects
+  </text>
+  <text x="90" y="420" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Custom fields (Text, Number, etc.)
+  </text>
+  <text x="90" y="440" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Lookup relationships
+  </text>
+  <text x="90" y="460" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Master-Detail relationships
+  </text>
+  <text x="90" y="480" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Formula fields
+  </text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Roll-up summary fields
+  </text>
+  <rect x="90" y="510" width="250" height="12" fill="#81c784" rx="3"/>
+  <text x="215" y="520" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    POINT &amp; CLICK
+  </text>
+  
+  <!-- Validation &amp; Automation -->
+  <rect x="380" y="350" width="280" height="180" fill="white" stroke="#66bb6a" stroke-width="2" rx="8"/>
+  <text x="520" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    Validation &amp; Automation
+  </text>
+  <text x="390" y="400" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Validation rules
+  </text>
+  <text x="390" y="420" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Workflow rules
+  </text>
+  <text x="390" y="440" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Process Builder
+  </text>
+  <text x="390" y="460" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Approval processes
+  </text>
+  <text x="390" y="480" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Assignment rules
+  </text>
+  <text x="390" y="500" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Auto-response rules
+  </text>
+  <rect x="390" y="510" width="250" height="12" fill="#81c784" rx="3"/>
+  <text x="515" y="520" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    DECLARATIVE
+  </text>
+  
+  <!-- Benefits -->
+  <rect x="80" y="550" width="580" height="160" fill="#a5d6a7" stroke="#4caf50" stroke-width="2" rx="8"/>
+  <text x="370" y="575" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">
+    Declarative Benefits
+  </text>
+  <text x="90" y="600" font-family="Arial, sans-serif" font-size="13" fill="#1b5e20">
+    Faster development - no coding required
+  </text>
+  <text x="90" y="620" font-family="Arial, sans-serif" font-size="13" fill="#1b5e20">
+    Lower maintenance - automatic platform updates
+  </text>
+  <text x="90" y="640" font-family="Arial, sans-serif" font-size="13" fill="#1b5e20">
+    Built-in best practices - Salesforce governs limits
+  </text>
+  <text x="90" y="660" font-family="Arial, sans-serif" font-size="13" fill="#1b5e20">
+    Citizen developer friendly - business users can build
+  </text>
+  <text x="90" y="680" font-family="Arial, sans-serif" font-size="13" fill="#1b5e20">
+    Easier to maintain - visual documentation
+  </text>
+  
+  <!-- Programmatic Development Section -->
+  <rect x="720" y="80" width="650" height="650" fill="#e3f2fd" stroke="#2196f3" stroke-width="3" rx="10"/>
+  <text x="1045" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1565c0">
+    Programmatic Development
+  </text>
+  <text x="1045" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555" font-style="italic">
+    (Code-Based)
+  </text>
+  
+  <!-- Apex -->
+  <rect x="750" y="170" width="280" height="160" fill="white" stroke="#42a5f5" stroke-width="2" rx="8"/>
+  <text x="890" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565c0">
+    Apex
+  </text>
+  <text x="760" y="220" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Object-oriented language
+  </text>
+  <text x="760" y="240" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Triggers (before/after DML)
+  </text>
+  <text x="760" y="260" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Classes and interfaces
+  </text>
+  <text x="760" y="280" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Asynchronous processing
+  </text>
+  <text x="760" y="300" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Testing framework (75% coverage)
+  </text>
+  <rect x="760" y="310" width="250" height="12" fill="#64b5f6" rx="3"/>
+  <text x="885" y="320" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    POWERFUL
+  </text>
+  
+  <!-- Lightning Web Components -->
+  <rect x="1050" y="170" width="280" height="160" fill="white" stroke="#42a5f5" stroke-width="2" rx="8"/>
+  <text x="1190" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565c0">
+    Lightning Web Components
+  </text>
+  <text x="1060" y="220" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Modern JavaScript (ES6+)
+  </text>
+  <text x="1060" y="240" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Web standards-based
+  </text>
+  <text x="1060" y="260" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Component lifecycle
+  </text>
+  <text x="1060" y="280" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Data binding &amp; events
+  </text>
+  <text x="1060" y="300" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • High performance
+  </text>
+  <rect x="1060" y="310" width="250" height="12" fill="#64b5f6" rx="3"/>
+  <text x="1185" y="320" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    MODERN
+  </text>
+  
+  <!-- Aura Components -->
+  <rect x="750" y="350" width="280" height="180" fill="white" stroke="#42a5f5" stroke-width="2" rx="8"/>
+  <text x="890" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565c0">
+    Aura Components
+  </text>
+  <text x="760" y="400" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Component framework
+  </text>
+  <text x="760" y="420" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Component bundles
+  </text>
+  <text x="760" y="440" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Event-driven architecture
+  </text>
+  <text x="760" y="460" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Lightning Data Service
+  </text>
+  <text x="760" y="480" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Component &amp; app events
+  </text>
+  <text x="760" y="500" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • (Legacy - use LWC instead)
+  </text>
+  <rect x="760" y="510" width="250" height="12" fill="#64b5f6" rx="3"/>
+  <text x="885" y="520" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    LEGACY
+  </text>
+  
+  <!-- Visualforce -->
+  <rect x="1050" y="350" width="280" height="180" fill="white" stroke="#42a5f5" stroke-width="2" rx="8"/>
+  <text x="1190" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565c0">
+    Visualforce
+  </text>
+  <text x="1060" y="400" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Page-centric development
+  </text>
+  <text x="1060" y="420" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • MVC architecture
+  </text>
+  <text x="1060" y="440" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Custom controllers
+  </text>
+  <text x="1060" y="460" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Standard controllers
+  </text>
+  <text x="1060" y="480" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • Controller extensions
+  </text>
+  <text x="1060" y="500" font-family="Arial, sans-serif" font-size="13" fill="#333">
+    • (Legacy - use LWC instead)
+  </text>
+  <rect x="1060" y="510" width="250" height="12" fill="#64b5f6" rx="3"/>
+  <text x="1185" y="520" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">
+    MATURE
+  </text>
+  
+  <!-- Benefits -->
+  <rect x="750" y="550" width="580" height="160" fill="#90caf9" stroke="#2196f3" stroke-width="2" rx="8"/>
+  <text x="1040" y="575" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0d47a1">
+    Programmatic Benefits
+  </text>
+  <text x="760" y="600" font-family="Arial, sans-serif" font-size="13" fill="#0d47a1">
+    Full control - unlimited flexibility
+  </text>
+  <text x="760" y="620" font-family="Arial, sans-serif" font-size="13" fill="#0d47a1">
+    Complex logic - handle any business requirement
+  </text>
+  <text x="760" y="640" font-family="Arial, sans-serif" font-size="13" fill="#0d47a1">
+    External integrations - API callouts and webhooks
+  </text>
+  <text x="760" y="660" font-family="Arial, sans-serif" font-size="13" fill="#0d47a1">
+    Performance optimization - fine-tuned queries
+  </text>
+  <text x="760" y="680" font-family="Arial, sans-serif" font-size="13" fill="#0d47a1">
+    Custom user experiences - advanced UI/UX
+  </text>
+  
+  <!-- Decision Flow -->
+  <rect x="50" y="750" width="1320" height="30" fill="#ffd54f" stroke="#f9a825" stroke-width="2" rx="5"/>
+  <text x="710" y="770" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#f57f17">
+    Best Practice: Use Declarative First, Then Programmatic When Needed
+  </text>
+</svg>

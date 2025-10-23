@@ -1,0 +1,255 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1B3B6F">
+    Territory &amp; Quota Management
+  </text>
+  <text x="700" y="70" font-size="14" font-style="italic" text-anchor="middle" fill="#666">
+    Fair distribution of accounts and clear revenue targets
+  </text>
+  
+  <!-- Left Column: Territory Hierarchy -->
+  <rect x="50" y="100" width="680" height="500" fill="#E6F3FF" stroke="#0176D3" stroke-width="3" rx="10"/>
+  <text x="390" y="135" font-size="22" font-weight="bold" text-anchor="middle" fill="#0176D3">
+    Territory Hierarchy
+  </text>
+  
+  <!-- National Level -->
+  <rect x="240" y="165" width="300" height="75" fill="#0176D3" stroke="#003D7A" stroke-width="2" rx="8"/>
+  <text x="390" y="195" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    National Sales
+  </text>
+  <text x="390" y="217" font-size="14" text-anchor="middle" fill="#E6F3FF">VP of Sales</text>
+  <text x="390" y="235" font-size="12" text-anchor="middle" fill="#B3D9FF">Quota: $10M</text>
+  
+  <!-- Connection Lines to Regional -->
+  <line x1="320" y1="240" x2="210" y2="280" stroke="#0176D3" stroke-width="2"/>
+  <line x1="390" y1="240" x2="390" y2="280" stroke="#0176D3" stroke-width="2"/>
+  <line x1="460" y1="240" x2="570" y2="280" stroke="#0176D3" stroke-width="2"/>
+  
+  <!-- Regional Level -->
+  <g>
+    <rect x="90" y="280" width="200" height="70" fill="#4A9EFF" stroke="#0176D3" stroke-width="2" rx="8"/>
+    <text x="190" y="307" font-size="15" font-weight="bold" text-anchor="middle" fill="#FFFFFF">West Region</text>
+    <text x="190" y="326" font-size="12" text-anchor="middle" fill="#E6F3FF">Regional Manager</text>
+    <text x="190" y="342" font-size="11" text-anchor="middle" fill="#FFFFFF">$3M</text>
+  </g>
+  
+  <g>
+    <rect x="310" y="280" width="160" height="70" fill="#4A9EFF" stroke="#0176D3" stroke-width="2" rx="8"/>
+    <text x="390" y="307" font-size="15" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Central</text>
+    <text x="390" y="326" font-size="12" text-anchor="middle" fill="#E6F3FF">Regional Mgr</text>
+    <text x="390" y="342" font-size="11" text-anchor="middle" fill="#FFFFFF">$4M</text>
+  </g>
+  
+  <g>
+    <rect x="490" y="280" width="200" height="70" fill="#4A9EFF" stroke="#0176D3" stroke-width="2" rx="8"/>
+    <text x="590" y="307" font-size="15" font-weight="bold" text-anchor="middle" fill="#FFFFFF">East Region</text>
+    <text x="590" y="326" font-size="12" text-anchor="middle" fill="#E6F3FF">Regional Manager</text>
+    <text x="590" y="342" font-size="11" text-anchor="middle" fill="#FFFFFF">$3M</text>
+  </g>
+  
+  <!-- Connection Lines to Territories -->
+  <line x1="150" y1="350" x2="135" y2="385" stroke="#4A9EFF" stroke-width="2"/>
+  <line x1="230" y1="350" x2="245" y2="385" stroke="#4A9EFF" stroke-width="2"/>
+  <line x1="350" y1="350" x2="335" y2="385" stroke="#4A9EFF" stroke-width="2"/>
+  <line x1="430" y1="350" x2="445" y2="385" stroke="#4A9EFF" stroke-width="2"/>
+  <line x1="550" y1="350" x2="535" y2="385" stroke="#4A9EFF" stroke-width="2"/>
+  <line x1="630" y1="350" x2="645" y2="385" stroke="#4A9EFF" stroke-width="2"/>
+  
+  <!-- Territory Level - Aligned in a row -->
+  <rect x="80" y="385" width="110" height="60" fill="#B3D9FF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="135" y="407" font-size="13" font-weight="bold" text-anchor="middle" fill="#003D7A">CA North</text>
+  <text x="135" y="423" font-size="10" text-anchor="middle" fill="#1B3B6F">Manager</text>
+  <text x="135" y="438" font-size="10" text-anchor="middle" fill="#666">$1.5M</text>
+  
+  <rect x="200" y="385" width="110" height="60" fill="#B3D9FF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="255" y="407" font-size="13" font-weight="bold" text-anchor="middle" fill="#003D7A">CA South</text>
+  <text x="255" y="423" font-size="10" text-anchor="middle" fill="#1B3B6F">Manager</text>
+  <text x="255" y="438" font-size="10" text-anchor="middle" fill="#666">$1.5M</text>
+  
+  <rect x="320" y="385" width="110" height="60" fill="#B3D9FF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="375" y="407" font-size="13" font-weight="bold" text-anchor="middle" fill="#003D7A">Midwest</text>
+  <text x="375" y="423" font-size="10" text-anchor="middle" fill="#1B3B6F">Manager</text>
+  <text x="375" y="438" font-size="10" text-anchor="middle" fill="#666">$2.0M</text>
+  
+  <rect x="440" y="385" width="110" height="60" fill="#B3D9FF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="495" y="407" font-size="13" font-weight="bold" text-anchor="middle" fill="#003D7A">Texas</text>
+  <text x="495" y="423" font-size="10" text-anchor="middle" fill="#1B3B6F">Manager</text>
+  <text x="495" y="438" font-size="10" text-anchor="middle" fill="#666">$2.0M</text>
+  
+  <rect x="560" y="385" width="110" height="60" fill="#B3D9FF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="615" y="407" font-size="13" font-weight="bold" text-anchor="middle" fill="#003D7A">Northeast</text>
+  <text x="615" y="423" font-size="10" text-anchor="middle" fill="#1B3B6F">Manager</text>
+  <text x="615" y="438" font-size="10" text-anchor="middle" fill="#666">$1.5M</text>
+  
+  <!-- Rep counts -->
+  <text x="135" y="460" font-size="9" font-style="italic" text-anchor="middle" fill="#666">3 reps</text>
+  <text x="255" y="460" font-size="9" font-style="italic" text-anchor="middle" fill="#666">3 reps</text>
+  <text x="375" y="460" font-size="9" font-style="italic" text-anchor="middle" fill="#666">4 reps</text>
+  <text x="495" y="460" font-size="9" font-style="italic" text-anchor="middle" fill="#666">4 reps</text>
+  <text x="615" y="460" font-size="9" font-style="italic" text-anchor="middle" fill="#666">3 reps</text>
+  
+  <!-- Assignment Rules Info -->
+  <rect x="70" y="480" width="640" height="100" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="8"/>
+  <text x="390" y="505" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">
+    Account Assignment Rules
+  </text>
+  <text x="390" y="527" font-size="11" text-anchor="middle" fill="#4A4A4A">
+    Accounts assigned by: Geography • Industry • Account Size • Revenue
+  </text>
+  <text x="390" y="547" font-size="10" text-anchor="middle" fill="#666">
+    Example: Billing State = "CA" → CA North | Industry = "Tech" → Tech Specialist
+  </text>
+  <text x="390" y="565" font-size="10" text-anchor="middle" fill="#666">
+    Revenue &gt; $1M → Enterprise Team | Account Type = "SMB" → SMB Team
+  </text>
+  
+  <!-- Right Column: Quota Management -->
+  <rect x="750" y="100" width="600" height="500" fill="#E8F8E8" stroke="#2E844A" stroke-width="3" rx="10"/>
+  <text x="1050" y="135" font-size="22" font-weight="bold" text-anchor="middle" fill="#2E844A">
+    Quota Management
+  </text>
+  
+  <!-- Quota Types -->
+  <rect x="780" y="160" width="260" height="160" fill="#FFFFFF" stroke="#2E844A" stroke-width="2" rx="8"/>
+  <text x="910" y="185" font-size="16" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Quota Types</text>
+  <line x1="790" y1="195" x2="1030" y2="195" stroke="#2E844A" stroke-width="1"/>
+  
+  <text x="800" y="218" font-size="13" font-weight="bold" fill="#2E844A">Revenue:</text>
+  <text x="800" y="236" font-size="11" fill="#4A4A4A">• Annual: $2M per rep</text>
+  <text x="800" y="252" font-size="11" fill="#4A4A4A">• Quarterly: $500K per rep</text>
+  <text x="800" y="268" font-size="11" fill="#4A4A4A">• Monthly: $167K per rep</text>
+  
+  <text x="800" y="291" font-size="13" font-weight="bold" fill="#2E844A">Activity:</text>
+  <text x="800" y="309" font-size="11" fill="#4A4A4A">• 20 meetings/month</text>
+  
+  <!-- Forecast Categories -->
+  <rect x="1060" y="160" width="260" height="160" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2" rx="8"/>
+  <text x="1190" y="185" font-size="16" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Forecast Categories</text>
+  <line x1="1070" y1="195" x2="1310" y2="195" stroke="#8B5CF6" stroke-width="1"/>
+  
+  <rect x="1080" y="210" width="210" height="25" fill="#E6E6E6" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="1185" y="227" font-size="12" text-anchor="middle" fill="#1B3B6F">Pipeline (10%)</text>
+  
+  <rect x="1080" y="242" width="210" height="25" fill="#B3D9FF" stroke="#0176D3" stroke-width="1" rx="4"/>
+  <text x="1185" y="259" font-size="12" text-anchor="middle" fill="#003D7A">Best Case (70%)</text>
+  
+  <rect x="1080" y="274" width="210" height="25" fill="#80C0FF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="1185" y="291" font-size="12" font-weight="bold" text-anchor="middle" fill="#003D7A">Commit (90%)</text>
+  
+  <rect x="1080" y="306" width="100" height="8" fill="#D4EDDA" stroke="#2E844A" stroke-width="1" rx="4"/>
+  <text x="1190" y="313" font-size="11" text-anchor="start" fill="#2E844A">Closed (100%)</text>
+  
+  <!-- Quota Attainment -->
+  <rect x="780" y="340" width="540" height="240" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="8"/>
+  <text x="1050" y="365" font-size="16" font-weight="bold" text-anchor="middle" fill="#1B3B6F">
+    Quota Attainment Tracking
+  </text>
+  <line x1="790" y1="375" x2="1310" y2="375" stroke="#0176D3" stroke-width="1"/>
+  
+  <!-- Rep 1 -->
+  <text x="800" y="400" font-size="12" font-weight="bold" fill="#1B3B6F">Sarah Johnson</text>
+  <text x="800" y="417" font-size="11" fill="#2E844A">125% - Overachieving</text>
+  <rect x="950" y="392" width="350" height="20" fill="#E8F8E8" stroke="#2E844A" stroke-width="1" rx="3"/>
+  <rect x="950" y="392" width="262.5" height="20" fill="#2E844A" rx="3"/>
+  <text x="1310" y="407" font-size="10" text-anchor="end" fill="#FFFFFF" font-weight="bold">125%</text>
+  
+  <!-- Rep 2 -->
+  <text x="800" y="448" font-size="12" font-weight="bold" fill="#1B3B6F">Mike Chen</text>
+  <text x="800" y="465" font-size="11" fill="#FFB020">95% - At Risk</text>
+  <rect x="950" y="440" width="350" height="20" fill="#E8F8E8" stroke="#FFB020" stroke-width="1" rx="3"/>
+  <rect x="950" y="440" width="192.5" height="20" fill="#FFB020" rx="3"/>
+  <text x="1150" y="455" font-size="10" text-anchor="start" fill="#1B3B6F" font-weight="bold">95%</text>
+  
+  <!-- Rep 3 -->
+  <text x="800" y="496" font-size="12" font-weight="bold" fill="#1B3B6F">Lisa Wong</text>
+  <text x="800" y="513" font-size="11" fill="#DC2626">78% - Behind</text>
+  <rect x="950" y="488" width="350" height="20" fill="#E8F8E8" stroke="#DC2626" stroke-width="1" rx="3"/>
+  <rect x="950" y="488" width="136.5" height="20" fill="#DC2626" rx="3"/>
+  <text x="1095" y="503" font-size="10" text-anchor="start" fill="#1B3B6F" font-weight="bold">78%</text>
+  
+  <!-- Territory Rollup -->
+  <line x1="790" y1="530" x2="1310" y2="530" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="800" y="550" font-size="12" font-weight="bold" fill="#0176D3">Territory Rollup:</text>
+  <text x="800" y="567" font-size="11" fill="#4A4A4A">CA North: 98% of $1.5M quota ($1.47M)</text>
+  
+  <!-- Bottom Section: Assignment Methods -->
+  <rect x="50" y="630" width="640" height="340" fill="#FFF4E6" stroke="#FF9A3C" stroke-width="3" rx="10"/>
+  <text x="370" y="665" font-size="22" font-weight="bold" text-anchor="middle" fill="#FF9A3C">
+    Assignment Methods
+  </text>
+  
+  <!-- Rule-Based -->
+  <rect x="80" y="690" width="280" height="130" fill="#FFFFFF" stroke="#FF9A3C" stroke-width="2" rx="8"/>
+  <text x="220" y="715" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Rule-Based</text>
+  <line x1="90" y1="725" x2="350" y2="725" stroke="#FF9A3C" stroke-width="1"/>
+  <text x="100" y="745" font-size="11" fill="#4A4A4A">• Criteria matching</text>
+  <text x="100" y="761" font-size="11" fill="#4A4A4A">• Automatic assignment</text>
+  <text x="100" y="777" font-size="11" fill="#4A4A4A">• Territory rules</text>
+  <text x="100" y="793" font-size="11" fill="#4A4A4A">• Industry/geo based</text>
+  <text x="100" y="809" font-size="11" fill="#4A4A4A">• Revenue thresholds</text>
+  
+  <!-- Manual -->
+  <rect x="380" y="690" width="280" height="130" fill="#FFFFFF" stroke="#FF9A3C" stroke-width="2" rx="8"/>
+  <text x="520" y="715" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Manual Assignment</text>
+  <line x1="390" y1="725" x2="650" y2="725" stroke="#FF9A3C" stroke-width="1"/>
+  <text x="400" y="745" font-size="11" fill="#4A4A4A">• Strategic accounts</text>
+  <text x="400" y="761" font-size="11" fill="#4A4A4A">• Complex ownership</text>
+  <text x="400" y="777" font-size="11" fill="#4A4A4A">• Split territories</text>
+  <text x="400" y="793" font-size="11" fill="#4A4A4A">• Exception handling</text>
+  <text x="400" y="809" font-size="11" fill="#4A4A4A">• Territory transitions</text>
+  
+  <!-- Round Robin -->
+  <rect x="80" y="840" width="280" height="110" fill="#FFFFFF" stroke="#FF9A3C" stroke-width="2" rx="8"/>
+  <text x="220" y="865" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Round Robin</text>
+  <line x1="90" y1="875" x2="350" y2="875" stroke="#FF9A3C" stroke-width="1"/>
+  <text x="100" y="895" font-size="11" fill="#4A4A4A">• Even distribution</text>
+  <text x="100" y="911" font-size="11" fill="#4A4A4A">• Balance workload</text>
+  <text x="100" y="927" font-size="11" fill="#4A4A4A">• Queue-based</text>
+  <text x="100" y="943" font-size="11" fill="#4A4A4A">• Fair opportunity split</text>
+  
+  <!-- Overlay Teams -->
+  <rect x="380" y="840" width="280" height="110" fill="#FFFFFF" stroke="#FF9A3C" stroke-width="2" rx="8"/>
+  <text x="520" y="865" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Overlay Teams</text>
+  <line x1="390" y1="875" x2="650" y2="875" stroke="#FF9A3C" stroke-width="1"/>
+  <text x="400" y="895" font-size="11" fill="#4A4A4A">• Sales Engineers</text>
+  <text x="400" y="911" font-size="11" fill="#4A4A4A">• Solution Architects</text>
+  <text x="400" y="927" font-size="11" fill="#4A4A4A">• Product Specialists</text>
+  <text x="400" y="943" font-size="11" fill="#4A4A4A">• Cross-territory support</text>
+  
+  <!-- Bottom Right: Best Practices -->
+  <rect x="750" y="630" width="600" height="340" fill="#F0E6FF" stroke="#8B5CF6" stroke-width="3" rx="10"/>
+  <text x="1050" y="665" font-size="22" font-weight="bold" text-anchor="middle" fill="#8B5CF6">
+    Territory Optimization
+  </text>
+  
+  <!-- Coverage Analysis -->
+  <rect x="780" y="690" width="540" height="90" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2" rx="8"/>
+  <text x="1050" y="715" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Coverage Analysis</text>
+  <line x1="790" y1="725" x2="1310" y2="725" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="800" y="745" font-size="11" fill="#4A4A4A">• Identify under-covered territories</text>
+  <text x="800" y="761" font-size="11" fill="#4A4A4A">• Balance account-to-rep ratios</text>
+  <text x="800" y="777" font-size="11" fill="#4A4A4A">• Optimize territory boundaries</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="780" y="800" width="260" height="150" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2" rx="8"/>
+  <text x="910" y="825" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Performance</text>
+  <line x1="790" y1="835" x2="1030" y2="835" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="800" y="855" font-size="11" fill="#4A4A4A">• Win rate by territory</text>
+  <text x="800" y="871" font-size="11" fill="#4A4A4A">• Deal size by region</text>
+  <text x="800" y="887" font-size="11" fill="#4A4A4A">• Sales cycle length</text>
+  <text x="800" y="903" font-size="11" fill="#4A4A4A">• Quota attainment</text>
+  <text x="800" y="919" font-size="11" fill="#4A4A4A">• Pipeline coverage</text>
+  <text x="800" y="935" font-size="11" fill="#4A4A4A">• Activity metrics</text>
+  
+  <!-- Territory Planning -->
+  <rect x="1060" y="800" width="260" height="150" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2" rx="8"/>
+  <text x="1190" y="825" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Planning</text>
+  <line x1="1070" y1="835" x2="1310" y2="835" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="1080" y="855" font-size="11" fill="#4A4A4A">• Annual realignment</text>
+  <text x="1080" y="871" font-size="11" fill="#4A4A4A">• Capacity planning</text>
+  <text x="1080" y="887" font-size="11" fill="#4A4A4A">• Resource allocation</text>
+  <text x="1080" y="903" font-size="11" fill="#4A4A4A">• Growth projections</text>
+  <text x="1080" y="919" font-size="11" fill="#4A4A4A">• Territory splits</text>
+  <text x="1080" y="935" font-size="11" fill="#4A4A4A">• Hiring needs</text>
+</svg>

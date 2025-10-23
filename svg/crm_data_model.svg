@@ -1,0 +1,231 @@
+<svg viewBox="0 0 1400 1100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#1B3B6F">
+    Sales Cloud CRM Data Model
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="700" y="65" font-size="14" font-style="italic" text-anchor="middle" fill="#666">
+    Standard Object Relationships and Data Hierarchy
+  </text>
+  
+  <!-- Legend -->
+  <rect x="50" y="90" width="500" height="70" fill="#F5F5F5" stroke="#666" stroke-width="2" rx="5"/>
+  <text x="300" y="110" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Relationship Types</text>
+  <line x1="60" y1="120" x2="540" y2="120" stroke="#666" stroke-width="1"/>
+  <line x1="70" y1="135" x2="130" y2="135" stroke="#2E844A" stroke-width="3"/>
+  <text x="140" y="140" font-size="11" fill="#4A4A4A">Lookup (1:Many) - Loose coupling</text>
+  <line x1="310" y1="135" x2="370" y2="135" stroke="#DC2626" stroke-width="3"/>
+  <text x="380" y="140" font-size="11" fill="#4A4A4A">Master-Detail - Tight coupling</text>
+  <line x1="70" y1="150" x2="130" y2="150" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="140" y="155" font-size="11" fill="#4A4A4A">Many-to-Many (via Junction)</text>
+  
+  <!-- Account Object (Central) -->
+  <rect x="550" y="200" width="300" height="200" fill="#E6F3FF" stroke="#0176D3" stroke-width="3" rx="10"/>
+  <text x="700" y="230" font-size="20" font-weight="bold" text-anchor="middle" fill="#0176D3">Account</text>
+  <text x="700" y="250" font-size="12" font-style="italic" text-anchor="middle" fill="#666">(Companies/Organizations)</text>
+  <line x1="560" y1="260" x2="840" y2="260" stroke="#0176D3" stroke-width="2"/>
+  
+  <text x="570" y="285" font-size="12" font-weight="bold" fill="#1B3B6F">Key Fields:</text>
+  <text x="570" y="305" font-size="11" fill="#4A4A4A">• Account Name (required)</text>
+  <text x="570" y="322" font-size="11" fill="#4A4A4A">• Account Owner</text>
+  <text x="570" y="339" font-size="11" fill="#4A4A4A">• Account Type (Prospect, Customer)</text>
+  <text x="570" y="356" font-size="11" fill="#4A4A4A">• Industry, Annual Revenue</text>
+  <text x="570" y="373" font-size="11" fill="#4A4A4A">• Parent Account (hierarchy)</text>
+  <text x="570" y="390" font-size="11" fill="#4A4A4A">• Billing/Shipping Address</text>
+  
+  <!-- Contact Object -->
+  <rect x="950" y="200" width="300" height="180" fill="#F0E6FF" stroke="#8B5CF6" stroke-width="3" rx="10"/>
+  <text x="1100" y="230" font-size="20" font-weight="bold" text-anchor="middle" fill="#8B5CF6">Contact</text>
+  <text x="1100" y="250" font-size="12" font-style="italic" text-anchor="middle" fill="#666">(People)</text>
+  <line x1="960" y1="260" x2="1240" y2="260" stroke="#8B5CF6" stroke-width="2"/>
+  
+  <text x="970" y="285" font-size="12" font-weight="bold" fill="#1B3B6F">Key Fields:</text>
+  <text x="970" y="305" font-size="11" fill="#4A4A4A">• First Name, Last Name</text>
+  <text x="970" y="322" font-size="11" fill="#4A4A4A">• Email, Phone, Mobile</text>
+  <text x="970" y="339" font-size="11" fill="#4A4A4A">• Title, Department</text>
+  <text x="970" y="356" font-size="11" fill="#4A4A4A">• Reports To (hierarchy)</text>
+  <text x="970" y="373" font-size="11" fill="#4A4A4A">• Mailing Address</text>
+  
+  <!-- Relationship: Account to Contact -->
+  <path d="M 850 290 L 950 290" stroke="#2E844A" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="900" y="280" font-size="11" font-weight="bold" fill="#2E844A">1:Many</text>
+  <text x="890" y="310" font-size="10" font-style="italic" fill="#666">Lookup</text>
+  
+  <!-- Lead Object -->
+  <rect x="150" y="200" width="280" height="180" fill="#FFF4E6" stroke="#FF9A3C" stroke-width="3" rx="10"/>
+  <text x="290" y="230" font-size="20" font-weight="bold" text-anchor="middle" fill="#FF9A3C">Lead</text>
+  <text x="290" y="250" font-size="12" font-style="italic" text-anchor="middle" fill="#666">(Potential Customers)</text>
+  <line x1="160" y1="260" x2="420" y2="260" stroke="#FF9A3C" stroke-width="2"/>
+  
+  <text x="170" y="285" font-size="12" font-weight="bold" fill="#1B3B6F">Key Fields:</text>
+  <text x="170" y="305" font-size="11" fill="#4A4A4A">• First Name, Last Name</text>
+  <text x="170" y="322" font-size="11" fill="#4A4A4A">• Company, Email, Phone</text>
+  <text x="170" y="339" font-size="11" fill="#4A4A4A">• Lead Status (New, Working...)</text>
+  <text x="170" y="356" font-size="11" fill="#4A4A4A">• Lead Source, Rating</text>
+  <text x="170" y="373" font-size="11" fill="#4A4A4A">• Industry, Annual Revenue</text>
+  
+  <!-- Lead Conversion Arrow -->
+  <path d="M 430 290 L 500 290 Q 525 290 525 265 L 525 250 Q 525 220 550 220" stroke="#FF9A3C" stroke-width="3" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowhead-orange)"/>
+  <text x="465" y="275" font-size="11" font-weight="bold" fill="#FF9A3C">Convert</text>
+  <text x="455" y="265" font-size="9" font-style="italic" fill="#666">→ Account</text>
+  
+  <path d="M 430 310 L 500 310 Q 525 310 525 300 L 525 280 Q 525 260 550 280" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <text x="455" y="325" font-size="9" font-style="italic" fill="#666">→ Contact</text>
+  
+  <path d="M 430 330 L 480 380" stroke="#2E844A" stroke-width="3" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="440" y="365" font-size="9" font-style="italic" fill="#666">→ Opportunity</text>
+  
+  <!-- Opportunity Object -->
+  <rect x="550" y="450" width="300" height="200" fill="#E8F8E8" stroke="#2E844A" stroke-width="3" rx="10"/>
+  <text x="700" y="480" font-size="20" font-weight="bold" text-anchor="middle" fill="#2E844A">Opportunity</text>
+  <text x="700" y="500" font-size="12" font-style="italic" text-anchor="middle" fill="#666">(Deals/Sales)</text>
+  <line x1="560" y1="510" x2="840" y2="510" stroke="#2E844A" stroke-width="2"/>
+  
+  <text x="570" y="535" font-size="12" font-weight="bold" fill="#1B3B6F">Key Fields:</text>
+  <text x="570" y="555" font-size="11" fill="#4A4A4A">• Opportunity Name (required)</text>
+  <text x="570" y="572" font-size="11" fill="#4A4A4A">• Account (lookup, required)</text>
+  <text x="570" y="589" font-size="11" fill="#4A4A4A">• Amount, Close Date</text>
+  <text x="570" y="606" font-size="11" fill="#4A4A4A">• Stage, Probability</text>
+  <text x="570" y="623" font-size="11" fill="#4A4A4A">• Lead Source, Type</text>
+  <text x="570" y="640" font-size="11" fill="#4A4A4A">• Forecast Category</text>
+  
+  <!-- Relationship: Account to Opportunity -->
+  <path d="M 700 400 L 700 450" stroke="#2E844A" stroke-width="3" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="710" y="430" font-size="11" font-weight="bold" fill="#2E844A">1:Many</text>
+  <text x="710" y="445" font-size="10" font-style="italic" fill="#666">Lookup</text>
+  
+  <!-- Product2 Object -->
+  <rect x="950" y="460" width="280" height="160" fill="#FFF0F5" stroke="#DC2626" stroke-width="3" rx="10"/>
+  <text x="1090" y="490" font-size="20" font-weight="bold" text-anchor="middle" fill="#DC2626">Product2</text>
+  <text x="1090" y="510" font-size="12" font-style="italic" text-anchor="middle" fill="#666">(Products/Services)</text>
+  <line x1="960" y1="520" x2="1220" y2="520" stroke="#DC2626" stroke-width="2"/>
+  
+  <text x="970" y="545" font-size="12" font-weight="bold" fill="#1B3B6F">Key Fields:</text>
+  <text x="970" y="565" font-size="11" fill="#4A4A4A">• Product Name</text>
+  <text x="970" y="582" font-size="11" fill="#4A4A4A">• Product Code</text>
+  <text x="970" y="599" font-size="11" fill="#4A4A4A">• Product Family</text>
+  <text x="970" y="616" font-size="11" fill="#4A4A4A">• Active Status</text>
+  
+  <!-- OpportunityLineItem Junction -->
+  <rect x="1280" y="485" width="80" height="110" fill="#FFE6F0" stroke="#DC2626" stroke-width="2" rx="5"/>
+  <text x="1320" y="510" font-size="11" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Opp Line</text>
+  <text x="1320" y="525" font-size="11" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Item</text>
+  <text x="1320" y="545" font-size="9" font-style="italic" text-anchor="middle" fill="#666">(Junction)</text>
+  <line x1="1285" y1="555" x2="1355" y2="555" stroke="#DC2626" stroke-width="1"/>
+  <text x="1290" y="570" font-size="9" fill="#4A4A4A">• Quantity</text>
+  <text x="1290" y="583" font-size="9" fill="#4A4A4A">• Unit Price</text>
+  
+  <!-- M:M Relationship via Junction -->
+  <path d="M 850 550 L 1280 540" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <text x="1050" y="540" font-size="11" font-weight="bold" fill="#8B5CF6">Many:Many</text>
+  
+  <path d="M 950 540 L 1280 540" stroke="#DC2626" stroke-width="3" fill="none" marker-end="url(#arrowhead-red)"/>
+  <text x="1100" y="565" font-size="10" font-style="italic" fill="#666">via Line Items</text>
+  
+  <!-- Opportunity Contact Role Junction -->
+  <rect x="950" y="680" width="280" height="120" fill="#E6E6FA" stroke="#8B5CF6" stroke-width="2" rx="8"/>
+  <text x="1090" y="710" font-size="16" font-weight="bold" text-anchor="middle" fill="#8B5CF6">OpportunityContactRole</text>
+  <text x="1090" y="730" font-size="11" font-style="italic" text-anchor="middle" fill="#666">(Junction Object - Many:Many)</text>
+  <line x1="960" y1="740" x2="1220" y2="740" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="970" y="760" font-size="11" fill="#4A4A4A">• Contact (lookup)</text>
+  <text x="970" y="777" font-size="11" fill="#4A4A4A">• Opportunity (lookup)</text>
+  <text x="970" y="794" font-size="11" fill="#4A4A4A">• Role (Decision Maker, Influencer...)</text>
+  
+  <!-- Relationships to Junction -->
+  <path d="M 750 650 L 1000 680" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <text x="850" y="665" font-size="11" font-weight="bold" fill="#8B5CF6">Many:Many</text>
+  
+  <path d="M 1100 380 L 1100 680" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <text x="1110" y="530" font-size="10" font-style="italic" fill="#666">Contacts</text>
+  
+  <!-- Case Object -->
+  <rect x="150" y="450" width="280" height="160" fill="#FFF9E6" stroke="#FFB020" stroke-width="3" rx="10"/>
+  <text x="290" y="480" font-size="20" font-weight="bold" text-anchor="middle" fill="#FFB020">Case</text>
+  <text x="290" y="500" font-size="12" font-style="italic" text-anchor="middle" fill="#666">(Support Tickets)</text>
+  <line x1="160" y1="510" x2="420" y2="510" stroke="#FFB020" stroke-width="2"/>
+  
+  <text x="170" y="535" font-size="12" font-weight="bold" fill="#1B3B6F">Key Fields:</text>
+  <text x="170" y="555" font-size="11" fill="#4A4A4A">• Case Number</text>
+  <text x="170" y="572" font-size="11" fill="#4A4A4A">• Status (New, Working...)</text>
+  <text x="170" y="589" font-size="11" fill="#4A4A4A">• Priority, Origin</text>
+  <text x="170" y="606" font-size="11" fill="#4A4A4A">• Subject, Description</text>
+  
+  <!-- Relationship: Account to Case -->
+  <path d="M 550 350 L 500 350 L 500 430 L 430 430" stroke="#2E844A" stroke-width="3" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="470" y="380" font-size="11" font-weight="bold" fill="#2E844A">1:Many</text>
+  
+  <!-- Relationship: Contact to Case -->
+  <path d="M 950 350 L 900 350 L 900 420 L 500 420 L 500 520 L 430 520" stroke="#2E844A" stroke-width="3" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="910" y="365" font-size="11" font-weight="bold" fill="#2E844A">1:Many</text>
+  
+  <!-- Task/Event Objects -->
+  <rect x="150" y="680" width="280" height="160" fill="#E6FFFA" stroke="#14B8A6" stroke-width="3" rx="10"/>
+  <text x="290" y="710" font-size="20" font-weight="bold" text-anchor="middle" fill="#14B8A6">Task &amp; Event</text>
+  <text x="290" y="730" font-size="12" font-style="italic" text-anchor="middle" fill="#666">(Activities)</text>
+  <line x1="160" y1="740" x2="420" y2="740" stroke="#14B8A6" stroke-width="2"/>
+  
+  <text x="170" y="765" font-size="12" font-weight="bold" fill="#1B3B6F">Related To:</text>
+  <text x="170" y="785" font-size="11" fill="#4A4A4A">• Account, Contact, Lead</text>
+  <text x="170" y="802" font-size="11" fill="#4A4A4A">• Opportunity, Case</text>
+  <text x="170" y="819" font-size="11" fill="#4A4A4A">• Custom Objects</text>
+  
+  <!-- Activity Relationships -->
+  <path d="M 430 760 L 500 350 L 550 350" stroke="#14B8A6" stroke-width="2" stroke-dasharray="3,3" fill="none"/>
+  <text x="450" y="600" font-size="10" fill="#14B8A6">Activities</text>
+  
+  <path d="M 430 760 L 500 550 L 550 550" stroke="#14B8A6" stroke-width="2" stroke-dasharray="3,3" fill="none"/>
+  
+  <path d="M 290 680 L 290 610" stroke="#14B8A6" stroke-width="2" stroke-dasharray="3,3" fill="none"/>
+  
+  <path d="M 250 680 L 250 380" stroke="#14B8A6" stroke-width="2" stroke-dasharray="3,3" fill="none"/>
+  
+  <!-- Bottom Info Panel -->
+  <rect x="50" y="890" width="1300" height="180" fill="#F5F5F5" stroke="#666" stroke-width="2" rx="8"/>
+  <text x="700" y="920" font-size="18" font-weight="bold" text-anchor="middle" fill="#1B3B6F">
+    Key Data Model Concepts
+  </text>
+  
+  <rect x="80" y="940" width="390" height="110" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="275" y="960" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Lookup Relationships</text>
+  <line x1="90" y1="970" x2="460" y2="970" stroke="#0176D3" stroke-width="1"/>
+  <text x="95" y="988" font-size="11" fill="#4A4A4A">• Loosely coupled - child can exist independently</text>
+  <text x="95" y="1005" font-size="11" fill="#4A4A4A">• No cascade delete (configurable)</text>
+  <text x="95" y="1022" font-size="11" fill="#4A4A4A">• Parent not required (can be null)</text>
+  <text x="95" y="1039" font-size="11" fill="#4A4A4A">• Example: Opportunity → Account</text>
+  
+  <rect x="500" y="940" width="390" height="110" fill="#FFFFFF" stroke="#DC2626" stroke-width="2" rx="5"/>
+  <text x="695" y="960" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Master-Detail Relationships</text>
+  <line x1="510" y1="970" x2="880" y2="970" stroke="#DC2626" stroke-width="1"/>
+  <text x="515" y="988" font-size="11" fill="#4A4A4A">• Tightly coupled - child depends on parent</text>
+  <text x="515" y="1005" font-size="11" fill="#4A4A4A">• Cascade delete (parent deletion deletes children)</text>
+  <text x="515" y="1022" font-size="11" fill="#4A4A4A">• Parent required (cannot be null)</text>
+  <text x="515" y="1039" font-size="11" fill="#4A4A4A">• Enables rollup summary fields on parent</text>
+  
+  <rect x="920" y="940" width="400" height="110" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2" rx="5"/>
+  <text x="1120" y="960" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Many-to-Many via Junction</text>
+  <line x1="930" y1="970" x2="1310" y2="970" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="935" y="988" font-size="11" fill="#4A4A4A">• Junction object with 2 master-detail relationships</text>
+  <text x="935" y="1005" font-size="11" fill="#4A4A4A">• Both parents can have many children</text>
+  <text x="935" y="1022" font-size="11" fill="#4A4A4A">• Junction stores relationship data</text>
+  <text x="935" y="1039" font-size="11" fill="#4A4A4A">• Example: Opportunity ↔ Contact (via Role)</text>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2E844A"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2E844A"/>
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF9A3C"/>
+    </marker>
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#8B5CF6"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#DC2626"/>
+    </marker>
+  </defs>
+</svg>

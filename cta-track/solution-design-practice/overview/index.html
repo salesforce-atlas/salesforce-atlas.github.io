@@ -1,0 +1,3613 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://salesforce-atlas.github.io/cta-track/solution-design-practice/overview/">
+      
+      
+        <link rel="prev" href="../../architect-readiness/cta-defense-questions/">
+      
+      
+        <link rel="next" href="../crm-and-data-modeling-scenarios/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Overview - Salesforce Atlas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#from-theory-to-practice" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Salesforce Atlas" class="md-header__button md-logo" aria-label="Salesforce Atlas" data-md-component="logo">
+      
+  <img src="../../../images/adhana.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Salesforce Atlas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../products/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Products & Ecosystem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  CTA Track
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../interview-preparation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Interview Preparation
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Salesforce Atlas" class="md-nav__button md-logo" aria-label="Salesforce Atlas" data-md-component="logo">
+      
+  <img src="../../../images/adhana.png" alt="logo">
+
+    </a>
+    Salesforce Atlas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../products/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Products & Ecosystem
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Products & Ecosystem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Admin & Developer Fundamentals
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Admin & Developer Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/salesforce_admin_developer_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Salesforce Admin & Developer Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Core CRM Clouds
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Core CRM Clouds
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/sales-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sales Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/service-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Service Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Revenue & Customer Engagement
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Revenue & Customer Engagement
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/cpq-revenue-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CPQ & Revenue Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/marketing-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Marketing Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/experience-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Experience Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Platform & Integration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Platform & Integration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/integration-mulesoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration & MuleSoft
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/pdi-fuels-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PDI Platform Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Analytics & Business Intelligence
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Analytics & Business Intelligence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/analytics-tableau/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analytics & Tableau
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CTA Track
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            CTA Track
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architect Readiness
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Architect Readiness
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architect-readiness/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architect-readiness/sales-service-scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sales & Service Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architect-readiness/integration-case-studies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration Case Studies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architect-readiness/leadership-and-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architect-readiness/cta-defense-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CTA Defense Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Solution Design Practice
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Solution Design Practice
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-theory-to-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Theory to Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Theory to Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-solution-design-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Solution Design Practice?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#this-sections-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      This Section's Focus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-crm-data-modeling-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. CRM &amp; Data Modeling Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-integration-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Integration Blueprints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-governance-security-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Governance &amp; Security Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-stakeholder-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Stakeholder Communication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Methodology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-analyze-20-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Analyze (20 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-design-40-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Design (40 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-document-10-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Document (10 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-present-15-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Present (15 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-defend-30-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Defend (30 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Principles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-business-first-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Business-First Thinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-right-sized-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Right-Sized Solutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-scalability-by-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Scalability by Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-security-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Security &amp; Compliance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-maintainability" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Maintainability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-design-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Design Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Design Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-model-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Model Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Artifacts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Artifacts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-to-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Create
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whiteboarding-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboarding Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Whiteboarding Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layout-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whiteboarding-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboarding Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Schedule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weekly-practice-routine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weekly Practice Routine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation Criteria
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluation Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-soundness-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Soundness (30%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-quality-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Quality (25%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-alignment-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Alignment (20%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication (15%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-management-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Management (10%)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Metrics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crm-and-data-modeling-scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CRM & Data Modeling Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration-blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration Blueprints
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance-and-security-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Governance & Security Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stakeholder-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stakeholder Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical Assessment
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Assessment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-assessment/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-assessment/core-cloud-assessments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Cloud Assessments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-assessment/integration-and-api-evaluations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration & API Evaluations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-assessment/leadership-competency-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Leadership Competency Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-assessment/scenario-defense-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scenario Defense Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Professional Readiness
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Professional Readiness
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../professional-readiness/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../professional-readiness/technical-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Readiness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../professional-readiness/communication-and-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communication & Leadership
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../professional-readiness/case-study-scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Case Study Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../professional-readiness/architecture-defense-prep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Defense Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    CTA Readiness
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            CTA Readiness
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cta-readiness/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cta-readiness/scenario-based-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scenario-Based Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cta-readiness/case-study-exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Case Study Exercises
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cta-readiness/communication-and-defense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communication & Defense
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cta-readiness/mock-board-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mock Board Preparation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../interview-preparation/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Interview Preparation
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Interview Preparation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Question Banks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Question Banks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/general-questions-for-admin-devs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/sales-service-cloud-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sales & Service Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/marketing-and-cpq-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Marketing & CPQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/integration-and-api-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration & APIs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/data-governance-and-security-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data & Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/leadership-and-delivery-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/pdi-platform-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Platform Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview-preparation/scenario-based-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scenario-Based
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-theory-to-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Theory to Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Theory to Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-solution-design-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Solution Design Practice?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#this-sections-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      This Section's Focus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-crm-data-modeling-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. CRM &amp; Data Modeling Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-integration-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Integration Blueprints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-governance-security-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Governance &amp; Security Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-stakeholder-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Stakeholder Communication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Methodology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-analyze-20-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Analyze (20 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-design-40-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Design (40 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-document-10-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Document (10 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-present-15-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Present (15 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-defend-30-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Defend (30 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Principles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-business-first-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Business-First Thinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-right-sized-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Right-Sized Solutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-scalability-by-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Scalability by Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-security-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Security &amp; Compliance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-maintainability" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Maintainability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-design-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Design Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Design Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-model-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Model Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Artifacts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Artifacts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-to-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Create
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whiteboarding-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboarding Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Whiteboarding Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layout-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whiteboarding-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whiteboarding Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Schedule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weekly-practice-routine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weekly Practice Routine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation Criteria
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluation Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-soundness-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Soundness (30%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-quality-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Quality (25%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-alignment-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Alignment (20%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication (15%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-management-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Management (10%)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Metrics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="solution-design-practice-overview">Solution Design Practice Overview<a class="headerlink" href="#solution-design-practice-overview" title="Permanent link">&para;</a></h1>
+<h2 id="from-theory-to-practice">From Theory to Practice<a class="headerlink" href="#from-theory-to-practice" title="Permanent link">&para;</a></h2>
+<p>This section bridges the gap between architectural knowledge and practical solution design. Here you'll practice designing real Salesforce solutions that balance business requirements, technical constraints, and stakeholder needs.</p>
+<h3 id="what-is-solution-design-practice">What is Solution Design Practice?<a class="headerlink" href="#what-is-solution-design-practice" title="Permanent link">&para;</a></h3>
+<p><strong>Solution Design Practice</strong> is the hands-on application of architectural principles to create comprehensive, production-ready Salesforce solutions. It involves:</p>
+<ul>
+<li>Translating business requirements into technical solutions</li>
+<li>Making informed trade-off decisions</li>
+<li>Designing scalable and maintainable architectures</li>
+<li>Documenting design decisions</li>
+<li>Communicating solutions to stakeholders</li>
+</ul>
+<h3 id="this-sections-focus">This Section's Focus<a class="headerlink" href="#this-sections-focus" title="Permanent link">&para;</a></h3>
+<p>Unlike the Architect Readiness section (which builds foundational thinking), this section emphasizes <strong>practical design exercises</strong> that mirror real CTA scenarios.</p>
+<h2 id="learning-objectives">Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
+<p>By the end of this section, you should be able to:</p>
+<ol>
+<li><strong>Analyze Requirements</strong></li>
+<li>Extract key business and technical requirements</li>
+<li>Identify constraints and assumptions</li>
+<li>Prioritize must-haves vs. nice-to-haves</li>
+<li>
+<p>Recognize gaps and ambiguities</p>
+</li>
+<li>
+<p><strong>Design Comprehensive Solutions</strong></p>
+</li>
+<li>Create data models for complex business processes</li>
+<li>Design integration architectures</li>
+<li>Plan security and governance frameworks</li>
+<li>
+<p>Build scalable, performant solutions</p>
+</li>
+<li>
+<p><strong>Document Decisions</strong></p>
+</li>
+<li>Explain design rationale</li>
+<li>Articulate trade-offs</li>
+<li>Justify technology choices</li>
+<li>
+<p>Create clear diagrams</p>
+</li>
+<li>
+<p><strong>Communicate Effectively</strong></p>
+</li>
+<li>Present solutions to stakeholders</li>
+<li>Defend design decisions</li>
+<li>Handle objections</li>
+<li>Adapt communication style to audience</li>
+</ol>
+<h2 id="section-structure">Section Structure<a class="headerlink" href="#section-structure" title="Permanent link">&para;</a></h2>
+<h3 id="1-crm-data-modeling-scenarios">1. CRM &amp; Data Modeling Scenarios<a class="headerlink" href="#1-crm-data-modeling-scenarios" title="Permanent link">&para;</a></h3>
+<p><strong>Focus</strong>: Designing data models for complex business processes</p>
+<p>Topics covered:
+- Account and contact hierarchies
+- Custom objects for unique business needs
+- Relationships and data integrity
+- Data migration strategies
+- Large data volume handling</p>
+<p><strong>Practice approach</strong>: Work through 5-10 scenarios, each building complexity</p>
+<h3 id="2-integration-blueprints">2. Integration Blueprints<a class="headerlink" href="#2-integration-blueprints" title="Permanent link">&para;</a></h3>
+<p><strong>Focus</strong>: Designing enterprise integration architectures</p>
+<p>Topics covered:
+- Integration patterns and best practices
+- API design and management
+- Event-driven architectures
+- Middleware selection
+- Error handling and monitoring</p>
+<p><strong>Practice approach</strong>: Create detailed integration blueprints with technology recommendations</p>
+<h3 id="3-governance-security-cases">3. Governance &amp; Security Cases<a class="headerlink" href="#3-governance-security-cases" title="Permanent link">&para;</a></h3>
+<p><strong>Focus</strong>: Implementing robust security and compliance frameworks</p>
+<p>Topics covered:
+- Security model design
+- Compliance requirements (GDPR, HIPAA, SOX)
+- Data governance frameworks
+- Audit and monitoring
+- Risk mitigation</p>
+<p><strong>Practice approach</strong>: Design security architectures for regulated industries</p>
+<h3 id="4-stakeholder-communication">4. Stakeholder Communication<a class="headerlink" href="#4-stakeholder-communication" title="Permanent link">&para;</a></h3>
+<p><strong>Focus</strong>: Presenting and defending solutions</p>
+<p>Topics covered:
+- Executive presentations
+- Technical deep-dives
+- Handling objections
+- Building consensus
+- Change management</p>
+<p><strong>Practice approach</strong>: Mock presentations and Q&amp;A sessions</p>
+<h2 id="practice-methodology">Practice Methodology<a class="headerlink" href="#practice-methodology" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-analyze-20-minutes">Step 1: Analyze (20 minutes)<a class="headerlink" href="#step-1-analyze-20-minutes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Read the scenario thoroughly</li>
+<li>Highlight key requirements</li>
+<li>List assumptions</li>
+<li>Identify constraints</li>
+<li>Note questions for clarification</li>
+</ul>
+<h3 id="step-2-design-40-minutes">Step 2: Design (40 minutes)<a class="headerlink" href="#step-2-design-40-minutes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Sketch data model</li>
+<li>Draw integration architecture</li>
+<li>Plan security model</li>
+<li>Consider scalability</li>
+<li>Document trade-offs</li>
+</ul>
+<h3 id="step-3-document-10-minutes">Step 3: Document (10 minutes)<a class="headerlink" href="#step-3-document-10-minutes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Create clean diagrams</li>
+<li>Write key decisions</li>
+<li>List risks and mitigations</li>
+<li>Prepare talking points</li>
+</ul>
+<h3 id="step-4-present-15-minutes">Step 4: Present (15 minutes)<a class="headerlink" href="#step-4-present-15-minutes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Explain business context</li>
+<li>Walk through solution</li>
+<li>Highlight key decisions</li>
+<li>Discuss trade-offs</li>
+<li>Open for questions</li>
+</ul>
+<h3 id="step-5-defend-30-minutes">Step 5: Defend (30 minutes)<a class="headerlink" href="#step-5-defend-30-minutes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Answer clarifying questions</li>
+<li>Defend design choices</li>
+<li>Acknowledge alternatives</li>
+<li>Adjust if needed</li>
+<li>Demonstrate flexibility</li>
+</ul>
+<h2 id="design-principles">Design Principles<a class="headerlink" href="#design-principles" title="Permanent link">&para;</a></h2>
+<h3 id="1-business-first-thinking">1. Business-First Thinking<a class="headerlink" href="#1-business-first-thinking" title="Permanent link">&para;</a></h3>
+<p><strong>Start with business outcomes</strong>, then work backwards to technical solutions.</p>
+<p>❌ "We should use Platform Events because they're cool"
+✅ "To meet the real-time requirement while staying within governor limits, Platform Events provide asynchronous, scalable event processing"</p>
+<h3 id="2-right-sized-solutions">2. Right-Sized Solutions<a class="headerlink" href="#2-right-sized-solutions" title="Permanent link">&para;</a></h3>
+<p><strong>Match complexity to requirements</strong>, avoid over-engineering.</p>
+<p>❌ Building custom middleware when standard APIs suffice
+✅ Using standard REST APIs for simple point-to-point integration</p>
+<h3 id="3-scalability-by-design">3. Scalability by Design<a class="headerlink" href="#3-scalability-by-design" title="Permanent link">&para;</a></h3>
+<p><strong>Plan for growth</strong> from day one.</p>
+<p>❌ Designing for current 100 users without considering future growth
+✅ Architecting for 10,000 users even if starting with 100</p>
+<h3 id="4-security-compliance">4. Security &amp; Compliance<a class="headerlink" href="#4-security-compliance" title="Permanent link">&para;</a></h3>
+<p><strong>Bake in security</strong>, don't bolt it on later.</p>
+<p>❌ Adding encryption after go-live
+✅ Designing with Shield Platform Encryption from the start</p>
+<h3 id="5-maintainability">5. Maintainability<a class="headerlink" href="#5-maintainability" title="Permanent link">&para;</a></h3>
+<p><strong>Future developers will thank you</strong> (or curse you).</p>
+<p>❌ Complex, undocumented custom code
+✅ Clear, well-documented solutions following best practices</p>
+<h2 id="common-design-patterns">Common Design Patterns<a class="headerlink" href="#common-design-patterns" title="Permanent link">&para;</a></h2>
+<h3 id="data-model-patterns">Data Model Patterns<a class="headerlink" href="#data-model-patterns" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Master-Detail for strict parent-child</strong>: Order → Order Line Items</li>
+<li><strong>Lookup for flexible relationships</strong>: Account → Partner Account</li>
+<li><strong>Junction objects for many-to-many</strong>: Campaigns ↔ Opportunities</li>
+<li><strong>Extension objects for scalability</strong>: Account → Account_Details__c</li>
+</ul>
+<h3 id="integration-patterns">Integration Patterns<a class="headerlink" href="#integration-patterns" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Request-Reply</strong>: Synchronous API calls</li>
+<li><strong>Fire-and-Forget</strong>: Asynchronous messaging</li>
+<li><strong>Batch Data Sync</strong>: Nightly ETL jobs</li>
+<li><strong>Event-Driven</strong>: Platform Events, Change Data Capture</li>
+</ul>
+<h3 id="security-patterns">Security Patterns<a class="headerlink" href="#security-patterns" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Layered security</strong>: Profiles + Permission Sets + Sharing</li>
+<li><strong>Least privilege</strong>: Grant minimum necessary access</li>
+<li><strong>Data classification</strong>: Identify and protect sensitive data</li>
+<li><strong>Audit everything</strong>: Field History, Event Monitoring</li>
+</ul>
+<h2 id="design-artifacts">Design Artifacts<a class="headerlink" href="#design-artifacts" title="Permanent link">&para;</a></h2>
+<h3 id="what-to-create">What to Create<a class="headerlink" href="#what-to-create" title="Permanent link">&para;</a></h3>
+<h4 id="1-solution-architecture-diagram">1. Solution Architecture Diagram<a class="headerlink" href="#1-solution-architecture-diagram" title="Permanent link">&para;</a></h4>
+<ul>
+<li>High-level system overview</li>
+<li>Integration points</li>
+<li>Data flow</li>
+<li>Security boundaries</li>
+</ul>
+<h4 id="2-data-model-diagram">2. Data Model Diagram<a class="headerlink" href="#2-data-model-diagram" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Objects and relationships</li>
+<li>Key fields</li>
+<li>Master-detail vs. lookup</li>
+<li>Custom vs. standard objects</li>
+</ul>
+<h4 id="3-integration-architecture">3. Integration Architecture<a class="headerlink" href="#3-integration-architecture" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Systems involved</li>
+<li>Integration patterns</li>
+<li>Data flow direction</li>
+<li>Error handling</li>
+</ul>
+<h4 id="4-security-model">4. Security Model<a class="headerlink" href="#4-security-model" title="Permanent link">&para;</a></h4>
+<ul>
+<li>OWD settings</li>
+<li>Sharing rules</li>
+<li>Profiles and permission sets</li>
+<li>Data encryption</li>
+</ul>
+<h4 id="5-decision-log">5. Decision Log<a class="headerlink" href="#5-decision-log" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Key decisions made</li>
+<li>Alternatives considered</li>
+<li>Trade-offs analyzed</li>
+<li>Rationale documented</li>
+</ul>
+<h2 id="whiteboarding-best-practices">Whiteboarding Best Practices<a class="headerlink" href="#whiteboarding-best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="layout-strategy">Layout Strategy<a class="headerlink" href="#layout-strategy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>┌─────────────────────────────────────┐
+│  Title &amp; Context (Top)              │
+├─────────────────────────────────────┤
+│  High-Level Architecture (Left)     │
+│                                     │
+├─────────────────────────────────────┤
+│  Data Model (Center)                │
+│                                     │
+├─────────────────────────────────────┤
+│  Integration Details (Right)        │
+│                                     │
+├─────────────────────────────────────┤
+│  Security &amp; Notes (Bottom)          │
+└─────────────────────────────────────┘
+</code></pre></div></td></tr></table></div>
+<h3 id="whiteboarding-tips">Whiteboarding Tips<a class="headerlink" href="#whiteboarding-tips" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Plan before drawing</strong>: Know what goes where</li>
+<li><strong>Use consistent symbols</strong>: Define legend upfront</li>
+<li><strong>Left to right flow</strong>: Natural reading direction</li>
+<li><strong>Label everything</strong>: No mystery boxes</li>
+<li><strong>Leave space</strong>: Room for additions during Q&amp;A</li>
+<li><strong>Use color purposefully</strong>: Not just decoration</li>
+</ul>
+<h2 id="practice-schedule">Practice Schedule<a class="headerlink" href="#practice-schedule" title="Permanent link">&para;</a></h2>
+<h3 id="weekly-practice-routine">Weekly Practice Routine<a class="headerlink" href="#weekly-practice-routine" title="Permanent link">&para;</a></h3>
+<p><strong>Monday</strong>: Data modeling scenario (60 min)
+- Practice designing complex data models
+- Focus on relationships and scalability</p>
+<p><strong>Wednesday</strong>: Integration scenario (75 min)
+- Full CTA-style scenario
+- Timed practice with analysis + design</p>
+<p><strong>Friday</strong>: Security &amp; governance (45 min)
+- Focus on compliance requirements
+- Practice articulating security decisions</p>
+<p><strong>Weekend</strong>: Presentation practice (2 hours)
+- Present completed scenarios to study group
+- Receive feedback
+- Practice Q&amp;A defense</p>
+<h2 id="evaluation-criteria">Evaluation Criteria<a class="headerlink" href="#evaluation-criteria" title="Permanent link">&para;</a></h2>
+<p>Rate your solutions on:</p>
+<h3 id="technical-soundness-30">Technical Soundness (30%)<a class="headerlink" href="#technical-soundness-30" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Meets all requirements</li>
+<li>[ ] Scalable and performant</li>
+<li>[ ] Follows best practices</li>
+<li>[ ] Technically feasible</li>
+</ul>
+<h3 id="design-quality-25">Design Quality (25%)<a class="headerlink" href="#design-quality-25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Right-sized (not over/under-engineered)</li>
+<li>[ ] Maintainable</li>
+<li>[ ] Well-documented</li>
+<li>[ ] Clear diagrams</li>
+</ul>
+<h3 id="business-alignment-20">Business Alignment (20%)<a class="headerlink" href="#business-alignment-20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Addresses business problem</li>
+<li>[ ] Delivers value</li>
+<li>[ ] Cost-effective</li>
+<li>[ ] Realistic timeline</li>
+</ul>
+<h3 id="communication-15">Communication (15%)<a class="headerlink" href="#communication-15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Clear presentation</li>
+<li>[ ] Explains rationale</li>
+<li>[ ] Handles questions well</li>
+<li>[ ] Adapts to audience</li>
+</ul>
+<h3 id="risk-management-10">Risk Management (10%)<a class="headerlink" href="#risk-management-10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Identifies risks</li>
+<li>[ ] Proposes mitigations</li>
+<li>[ ] Has contingency plans</li>
+<li>[ ] Considers constraints</li>
+</ul>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Start with CRM &amp; Data Modeling</strong></li>
+<li>Work through modeling scenarios</li>
+<li>Practice drawing ERDs</li>
+<li>
+<p>Focus on relationship types</p>
+</li>
+<li>
+<p><strong>Move to Integration Blueprints</strong></p>
+</li>
+<li>Design integration architectures</li>
+<li>Choose appropriate patterns</li>
+<li>
+<p>Document technology choices</p>
+</li>
+<li>
+<p><strong>Practice Security &amp; Governance</strong></p>
+</li>
+<li>Design for compliance</li>
+<li>Plan security models</li>
+<li>
+<p>Document governance frameworks</p>
+</li>
+<li>
+<p><strong>Refine Communication</strong></p>
+</li>
+<li>Present to study groups</li>
+<li>Record yourself</li>
+<li>Get feedback</li>
+<li>Iterate and improve</li>
+</ol>
+<h2 id="success-metrics">Success Metrics<a class="headerlink" href="#success-metrics" title="Permanent link">&para;</a></h2>
+<p>You're ready to move on when you can:</p>
+<p>✅ Complete a full scenario in 75 minutes
+✅ Create clear, comprehensive diagrams
+✅ Explain design decisions confidently
+✅ Handle challenging questions gracefully
+✅ Adjust designs based on feedback
+✅ Think architecturally, not just technically</p>
+<hr />
+<p><strong>Let's practice designing world-class Salesforce solutions!</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../architect-readiness/cta-defense-questions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CTA Defense Questions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                CTA Defense Questions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../crm-and-data-modeling-scenarios/" class="md-footer__link md-footer__link--next" aria-label="Next: CRM &amp; Data Modeling Scenarios">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                CRM & Data Modeling Scenarios
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.footer", "search.suggest", "search.highlight", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

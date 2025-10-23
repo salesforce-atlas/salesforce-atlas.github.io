@@ -1,0 +1,277 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Revenue Cloud Architecture
+  </text>
+  
+  <text x="600" y="70" font-size="16" text-anchor="middle" fill="#666">
+    Complete Revenue Lifecycle Management
+  </text>
+  
+  <!-- Core Platform -->
+  <rect x="50" y="110" width="1100" height="100" fill="#e3f2fd" stroke="#1976d2" stroke-width="3" rx="10"/>
+  <text x="600" y="145" font-size="20" font-weight="bold" text-anchor="middle" fill="#0d47a1">
+    Salesforce CPQ Foundation
+  </text>
+  <text x="600" y="170" font-size="13" text-anchor="middle" fill="#1565c0">
+    Product Configuration | Pricing Engine | Quote Generation | Approval Workflows
+  </text>
+  <text x="600" y="190" font-size="13" text-anchor="middle" fill="#1565c0">
+    Contract Management | Order Management
+  </text>
+  
+  <!-- Main Components Row 1 -->
+  <!-- Billing Component -->
+  <g id="billing">
+    <rect x="70" y="250" width="330" height="240" fill="#fff3e0" stroke="#f57c00" stroke-width="3" rx="10"/>
+    <text x="235" y="285" font-size="19" font-weight="bold" text-anchor="middle" fill="#e65100">
+      💰 Billing
+    </text>
+    
+    <rect x="90" y="305" width="290" height="50" fill="#ff9800" stroke="#e65100" stroke-width="2" rx="5"/>
+    <text x="235" y="325" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Invoice Generation
+    </text>
+    <text x="235" y="343" font-size="11" text-anchor="middle" fill="white">
+      Automated invoice creation &amp; distribution
+    </text>
+    
+    <rect x="90" y="370" width="290" height="50" fill="#ff9800" stroke="#e65100" stroke-width="2" rx="5"/>
+    <text x="235" y="390" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Payment Processing
+    </text>
+    <text x="235" y="408" font-size="11" text-anchor="middle" fill="white">
+      Payment gateway integration &amp; recording
+    </text>
+    
+    <rect x="90" y="435" width="290" height="45" fill="#ff9800" stroke="#e65100" stroke-width="2" rx="5"/>
+    <text x="235" y="455" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Billing Schedules
+    </text>
+    <text x="235" y="472" font-size="11" text-anchor="middle" fill="white">
+      Flexible billing frequencies &amp; timing
+    </text>
+  </g>
+  
+  <!-- Subscription Management -->
+  <g id="subscription">
+    <rect x="435" y="250" width="330" height="240" fill="#e8f5e9" stroke="#388e3c" stroke-width="3" rx="10"/>
+    <text x="600" y="285" font-size="19" font-weight="bold" text-anchor="middle" fill="#1b5e20">
+      🔄 Subscription Management
+    </text>
+    
+    <rect x="455" y="305" width="290" height="50" fill="#4caf50" stroke="#1b5e20" stroke-width="2" rx="5"/>
+    <text x="600" y="325" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Lifecycle Management
+    </text>
+    <text x="600" y="343" font-size="11" text-anchor="middle" fill="white">
+      Create, amend, renew, cancel subscriptions
+    </text>
+    
+    <rect x="455" y="370" width="290" height="50" fill="#4caf50" stroke="#1b5e20" stroke-width="2" rx="5"/>
+    <text x="600" y="390" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Amendments &amp; Renewals
+    </text>
+    <text x="600" y="408" font-size="11" text-anchor="middle" fill="white">
+      Mid-term changes &amp; contract extensions
+    </text>
+    
+    <rect x="455" y="435" width="290" height="45" fill="#4caf50" stroke="#1b5e20" stroke-width="2" rx="5"/>
+    <text x="600" y="455" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Co-termination &amp; Proration
+    </text>
+    <text x="600" y="472" font-size="11" text-anchor="middle" fill="white">
+      Align subscription dates &amp; calculate charges
+    </text>
+  </g>
+  
+  <!-- Revenue Recognition -->
+  <g id="revenue-recognition">
+    <rect x="800" y="250" width="330" height="240" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="3" rx="10"/>
+    <text x="965" y="285" font-size="19" font-weight="bold" text-anchor="middle" fill="#4a148c">
+      📊 Revenue Recognition
+    </text>
+    
+    <rect x="820" y="305" width="290" height="50" fill="#9c27b0" stroke="#4a148c" stroke-width="2" rx="5"/>
+    <text x="965" y="325" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      ASC 606 / IFRS 15 Compliance
+    </text>
+    <text x="965" y="343" font-size="11" text-anchor="middle" fill="white">
+      Standards-compliant revenue recognition
+    </text>
+    
+    <rect x="820" y="370" width="290" height="50" fill="#9c27b0" stroke="#4a148c" stroke-width="2" rx="5"/>
+    <text x="965" y="390" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Revenue Scheduling
+    </text>
+    <text x="965" y="408" font-size="11" text-anchor="middle" fill="white">
+      Automated recognition over time
+    </text>
+    
+    <rect x="820" y="435" width="290" height="45" fill="#9c27b0" stroke="#4a148c" stroke-width="2" rx="5"/>
+    <text x="965" y="455" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Performance Obligations
+    </text>
+    <text x="965" y="472" font-size="11" text-anchor="middle" fill="white">
+      Track &amp; manage contract obligations
+    </text>
+  </g>
+  
+  <!-- Main Components Row 2 -->
+  <!-- Usage-Based Billing -->
+  <g id="usage-billing">
+    <rect x="70" y="530" width="330" height="190" fill="#e1f5fe" stroke="#0277bd" stroke-width="3" rx="10"/>
+    <text x="235" y="565" font-size="19" font-weight="bold" text-anchor="middle" fill="#01579b">
+      📈 Usage-Based Billing
+    </text>
+    
+    <rect x="90" y="585" width="290" height="50" fill="#03a9f4" stroke="#01579b" stroke-width="2" rx="5"/>
+    <text x="235" y="605" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Usage Tracking
+    </text>
+    <text x="235" y="623" font-size="11" text-anchor="middle" fill="white">
+      Meter consumption &amp; usage events
+    </text>
+    
+    <rect x="90" y="650" width="290" height="60" fill="#03a9f4" stroke="#01579b" stroke-width="2" rx="5"/>
+    <text x="235" y="670" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Rating &amp; Pricing
+    </text>
+    <text x="235" y="688" font-size="11" text-anchor="middle" fill="white">
+      Apply tiered pricing to consumption
+    </text>
+    <text x="235" y="702" font-size="11" text-anchor="middle" fill="white">
+      Calculate overage charges
+    </text>
+  </g>
+  
+  <!-- Asset &amp; Entitlement Management -->
+  <g id="asset-management">
+    <rect x="435" y="530" width="330" height="190" fill="#fce4ec" stroke="#c2185b" stroke-width="3" rx="10"/>
+    <text x="600" y="565" font-size="19" font-weight="bold" text-anchor="middle" fill="#880e4f">
+      🎯 Asset &amp; Entitlement
+    </text>
+    
+    <rect x="455" y="585" width="290" height="50" fill="#e91e63" stroke="#880e4f" stroke-width="2" rx="5"/>
+    <text x="600" y="605" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Asset Lifecycle
+    </text>
+    <text x="600" y="623" font-size="11" text-anchor="middle" fill="white">
+      Track purchased products &amp; services
+    </text>
+    
+    <rect x="455" y="650" width="290" height="60" fill="#e91e63" stroke="#880e4f" stroke-width="2" rx="5"/>
+    <text x="600" y="670" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Entitlement Management
+    </text>
+    <text x="600" y="688" font-size="11" text-anchor="middle" fill="white">
+      Service contracts &amp; warranties
+    </text>
+    <text x="600" y="702" font-size="11" text-anchor="middle" fill="white">
+      Support levels &amp; SLAs
+    </text>
+  </g>
+  
+  <!-- Reporting &amp; Analytics -->
+  <g id="reporting">
+    <rect x="800" y="530" width="330" height="190" fill="#fff9c4" stroke="#f9a825" stroke-width="3" rx="10"/>
+    <text x="965" y="565" font-size="19" font-weight="bold" text-anchor="middle" fill="#f57f17">
+      📉 Reporting &amp; Analytics
+    </text>
+    
+    <rect x="820" y="585" width="290" height="50" fill="#fbc02d" stroke="#f57f17" stroke-width="2" rx="5"/>
+    <text x="965" y="605" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Revenue Forecasting
+    </text>
+    <text x="965" y="623" font-size="11" text-anchor="middle" fill="white">
+      Predictive revenue projections
+    </text>
+    
+    <rect x="820" y="650" width="290" height="60" fill="#fbc02d" stroke="#f57f17" stroke-width="2" rx="5"/>
+    <text x="965" y="670" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+      Financial Reporting
+    </text>
+    <text x="965" y="688" font-size="11" text-anchor="middle" fill="white">
+      Revenue waterfalls &amp; dashboards
+    </text>
+    <text x="965" y="702" font-size="11" text-anchor="middle" fill="white">
+      Compliance &amp; audit reports
+    </text>
+  </g>
+  
+  <!-- Integration Layer -->
+  <rect x="70" y="760" width="1060" height="110" fill="#eceff1" stroke="#455a64" stroke-width="3" rx="10"/>
+  <text x="600" y="795" font-size="19" font-weight="bold" text-anchor="middle" fill="#263238">
+    🔌 Integration &amp; Data Flow
+  </text>
+  
+  <rect x="110" y="810" width="180" height="45" fill="#607d8b" stroke="#263238" stroke-width="2" rx="5"/>
+  <text x="200" y="828" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    ERP Systems
+  </text>
+  <text x="200" y="845" font-size="10" text-anchor="middle" fill="white">
+    Financial posting
+  </text>
+  
+  <rect x="320" y="810" width="180" height="45" fill="#607d8b" stroke="#263238" stroke-width="2" rx="5"/>
+  <text x="410" y="828" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Payment Gateways
+  </text>
+  <text x="410" y="845" font-size="10" text-anchor="middle" fill="white">
+    Transaction processing
+  </text>
+  
+  <rect x="530" y="810" width="180" height="45" fill="#607d8b" stroke="#263238" stroke-width="2" rx="5"/>
+  <text x="620" y="828" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Tax Services
+  </text>
+  <text x="620" y="845" font-size="10" text-anchor="middle" fill="white">
+    Calculation &amp; compliance
+  </text>
+  
+  <rect x="740" y="810" width="180" height="45" fill="#607d8b" stroke="#263238" stroke-width="2" rx="5"/>
+  <text x="830" y="828" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Data Warehouse
+  </text>
+  <text x="830" y="845" font-size="10" text-anchor="middle" fill="white">
+    Analytics &amp; BI
+  </text>
+  
+  <rect x="950" y="810" width="150" height="45" fill="#607d8b" stroke="#263238" stroke-width="2" rx="5"/>
+  <text x="1025" y="828" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    External APIs
+  </text>
+  <text x="1025" y="845" font-size="10" text-anchor="middle" fill="white">
+    System integration
+  </text>
+  
+  <!-- Connecting Lines -->
+  <defs>
+    <marker id="arrowblue" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1976d2"/>
+    </marker>
+  </defs>
+  
+  <!-- From CPQ to components -->
+  <line x1="235" y1="210" x2="235" y2="250" stroke="#1976d2" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="600" y1="210" x2="600" y2="250" stroke="#1976d2" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="965" y1="210" x2="965" y2="250" stroke="#1976d2" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Between components -->
+  <line x1="400" y1="370" x2="435" y2="370" stroke="#424242" stroke-width="2" marker-end="url(#arrowblue)"/>
+  <line x1="765" y1="370" x2="800" y2="370" stroke="#424242" stroke-width="2" marker-end="url(#arrowblue)"/>
+  
+  <line x1="235" y1="490" x2="235" y2="530" stroke="#424242" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="600" y1="490" x2="600" y2="530" stroke="#424242" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="965" y1="490" x2="965" y2="530" stroke="#424242" stroke-width="2" stroke-dasharray="3,3"/>
+  
+  <!-- To integration layer -->
+  <line x1="200" y1="720" x2="200" y2="760" stroke="#455a64" stroke-width="2"/>
+  <line x1="410" y1="720" x2="410" y2="760" stroke="#455a64" stroke-width="2"/>
+  <line x1="620" y1="720" x2="620" y2="760" stroke="#455a64" stroke-width="2"/>
+  <line x1="830" y1="720" x2="830" y2="760" stroke="#455a64" stroke-width="2"/>
+  <line x1="1025" y1="720" x2="1025" y2="760" stroke="#455a64" stroke-width="2"/>
+</svg>

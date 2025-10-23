@@ -2,130 +2,194 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://salesforce-atlas.github.io/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/cta-track/</loc>
-         <lastmod>2025-10-22</lastmod>
-    </url>
-    <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/advanced-cloud-specializations/</loc>
-         <lastmod>2025-10-22</lastmod>
-    </url>
-    <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/architecture-design-principles/</loc>
-         <lastmod>2025-10-22</lastmod>
-    </url>
-    <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/communication-and-stakeholder-management/</loc>
-         <lastmod>2025-10-22</lastmod>
-    </url>
-    <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/data-modeling-governance/</loc>
-         <lastmod>2025-10-22</lastmod>
-    </url>
-    <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/integration-and-api-strategy/</loc>
-         <lastmod>2025-10-22</lastmod>
-    </url>
-    <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/leadership-and-project-management/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/cta-track/overview/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/review-board-preparation/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <loc>https://salesforce-atlas.github.io/cta-track/architect-readiness/cta-defense-questions/</loc>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/security-and-compliance/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <loc>https://salesforce-atlas.github.io/cta-track/architect-readiness/integration-case-studies/</loc>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/solution-delivery-and-lifecycle/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <loc>https://salesforce-atlas.github.io/cta-track/architect-readiness/leadership-and-communication/</loc>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
-         <loc>https://salesforce-atlas.github.io/cta-track/tools-and-devops-practices/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <loc>https://salesforce-atlas.github.io/cta-track/architect-readiness/overview/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/architect-readiness/sales-service-scenarios/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/cta-readiness/case-study-exercises/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/cta-readiness/communication-and-defense/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/cta-readiness/mock-board-preparation/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/cta-readiness/overview/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/cta-readiness/scenario-based-questions/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/professional-readiness/architecture-defense-prep/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/professional-readiness/case-study-scenarios/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/professional-readiness/communication-and-leadership/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/professional-readiness/overview/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/professional-readiness/technical-readiness/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/solution-design-practice/crm-and-data-modeling-scenarios/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/solution-design-practice/governance-and-security-cases/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/solution-design-practice/integration-blueprints/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/solution-design-practice/overview/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/solution-design-practice/stakeholder-communication/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/technical-assessment/core-cloud-assessments/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/technical-assessment/integration-and-api-evaluations/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/technical-assessment/leadership-competency-framework/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/technical-assessment/overview/</loc>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/cta-track/technical-assessment/scenario-defense-cases/</loc>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/data-governance-and-security-questions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/general-questions-for-admin-devs/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/integration-and-api-questions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/leadership-and-delivery-questions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/marketing-and-cpq-questions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/overview/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/pdi-platform-questions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/sales-service-cloud-questions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/interview-preparation/scenario-based-questions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/analytics-tableau/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/cpq-revenue-cloud/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/experience-cloud/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/integration-mulesoft/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/marketing-cloud/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/pdi-fuels-platform/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/sales-cloud/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://salesforce-atlas.github.io/products/salesforce_admin_developer_guide/</loc>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://salesforce-atlas.github.io/products/service-cloud/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
 </urlset>

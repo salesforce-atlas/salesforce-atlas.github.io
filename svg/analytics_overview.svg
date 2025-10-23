@@ -1,0 +1,97 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Salesforce Analytics Ecosystem
+  </text>
+  
+  <!-- Central Hub -->
+  <circle cx="600" cy="400" r="100" fill="#0176d3" opacity="0.1"/>
+  <circle cx="600" cy="400" r="80" fill="#0176d3"/>
+  <text x="600" y="395" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Salesforce
+  </text>
+  <text x="600" y="415" font-size="14" text-anchor="middle" fill="white">
+    Data Platform
+  </text>
+  
+  <!-- Tableau CRM -->
+  <rect x="150" y="150" width="200" height="140" rx="10" fill="#00d4ff" stroke="#0176d3" stroke-width="2"/>
+  <text x="250" y="185" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Tableau CRM
+  </text>
+  <text x="250" y="210" font-size="12" text-anchor="middle" fill="#1a1a1a">
+    (Einstein Analytics)
+  </text>
+  <text x="160" y="240" font-size="11" fill="#1a1a1a">• Native Salesforce</text>
+  <text x="160" y="258" font-size="11" fill="#1a1a1a">• AI-Powered Insights</text>
+  <text x="160" y="276" font-size="11" fill="#1a1a1a">• Embedded Analytics</text>
+  
+  <!-- Tableau Desktop and Server -->
+  <rect x="850" y="150" width="200" height="140" rx="10" fill="#e97627" stroke="#c44601" stroke-width="2"/>
+  <text x="950" y="185" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Tableau
+  </text>
+  <text x="950" y="210" font-size="12" text-anchor="middle" fill="white">
+    Desktop and Server
+  </text>
+  <text x="860" y="240" font-size="11" fill="white">• Enterprise BI</text>
+  <text x="860" y="258" font-size="11" fill="white">• 500+ Connectors</text>
+  <text x="860" y="276" font-size="11" fill="white">• Advanced Viz</text>
+  
+  <!-- Native Reports and Dashboards -->
+  <rect x="150" y="510" width="200" height="140" rx="10" fill="#54698d" stroke="#2e3d54" stroke-width="2"/>
+  <text x="250" y="545" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Native Reports
+  </text>
+  <text x="250" y="570" font-size="12" text-anchor="middle" fill="white">
+    and Dashboards
+  </text>
+  <text x="160" y="600" font-size="11" fill="white">• Built-in Reporting</text>
+  <text x="160" y="618" font-size="11" fill="white">• Quick Setup</text>
+  <text x="160" y="636" font-size="11" fill="white">• Standard Analytics</text>
+  
+  <!-- Einstein Discovery -->
+  <rect x="850" y="510" width="200" height="140" rx="10" fill="#032d60" stroke="#001f3f" stroke-width="2"/>
+  <text x="950" y="545" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Einstein
+  </text>
+  <text x="950" y="570" font-size="12" text-anchor="middle" fill="white">
+    Discovery
+  </text>
+  <text x="860" y="600" font-size="11" fill="white">• Predictive ML</text>
+  <text x="860" y="618" font-size="11" fill="white">• Automated Insights</text>
+  <text x="860" y="636" font-size="11" fill="white">• What-If Analysis</text>
+  
+  <!-- Mobile Analytics -->
+  <rect x="450" y="640" width="300" height="110" rx="10" fill="#16325c" stroke="#0c1b33" stroke-width="2"/>
+  <text x="600" y="675" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Mobile Analytics
+  </text>
+  <text x="460" y="705" font-size="11" fill="white">• Offline Access</text>
+  <text x="460" y="723" font-size="11" fill="white">• Touch-Optimized</text>
+  <text x="640" y="705" font-size="11" fill="white">• Responsive Design</text>
+  <text x="640" y="723" font-size="11" fill="white">• Real-Time Sync</text>
+  
+  <!-- Connection Lines -->
+  <line x1="350" y1="220" x2="520" y2="360" stroke="#0176d3" stroke-width="3" opacity="0.5"/>
+  <line x1="850" y1="220" x2="680" y2="360" stroke="#e97627" stroke-width="3" opacity="0.5"/>
+  <line x1="350" y1="580" x2="520" y2="440" stroke="#54698d" stroke-width="3" opacity="0.5"/>
+  <line x1="850" y1="580" x2="680" y2="440" stroke="#032d60" stroke-width="3" opacity="0.5"/>
+  <line x1="600" y1="500" x2="600" y2="640" stroke="#16325c" stroke-width="3" opacity="0.5"/>
+  
+  <!-- Data Sources -->
+  <rect x="420" y="70" width="360" height="50" rx="8" fill="#f4f6f9" stroke="#0176d3" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="600" y="100" font-size="14" text-anchor="middle" fill="#1a1a1a">
+    Data Sources: CRM Objects, External DBs, Data Warehouses, APIs
+  </text>
+  
+  <!-- Legend -->
+  <g transform="translate(900, 700)">
+    <text x="0" y="0" font-size="12" font-weight="bold" fill="#1a1a1a">Integration Points</text>
+    <line x1="0" y1="10" x2="40" y2="10" stroke="#0176d3" stroke-width="3" opacity="0.5"/>
+    <text x="45" y="15" font-size="10" fill="#666">Data Flow</text>
+  </g>
+</svg>

@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000">
+  <!-- Title -->
+  <text x="700" y="50" font-size="32" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Salesforce Integration Methods
+  </text>
+  
+  <!-- Salesforce Platform (Center) -->
+  <g>
+    <rect x="550" y="400" width="300" height="200" fill="#00A1E0" stroke="#0070D2" stroke-width="4" rx="15"/>
+    <circle cx="700" cy="460" r="35" fill="white"/>
+    <text x="700" y="472" font-size="28" font-weight="bold" text-anchor="middle" fill="#00A1E0">SF</text>
+    <text x="700" y="525" font-size="22" font-weight="bold" text-anchor="middle" fill="white">
+      Salesforce
+    </text>
+    <text x="700" y="550" font-size="14" text-anchor="middle" fill="white">
+      Platform
+    </text>
+    <text x="700" y="575" font-size="12" text-anchor="middle" fill="white" opacity="0.9">
+      CRM &amp; Data
+    </text>
+  </g>
+  
+  <!-- Native Salesforce Methods (Left Side) -->
+  <g>
+    <text x="150" y="120" font-size="20" font-weight="bold" fill="#0EA5E9">
+      Native Salesforce Integration
+    </text>
+    
+    <!-- Platform Events -->
+    <rect x="50" y="150" width="250" height="120" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" rx="8"/>
+    <text x="175" y="180" font-size="16" font-weight="bold" text-anchor="middle" fill="#0284C7">
+      Platform Events
+    </text>
+    <text x="70" y="205" font-size="11" fill="#1F2937">• Publish-Subscribe pattern</text>
+    <text x="70" y="222" font-size="11" fill="#1F2937">• Real-time event delivery</text>
+    <text x="70" y="239" font-size="11" fill="#1F2937">• Scalable messaging</text>
+    <text x="70" y="256" font-size="11" fill="#1F2937">• External system integration</text>
+    
+    <!-- Change Data Capture -->
+    <rect x="50" y="290" width="250" height="120" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" rx="8"/>
+    <text x="175" y="320" font-size="16" font-weight="bold" text-anchor="middle" fill="#0284C7">
+      Change Data Capture
+    </text>
+    <text x="70" y="345" font-size="11" fill="#1F2937">• Real-time change notifications</text>
+    <text x="70" y="362" font-size="11" fill="#1F2937">• Object-level tracking</text>
+    <text x="70" y="379" font-size="11" fill="#1F2937">• Efficient data sync</text>
+    <text x="70" y="396" font-size="11" fill="#1F2937">• Reduced API calls</text>
+    
+    <!-- REST API -->
+    <rect x="50" y="430" width="250" height="120" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" rx="8"/>
+    <text x="175" y="460" font-size="16" font-weight="bold" text-anchor="middle" fill="#0284C7">
+      REST API
+    </text>
+    <text x="70" y="485" font-size="11" fill="#1F2937">• JSON request/response</text>
+    <text x="70" y="502" font-size="11" fill="#1F2937">• CRUD operations</text>
+    <text x="70" y="519" font-size="11" fill="#1F2937">• SOQL queries</text>
+    <text x="70" y="536" font-size="11" fill="#1F2937">• Modern HTTP-based</text>
+    
+    <!-- SOAP API -->
+    <rect x="50" y="570" width="250" height="120" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" rx="8"/>
+    <text x="175" y="600" font-size="16" font-weight="bold" text-anchor="middle" fill="#0284C7">
+      SOAP API
+    </text>
+    <text x="70" y="625" font-size="11" fill="#1F2937">• WSDL-based</text>
+    <text x="70" y="642" font-size="11" fill="#1F2937">• XML request/response</text>
+    <text x="70" y="659" font-size="11" fill="#1F2937">• Strongly typed</text>
+    <text x="70" y="676" font-size="11" fill="#1F2937">• Enterprise integration</text>
+    
+    <!-- Bulk API -->
+    <rect x="50" y="710" width="250" height="120" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" rx="8"/>
+    <text x="175" y="740" font-size="16" font-weight="bold" text-anchor="middle" fill="#0284C7">
+      Bulk API 2.0
+    </text>
+    <text x="70" y="765" font-size="11" fill="#1F2937">• High-volume operations</text>
+    <text x="70" y="782" font-size="11" fill="#1F2937">• Asynchronous processing</text>
+    <text x="70" y="799" font-size="11" fill="#1F2937">• CSV/JSON format</text>
+    <text x="70" y="816" font-size="11" fill="#1F2937">• Millions of records</text>
+    
+    <!-- Streaming API -->
+    <rect x="50" y="850" width="250" height="120" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" rx="8"/>
+    <text x="175" y="880" font-size="16" font-weight="bold" text-anchor="middle" fill="#0284C7">
+      Streaming API
+    </text>
+    <text x="70" y="905" font-size="11" fill="#1F2937">• Real-time push notifications</text>
+    <text x="70" y="922" font-size="11" fill="#1F2937">• PushTopic queries</text>
+    <text x="70" y="939" font-size="11" fill="#1F2937">• Bayeux protocol (CometD)</text>
+    <text x="70" y="956" font-size="11" fill="#1F2937">• Long polling support</text>
+  </g>
+  
+  <!-- MuleSoft Connectors (Right Side) -->
+  <g>
+    <text x="1100" y="120" font-size="20" font-weight="bold" fill="#F59E0B">
+      MuleSoft Integration
+    </text>
+    
+    <!-- Salesforce Connector -->
+    <rect x="1100" y="150" width="250" height="200" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" rx="8"/>
+    <text x="1225" y="180" font-size="16" font-weight="bold" text-anchor="middle" fill="#D97706">
+      Salesforce Connector
+    </text>
+    <text x="1120" y="205" font-size="11" fill="#1F2937">• Pre-built operations</text>
+    <text x="1120" y="222" font-size="11" fill="#1F2937">• Query &amp; CRUD operations</text>
+    <text x="1120" y="239" font-size="11" fill="#1F2937">• Bulk data loading</text>
+    <text x="1120" y="256" font-size="11" fill="#1F2937">• OAuth authentication</text>
+    <text x="1120" y="273" font-size="11" fill="#1F2937">• Metadata API access</text>
+    <text x="1120" y="290" font-size="11" fill="#1F2937">• Error handling</text>
+    <text x="1120" y="307" font-size="11" fill="#1F2937">• Automatic retries</text>
+    <text x="1120" y="324" font-size="11" fill="#1F2937">• DataWeave transformations</text>
+    
+    <!-- Analytics Connector -->
+    <rect x="1100" y="370" width="250" height="130" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" rx="8"/>
+    <text x="1225" y="400" font-size="16" font-weight="bold" text-anchor="middle" fill="#D97706">
+      Analytics Connector
+    </text>
+    <text x="1120" y="425" font-size="11" fill="#1F2937">• Tableau CRM integration</text>
+    <text x="1120" y="442" font-size="11" fill="#1F2937">• Dataset management</text>
+    <text x="1120" y="459" font-size="11" fill="#1F2937">• Data synchronization</text>
+    <text x="1120" y="476" font-size="11" fill="#1F2937">• Analytics queries</text>
+    
+    <!-- Custom Connector -->
+    <rect x="1100" y="520" width="250" height="110" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" rx="8"/>
+    <text x="1225" y="550" font-size="16" font-weight="bold" text-anchor="middle" fill="#D97706">
+      Custom Connectors
+    </text>
+    <text x="1120" y="575" font-size="11" fill="#1F2937">• Build custom integrations</text>
+    <text x="1120" y="592" font-size="11" fill="#1F2937">• SDK support</text>
+    <text x="1120" y="609" font-size="11" fill="#1F2937">• Extend platform</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <defs>
+    <marker id="arrow-sf" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6B7280"/>
+    </marker>
+  </defs>
+  
+  <!-- Left side connections to Salesforce -->
+  <path d="M 300 210 L 550 450" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  <path d="M 300 350 L 550 470" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  <path d="M 300 490 L 550 490" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  <path d="M 300 630 L 550 530" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  <path d="M 300 770 L 550 550" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  <path d="M 300 910 L 550 570" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  
+  <!-- Right side connections from Salesforce -->
+  <path d="M 850 450 L 1100 250" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  <path d="M 850 500 L 1100 435" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  <path d="M 850 530 L 1100 575" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow-sf)"/>
+  
+  <!-- Integration Type Labels -->
+  <g>
+    <rect x="350" y="80" width="700" height="50" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2" rx="8"/>
+    <text x="500" y="110" font-size="14" font-weight="bold" fill="#1F2937">
+      ← Native Salesforce Features
+    </text>
+    <text x="900" y="110" font-size="14" font-weight="bold" fill="#1F2937">
+      MuleSoft Platform →
+    </text>
+  </g>
+  
+  <!-- Authentication Methods -->
+  <g>
+    <rect x="350" y="650" width="700" height="320" fill="#FEF2F2" stroke="#EF4444" stroke-width="2" rx="10"/>
+    <text x="700" y="685" font-size="20" font-weight="bold" text-anchor="middle" fill="#DC2626">
+      Authentication Methods
+    </text>
+    
+    <!-- OAuth 2.0 JWT -->
+    <rect x="380" y="710" width="200" height="110" fill="white" stroke="#CBD5E1" stroke-width="2" rx="5"/>
+    <text x="480" y="735" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      OAuth 2.0 JWT Bearer
+    </text>
+    <text x="395" y="755" font-size="10" fill="#4B5563">• Certificate-based</text>
+    <text x="395" y="770" font-size="10" fill="#4B5563">• Most secure</text>
+    <text x="395" y="785" font-size="10" fill="#4B5563">• Service-to-service</text>
+    <text x="395" y="800" font-size="10" fill="#4B5563">• No password required</text>
+    <rect x="390" y="755" width="8" height="8" fill="#10B981" rx="1"/>
+    <rect x="390" y="770" width="8" height="8" fill="#10B981" rx="1"/>
+    <rect x="390" y="785" width="8" height="8" fill="#10B981" rx="1"/>
+    <rect x="390" y="800" width="8" height="8" fill="#10B981" rx="1"/>
+    
+    <!-- Username-Password -->
+    <rect x="600" y="710" width="200" height="110" fill="white" stroke="#CBD5E1" stroke-width="2" rx="5"/>
+    <text x="700" y="735" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      Username-Password
+    </text>
+    <text x="615" y="755" font-size="10" fill="#4B5563">• User credentials</text>
+    <text x="615" y="770" font-size="10" fill="#4B5563">• Security token</text>
+    <text x="615" y="785" font-size="10" fill="#4B5563">• User context operations</text>
+    <text x="615" y="800" font-size="10" fill="#4B5563">• Simple setup</text>
+    <rect x="610" y="755" width="8" height="8" fill="#F59E0B" rx="1"/>
+    <rect x="610" y="770" width="8" height="8" fill="#F59E0B" rx="1"/>
+    <rect x="610" y="785" width="8" height="8" fill="#F59E0B" rx="1"/>
+    <rect x="610" y="800" width="8" height="8" fill="#F59E0B" rx="1"/>
+    
+    <!-- Web Server Flow -->
+    <rect x="820" y="710" width="200" height="110" fill="white" stroke="#CBD5E1" stroke-width="2" rx="5"/>
+    <text x="920" y="735" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      Web Server Flow
+    </text>
+    <text x="835" y="755" font-size="10" fill="#4B5563">• Browser-based auth</text>
+    <text x="835" y="770" font-size="10" fill="#4B5563">• Authorization code</text>
+    <text x="835" y="785" font-size="10" fill="#4B5563">• Redirect URI</text>
+    <text x="835" y="800" font-size="10" fill="#4B5563">• Refresh token support</text>
+    <rect x="830" y="755" width="8" height="8" fill="#3B82F6" rx="1"/>
+    <rect x="830" y="770" width="8" height="8" fill="#3B82F6" rx="1"/>
+    <rect x="830" y="785" width="8" height="8" fill="#3B82F6" rx="1"/>
+    <rect x="830" y="800" width="8" height="8" fill="#3B82F6" rx="1"/>
+    
+    <!-- SAML Bearer -->
+    <rect x="380" y="840" width="200" height="110" fill="white" stroke="#CBD5E1" stroke-width="2" rx="5"/>
+    <text x="480" y="865" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      SAML Bearer
+    </text>
+    <text x="395" y="885" font-size="10" fill="#4B5563">• SAML assertion</text>
+    <text x="395" y="900" font-size="10" fill="#4B5563">• Enterprise SSO</text>
+    <text x="395" y="915" font-size="10" fill="#4B5563">• Identity federation</text>
+    <text x="395" y="930" font-size="10" fill="#4B5563">• Complex setup</text>
+    <rect x="390" y="885" width="8" height="8" fill="#8B5CF6" rx="1"/>
+    <rect x="390" y="900" width="8" height="8" fill="#8B5CF6" rx="1"/>
+    <rect x="390" y="915" width="8" height="8" fill="#8B5CF6" rx="1"/>
+    <rect x="390" y="930" width="8" height="8" fill="#8B5CF6" rx="1"/>
+    
+    <!-- Connected App -->
+    <rect x="600" y="840" width="200" height="110" fill="white" stroke="#CBD5E1" stroke-width="2" rx="5"/>
+    <text x="700" y="865" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      Connected App
+    </text>
+    <text x="615" y="885" font-size="10" fill="#4B5563">• Required for OAuth</text>
+    <text x="615" y="900" font-size="10" fill="#4B5563">• Consumer key/secret</text>
+    <text x="615" y="915" font-size="10" fill="#4B5563">• Scopes &amp; permissions</text>
+    <text x="615" y="930" font-size="10" fill="#4B5563">• Callback URL</text>
+    <rect x="610" y="885" width="8" height="8" fill="#EC4899" rx="1"/>
+    <rect x="610" y="900" width="8" height="8" fill="#EC4899" rx="1"/>
+    <rect x="610" y="915" width="8" height="8" fill="#EC4899" rx="1"/>
+    <rect x="610" y="930" width="8" height="8" fill="#EC4899" rx="1"/>
+    
+    <!-- Best Practice -->
+    <rect x="820" y="840" width="200" height="110" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2" rx="5"/>
+    <text x="920" y="865" font-size="13" font-weight="bold" text-anchor="middle" fill="#1E40AF">
+      🔒 Recommended
+    </text>
+    <text x="835" y="890" font-size="10" font-weight="bold" fill="#1E3A8A">Use OAuth 2.0 JWT</text>
+    <text x="835" y="908" font-size="9" fill="#1E40AF">• Most secure option</text>
+    <text x="835" y="923" font-size="9" fill="#1E40AF">• No password exposure</text>
+    <text x="835" y="938" font-size="9" fill="#1E40AF">• Production standard</text>
+  </g>
+</svg>

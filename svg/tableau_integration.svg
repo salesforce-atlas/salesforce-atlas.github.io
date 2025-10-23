@@ -1,0 +1,149 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Salesforce-Tableau Integration
+  </text>
+  
+  <!-- Salesforce Platform -->
+  <rect x="50" y="100" width="450" height="250" rx="10" fill="#0176d3" opacity="0.1" stroke="#0176d3" stroke-width="3"/>
+  <text x="275" y="140" font-size="22" font-weight="bold" text-anchor="middle" fill="#0176d3">
+    Salesforce Platform
+  </text>
+  
+  <!-- Salesforce Components -->
+  <rect x="80" y="170" width="180" height="150" rx="8" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="170" y="195" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Data Sources
+  </text>
+  <text x="90" y="220" font-size="11" fill="#1a1a1a">• Standard Objects</text>
+  <text x="90" y="238" font-size="11" fill="#1a1a1a">• Custom Objects</text>
+  <text x="90" y="256" font-size="11" fill="#1a1a1a">• External Objects</text>
+  <text x="90" y="274" font-size="11" fill="#1a1a1a">• Big Objects</text>
+  <text x="90" y="292" font-size="11" fill="#1a1a1a">• Platform Events</text>
+  <text x="90" y="310" font-size="11" fill="#1a1a1a">• Change Data Capture</text>
+  
+  <rect x="290" y="170" width="180" height="150" rx="8" fill="white" stroke="#0176d3" stroke-width="2"/>
+  <text x="380" y="195" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    User Interface
+  </text>
+  <text x="300" y="220" font-size="11" fill="#1a1a1a">• Lightning Pages</text>
+  <text x="300" y="238" font-size="11" fill="#1a1a1a">• Visualforce Pages</text>
+  <text x="300" y="256" font-size="11" fill="#1a1a1a">• Mobile App</text>
+  <text x="300" y="274" font-size="11" fill="#1a1a1a">• Canvas Apps</text>
+  <text x="300" y="292" font-size="11" fill="#1a1a1a">• Experience Cloud</text>
+  <text x="300" y="310" font-size="11" fill="#1a1a1a">• Service Console</text>
+  
+  <!-- Integration Layer -->
+  <rect x="50" y="390" width="1100" height="160" rx="10" fill="#f4f6f9" stroke="#666" stroke-width="2"/>
+  <text x="600" y="425" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Integration Methods
+  </text>
+  
+  <!-- Salesforce Connector -->
+  <rect x="80" y="450" width="180" height="80" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="170" y="475" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Salesforce Connector
+  </text>
+  <text x="90" y="498" font-size="10" fill="#1a1a1a">• Native Connection</text>
+  <text x="90" y="513" font-size="10" fill="#1a1a1a">• Metadata Access</text>
+  <text x="90" y="528" font-size="10" fill="#1a1a1a">• Live or Extract</text>
+  
+  <!-- REST API -->
+  <rect x="290" y="450" width="180" height="80" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="380" y="475" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    REST API
+  </text>
+  <text x="300" y="498" font-size="10" fill="#1a1a1a">• Custom Endpoints</text>
+  <text x="300" y="513" font-size="10" fill="#1a1a1a">• OAuth 2.0</text>
+  <text x="300" y="528" font-size="10" fill="#1a1a1a">• JSON Response</text>
+  
+  <!-- SOAP API -->
+  <rect x="500" y="450" width="180" height="80" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="590" y="475" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    SOAP API
+  </text>
+  <text x="510" y="498" font-size="10" fill="#1a1a1a">• Enterprise WSDL</text>
+  <text x="510" y="513" font-size="10" fill="#1a1a1a">• Partner WSDL</text>
+  <text x="510" y="528" font-size="10" fill="#1a1a1a">• Metadata API</text>
+  
+  <!-- Connected Apps -->
+  <rect x="710" y="450" width="180" height="80" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="800" y="475" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Connected Apps
+  </text>
+  <text x="720" y="498" font-size="10" fill="#1a1a1a">• SSO (SAML)</text>
+  <text x="720" y="513" font-size="10" fill="#1a1a1a">• Token Exchange</text>
+  <text x="720" y="528" font-size="10" fill="#1a1a1a">• Trusted Auth</text>
+  
+  <!-- Embedding -->
+  <rect x="920" y="450" width="180" height="80" rx="8" fill="white" stroke="#00d4ff" stroke-width="2"/>
+  <text x="1010" y="475" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Embedding
+  </text>
+  <text x="930" y="498" font-size="10" fill="#1a1a1a">• iframe Integration</text>
+  <text x="930" y="513" font-size="10" fill="#1a1a1a">• JavaScript API</text>
+  <text x="930" y="528" font-size="10" fill="#1a1a1a">• Context Passing</text>
+  
+  <!-- Tableau Platform -->
+  <rect x="700" y="600" width="450" height="160" rx="10" fill="#e97627" opacity="0.1" stroke="#e97627" stroke-width="3"/>
+  <text x="925" y="640" font-size="22" font-weight="bold" text-anchor="middle" fill="#e97627">
+    Tableau Platform
+  </text>
+  
+  <!-- Tableau Components -->
+  <rect x="730" y="660" width="180" height="80" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+  <text x="820" y="685" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Tableau Desktop
+  </text>
+  <text x="740" y="708" font-size="10" fill="#1a1a1a">• Data Modeling</text>
+  <text x="740" y="723" font-size="10" fill="#1a1a1a">• Visualization Design</text>
+  
+  <rect x="940" y="660" width="180" height="80" rx="8" fill="white" stroke="#e97627" stroke-width="2"/>
+  <text x="1030" y="685" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Tableau Server
+  </text>
+  <text x="950" y="708" font-size="10" fill="#1a1a1a">• Publishing</text>
+  <text x="950" y="723" font-size="10" fill="#1a1a1a">• Collaboration</text>
+  
+  <!-- Connection Arrows -->
+  <path d="M 275 350 L 170 450" stroke="#0176d3" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  <path d="M 275 350 L 380 450" stroke="#0176d3" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  <path d="M 275 350 L 590 450" stroke="#0176d3" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  <path d="M 380 350 L 800 450" stroke="#0176d3" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  <path d="M 380 350 L 1010 450" stroke="#0176d3" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  
+  <path d="M 170 550 L 820 660" stroke="#e97627" stroke-width="2" fill="none" marker-end="url(#arroworange)"/>
+  <path d="M 380 550 L 820 660" stroke="#e97627" stroke-width="2" fill="none" marker-end="url(#arroworange)"/>
+  <path d="M 590 550 L 1030 660" stroke="#e97627" stroke-width="2" fill="none" marker-end="url(#arroworange)"/>
+  <path d="M 800 550 L 1030 660" stroke="#e97627" stroke-width="2" fill="none" marker-end="url(#arroworange)"/>
+  <path d="M 1010 550 L 1030 660" stroke="#e97627" stroke-width="2" fill="none" marker-end="url(#arroworange)"/>
+  
+  <!-- Data Flow Labels -->
+  <g transform="translate(80, 580)">
+    <circle cx="0" cy="0" r="8" fill="#00d4ff"/>
+    <text x="15" y="5" font-size="12" fill="#1a1a1a">Real-Time Data Flow</text>
+  </g>
+  
+  <g transform="translate(300, 580)">
+    <circle cx="0" cy="0" r="8" fill="#54698d"/>
+    <text x="15" y="5" font-size="12" fill="#1a1a1a">Extract Refresh</text>
+  </g>
+  
+  <g transform="translate(520, 580)">
+    <circle cx="0" cy="0" r="8" fill="#032d60"/>
+    <text x="15" y="5" font-size="12" fill="#1a1a1a">Single Sign-On</text>
+  </g>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0176d3"/>
+    </marker>
+    <marker id="arroworange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e97627"/>
+    </marker>
+  </defs>
+</svg>

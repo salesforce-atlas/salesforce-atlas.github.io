@@ -1,0 +1,65 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="450" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#032e61">
+    Salesforce Security Model - Four Layers
+  </text>
+  
+  <!-- Layer 1: Organization Level -->
+  <rect x="80" y="80" width="740" height="110" fill="#e74c3c" opacity="0.15" stroke="#e74c3c" stroke-width="3" rx="8"/>
+  <text x="450" y="110" font-size="20" font-weight="bold" text-anchor="middle" fill="#c0392b">
+    1. Organization-Level Security
+  </text>
+  <text x="120" y="145" font-size="15" fill="#2c3e50">• Login IP Ranges</text>
+  <text x="350" y="145" font-size="15" fill="#2c3e50">• Session Settings</text>
+  <text x="580" y="145" font-size="15" fill="#2c3e50">• Password Policies</text>
+  <text x="120" y="170" font-size="15" fill="#2c3e50">• Login Hours</text>
+  <text x="350" y="170" font-size="15" fill="#2c3e50">• Network Access</text>
+  <text x="580" y="170" font-size="15" fill="#2c3e50">• Authentication</text>
+  
+  <!-- Arrow -->
+  <path d="M 450 200 L 450 220" stroke="#032e61" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 2: Object Level -->
+  <rect x="120" y="230" width="660" height="110" fill="#f39c12" opacity="0.15" stroke="#f39c12" stroke-width="3" rx="8"/>
+  <text x="450" y="260" font-size="20" font-weight="bold" text-anchor="middle" fill="#d68910">
+    2. Object-Level Security (CRUD)
+  </text>
+  <text x="160" y="295" font-size="15" fill="#2c3e50">• Profiles: Define baseline permissions</text>
+  <text x="480" y="295" font-size="15" fill="#2c3e50">• Read, Create, Edit, Delete</text>
+  <text x="160" y="320" font-size="15" fill="#2c3e50">• Permission Sets: Extend permissions</text>
+  <text x="480" y="320" font-size="15" fill="#2c3e50">• View All, Modify All</text>
+  
+  <!-- Arrow -->
+  <path d="M 450 350 L 450 370" stroke="#032e61" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 3: Field Level -->
+  <rect x="160" y="380" width="580" height="110" fill="#9b59b6" opacity="0.15" stroke="#9b59b6" stroke-width="3" rx="8"/>
+  <text x="450" y="410" font-size="20" font-weight="bold" text-anchor="middle" fill="#7d3c98">
+    3. Field-Level Security (FLS)
+  </text>
+  <text x="200" y="445" font-size="15" fill="#2c3e50">• Field Visibility: Can users see the field?</text>
+  <text x="200" y="470" font-size="15" fill="#2c3e50">• Field Editability: Can users modify the field?</text>
+  
+  <!-- Arrow -->
+  <path d="M 450 500 L 450 520" stroke="#032e61" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 4: Record Level -->
+  <rect x="200" y="530" width="500" height="90" fill="#27ae60" opacity="0.15" stroke="#27ae60" stroke-width="3" rx="8"/>
+  <text x="450" y="560" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e8449">
+    4. Record-Level Security
+  </text>
+  <text x="240" y="590" font-size="15" fill="#2c3e50">• OWD: Organization-Wide Defaults</text>
+  <text x="240" y="610" font-size="15" fill="#2c3e50">• Role Hierarchy • Sharing Rules • Manual Sharing</text>
+  
+  <!-- Security Flow Note -->
+  <text x="50" y="645" font-size="13" font-style="italic" fill="#7f8c8d">
+    Security Model Flow: Each layer adds restrictions, from broadest (Organization) to most specific (Record)
+  </text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#032e61"/>
+    </marker>
+  </defs>
+</svg>

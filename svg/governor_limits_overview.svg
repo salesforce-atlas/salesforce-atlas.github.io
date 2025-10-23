@@ -1,0 +1,175 @@
+<svg viewBox="0 0 1000 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="500" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#032e61">
+    Salesforce Governor Limits Overview
+  </text>
+  
+  <text x="500" y="65" font-size="14" font-style="italic" text-anchor="middle" fill="#7f8c8d">
+    Resource limits to ensure fair sharing in multi-tenant environment
+  </text>
+  
+  <!-- Synchronous Limits -->
+  <g id="sync-limits">
+    <rect x="50" y="90" width="450" height="280" fill="#3498db" opacity="0.15" stroke="#2980b9" stroke-width="3" rx="10"/>
+    <text x="275" y="125" font-size="20" font-weight="bold" text-anchor="middle" fill="#2980b9">
+      ⚡ Synchronous Limits
+    </text>
+    <text x="275" y="145" font-size="13" font-style="italic" text-anchor="middle" fill="#7f8c8d">
+      (User-initiated actions, API calls)
+    </text>
+    
+    <!-- SOQL Queries -->
+    <rect x="70" y="160" width="180" height="50" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="160" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">SOQL Queries</text>
+    <text x="160" y="200" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">100</text>
+    
+    <!-- SOSL Queries -->
+    <rect x="270" y="160" width="180" height="50" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="360" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">SOSL Queries</text>
+    <text x="360" y="200" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">20</text>
+    
+    <!-- DML Statements -->
+    <rect x="70" y="220" width="180" height="50" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="160" y="240" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">DML Statements</text>
+    <text x="160" y="260" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">150</text>
+    
+    <!-- Records Retrieved -->
+    <rect x="270" y="220" width="180" height="50" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="360" y="240" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Records Retrieved</text>
+    <text x="360" y="260" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">50,000</text>
+    
+    <!-- Heap Size -->
+    <rect x="70" y="280" width="180" height="50" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="160" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Heap Size</text>
+    <text x="160" y="320" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">6 MB</text>
+    
+    <!-- CPU Time -->
+    <rect x="270" y="280" width="180" height="50" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="360" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">CPU Time</text>
+    <text x="360" y="320" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">10 seconds</text>
+    
+    <!-- Email Invocations -->
+    <rect x="70" y="340" width="180" height="20" fill="#3498db" opacity="0.2" stroke="#2980b9" stroke-width="1" rx="3"/>
+    <text x="160" y="355" font-size="12" text-anchor="middle" fill="#2c3e50">Email Invocations: 10</text>
+  </g>
+  
+  <!-- Asynchronous Limits -->
+  <g id="async-limits">
+    <rect x="520" y="90" width="450" height="280" fill="#27ae60" opacity="0.15" stroke="#1e8449" stroke-width="3" rx="10"/>
+    <text x="745" y="125" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e8449">
+      🔄 Asynchronous Limits
+    </text>
+    <text x="745" y="145" font-size="13" font-style="italic" text-anchor="middle" fill="#7f8c8d">
+      (Batch, Future, Queueable, Scheduled)
+    </text>
+    
+    <!-- SOQL Queries -->
+    <rect x="540" y="160" width="180" height="50" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="630" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">SOQL Queries</text>
+    <text x="630" y="200" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">200</text>
+    
+    <!-- SOSL Queries -->
+    <rect x="740" y="160" width="180" height="50" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="830" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">SOSL Queries</text>
+    <text x="830" y="200" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">20</text>
+    
+    <!-- DML Statements -->
+    <rect x="540" y="220" width="180" height="50" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="630" y="240" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">DML Statements</text>
+    <text x="630" y="260" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">150</text>
+    
+    <!-- Records Retrieved -->
+    <rect x="740" y="220" width="180" height="50" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="830" y="240" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Records Retrieved</text>
+    <text x="830" y="260" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">50,000</text>
+    
+    <!-- Heap Size -->
+    <rect x="540" y="280" width="180" height="50" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="630" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Heap Size</text>
+    <text x="630" y="320" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">12 MB</text>
+    
+    <!-- CPU Time -->
+    <rect x="740" y="280" width="180" height="50" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="830" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">CPU Time</text>
+    <text x="830" y="320" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">60 seconds</text>
+    
+    <!-- Future Calls -->
+    <rect x="540" y="340" width="180" height="20" fill="#27ae60" opacity="0.2" stroke="#1e8449" stroke-width="1" rx="3"/>
+    <text x="630" y="355" font-size="12" text-anchor="middle" fill="#2c3e50">Future Calls: 50</text>
+    
+    <!-- Callouts -->
+    <rect x="740" y="340" width="180" height="20" fill="#27ae60" opacity="0.2" stroke="#1e8449" stroke-width="1" rx="3"/>
+    <text x="830" y="355" font-size="12" text-anchor="middle" fill="#2c3e50">Callouts: 100</text>
+  </g>
+  
+  <!-- Best Practices Section -->
+  <text x="500" y="410" font-size="20" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+    🛡️ Avoiding Governor Limits - Best Practices
+  </text>
+  
+  <!-- Practice 1: Bulkification -->
+  <g id="practice1">
+    <rect x="50" y="430" width="450" height="110" fill="#f39c12" opacity="0.15" stroke="#d68910" stroke-width="2" rx="8"/>
+    <text x="275" y="460" font-size="18" font-weight="bold" text-anchor="middle" fill="#d68910">
+      1. Bulkification
+    </text>
+    <text x="70" y="485" font-size="13" fill="#2c3e50">❌ BAD: Process single records in loops</text>
+    <text x="70" y="505" font-size="13" font-family="monospace" fill="#c0392b">
+      for (Account a : accounts) { insert new Contact(...); }
+    </text>
+    <text x="70" y="525" font-size="13" fill="#2c3e50">✅ GOOD: Process collections of records</text>
+    <text x="70" y="545" font-size="13" font-family="monospace" fill="#27ae60">
+      List&lt;Contact&gt; cons = new List&lt;Contact&gt;(); ... insert cons;
+    </text>
+  </g>
+  
+  <!-- Practice 2: SOQL Outside Loops -->
+  <g id="practice2">
+    <rect x="520" y="430" width="450" height="110" fill="#9b59b6" opacity="0.15" stroke="#8e44ad" stroke-width="2" rx="8"/>
+    <text x="745" y="460" font-size="18" font-weight="bold" text-anchor="middle" fill="#8e44ad">
+      2. SOQL Outside Loops
+    </text>
+    <text x="540" y="485" font-size="13" fill="#2c3e50">❌ BAD: Query inside loop (hits limit fast)</text>
+    <text x="540" y="505" font-size="13" font-family="monospace" fill="#c0392b">
+      for (Account a : accounts) { List&lt;Contact&gt; c = [SELECT...];}
+    </text>
+    <text x="540" y="525" font-size="13" fill="#2c3e50">✅ GOOD: Query once, process many</text>
+    <text x="540" y="545" font-size="13" font-family="monospace" fill="#27ae60">
+      Map&lt;Id,Contact&gt; contactMap = [SELECT ... WHERE Id IN :ids];
+    </text>
+  </g>
+  
+  <!-- Practice 3: Use Async Processing -->
+  <g id="practice3">
+    <rect x="50" y="555" width="450" height="90" fill="#e74c3c" opacity="0.15" stroke="#c0392b" stroke-width="2" rx="8"/>
+    <text x="275" y="585" font-size="18" font-weight="bold" text-anchor="middle" fill="#c0392b">
+      3. Asynchronous Processing
+    </text>
+    <text x="70" y="610" font-size="13" fill="#2c3e50">• @future methods for long-running operations</text>
+    <text x="70" y="630" font-size="13" fill="#2c3e50">• Batch Apex for processing large data volumes</text>
+    <text x="70" y="650" font-size="13" fill="#2c3e50">• Queueable Apex for chainable jobs</text>
+  </g>
+  
+  <!-- Practice 4: Optimize Queries -->
+  <g id="practice4">
+    <rect x="520" y="555" width="450" height="90" fill="#16a085" opacity="0.15" stroke="#138d75" stroke-width="2" rx="8"/>
+    <text x="745" y="585" font-size="18" font-weight="bold" text-anchor="middle" fill="#138d75">
+      4. Query Optimization
+    </text>
+    <text x="540" y="610" font-size="13" fill="#2c3e50">• Use indexed fields in WHERE clauses</text>
+    <text x="540" y="630" font-size="13" fill="#2c3e50">• Query only needed fields (avoid SELECT *)</text>
+    <text x="540" y="650" font-size="13" fill="#2c3e50">• Use relationship queries vs multiple queries</text>
+  </g>
+  
+  <!-- Monitoring Limits -->
+  <rect x="50" y="665" width="900" height="60" fill="#34495e" opacity="0.1" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="500" y="690" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    📊 Monitoring Limits in Code
+  </text>
+  <text x="500" y="712" font-size="13" font-family="monospace" text-anchor="middle" fill="#2c3e50">
+    System.debug('SOQL: ' + Limits.getQueries() + '/' + Limits.getLimitQueries());
+  </text>
+  <text x="500" y="730" font-size="13" font-family="monospace" text-anchor="middle" fill="#2c3e50">
+    System.debug('DML: ' + Limits.getDMLStatements() + '/' + Limits.getLimitDMLStatements());
+  </text>
+</svg>

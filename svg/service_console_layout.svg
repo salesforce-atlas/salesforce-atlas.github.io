@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #032e61; }
+      .section-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .component-text { font-family: Arial, sans-serif; font-size: 13px; fill: #333333; }
+      .label-text { font-family: Arial, sans-serif; font-size: 12px; fill: #555555; }
+      .icon-text { font-family: Arial, sans-serif; font-size: 20px; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" class="title">Service Console Layout - Lightning Experience</text>
+  
+  <!-- Global Header -->
+  <rect x="50" y="70" width="1300" height="60" fill="#16325c" rx="5"/>
+  <text x="100" y="105" class="section-title">Salesforce Service Cloud</text>
+  
+  <!-- App Launcher -->
+  <rect x="1200" y="85" width="130" height="30" fill="#0070d2" rx="3"/>
+  <text x="1265" y="107" text-anchor="middle" class="section-title" font-size="13">App Launcher ⚙️</text>
+  
+  <!-- Navigation Tab Bar -->
+  <rect x="50" y="140" width="1300" height="50" fill="#0176d3" rx="5"/>
+  <text x="70" y="170" class="section-title" font-size="14">Navigation Tabs:</text>
+  
+  <!-- Individual tabs -->
+  <rect x="210" y="148" width="100" height="35" fill="#005fb2" rx="3"/>
+  <text x="260" y="171" text-anchor="middle" class="section-title" font-size="12">Home</text>
+  
+  <rect x="320" y="148" width="100" height="35" fill="#ffffff" rx="3" stroke="#0070d2" stroke-width="2"/>
+  <text x="370" y="171" text-anchor="middle" class="component-text" font-size="12" font-weight="bold">Case #12345</text>
+  
+  <rect x="430" y="148" width="100" height="35" fill="#005fb2" rx="3"/>
+  <text x="480" y="171" text-anchor="middle" class="section-title" font-size="12">Cases</text>
+  
+  <rect x="540" y="148" width="100" height="35" fill="#005fb2" rx="3"/>
+  <text x="590" y="171" text-anchor="middle" class="section-title" font-size="12">Accounts</text>
+  
+  <rect x="650" y="148" width="100" height="35" fill="#005fb2" rx="3"/>
+  <text x="700" y="171" text-anchor="middle" class="section-title" font-size="12">Reports</text>
+  
+  <text x="770" y="171" class="section-title" font-size="18">+ New Tab</text>
+  
+  <!-- Main Console Area -->
+  
+  <!-- Left Sidebar - Record List/Navigation -->
+  <rect x="50" y="200" width="250" height="650" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="5"/>
+  <rect x="50" y="200" width="250" height="40" fill="#34495e" rx="5"/>
+  <text x="175" y="225" text-anchor="middle" class="section-title">My Cases Queue</text>
+  
+  <!-- Case list items -->
+  <rect x="60" y="250" width="230" height="60" fill="#ffffff" stroke="#0070d2" stroke-width="2" rx="3"/>
+  <text x="70" y="270" class="component-text" font-weight="bold">Case #12345 - High</text>
+  <text x="70" y="290" class="label-text">Product not working</text>
+  <text x="70" y="305" class="label-text">Assigned: You | Age: 2h</text>
+  
+  <rect x="60" y="320" width="230" height="60" fill="#ffffff" stroke="#95a5a6" stroke-width="1" rx="3"/>
+  <text x="70" y="340" class="component-text">Case #12344 - Medium</text>
+  <text x="70" y="360" class="label-text">Billing inquiry</text>
+  <text x="70" y="375" class="label-text">Assigned: You | Age: 1d</text>
+  
+  <rect x="60" y="390" width="230" height="60" fill="#ffffff" stroke="#95a5a6" stroke-width="1" rx="3"/>
+  <text x="70" y="410" class="component-text">Case #12343 - Low</text>
+  <text x="70" y="430" class="label-text">Feature request</text>
+  <text x="70" y="445" class="label-text">Assigned: You | Age: 3d</text>
+  
+  <!-- More cases indicator -->
+  <text x="175" y="475" text-anchor="middle" class="label-text" font-style="italic">12 more cases...</text>
+  
+  <!-- Center - Primary Record Detail (Split View) -->
+  <rect x="310" y="200" width="790" height="650" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" rx="5"/>
+  
+  <!-- Highlights Panel -->
+  <rect x="310" y="200" width="790" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="5"/>
+  <text x="330" y="230" class="component-text" font-weight="bold" font-size="18">Case #12345: Product Not Working</text>
+  <text x="330" y="255" class="component-text">Status: Working | Priority: High | Type: Technical</text>
+  <text x="330" y="278" class="component-text">Account: Acme Corp | Contact: John Smith</text>
+  
+  <!-- Action buttons -->
+  <rect x="920" y="215" width="80" height="30" fill="#0070d2" rx="3"/>
+  <text x="960" y="235" text-anchor="middle" class="section-title" font-size="11">Edit</text>
+  
+  <rect x="1010" y="215" width="80" height="30" fill="#27ae60" rx="3"/>
+  <text x="1050" y="235" text-anchor="middle" class="section-title" font-size="11">Close Case</text>
+  
+  <!-- Details Section -->
+  <rect x="320" y="310" width="770" height="180" fill="#ffffff" rx="3"/>
+  <text x="330" y="335" class="component-text" font-weight="bold" font-size="15">📋 Case Details</text>
+  <text x="330" y="360" class="component-text">Subject: Customer reports product malfunction after update</text>
+  <text x="330" y="380" class="component-text">Description: Customer installed latest software update and now</text>
+  <text x="330" y="398" class="component-text">the application crashes on startup. Tried basic troubleshooting.</text>
+  <text x="330" y="416" class="component-text">Product: CloudSync Pro v3.2 | Error Code: ERR_1045</text>
+  
+  <text x="330" y="445" class="component-text" font-weight="bold">Entitlement: Premium Support (4-hour response)</text>
+  <text x="330" y="465" class="component-text">Time to Respond: 1h 23m remaining | Time to Close: 3h 15m remaining</text>
+  
+  <!-- Activity Timeline -->
+  <rect x="320" y="500" width="770" height="340" fill="#ffffff" rx="3"/>
+  <text x="330" y="525" class="component-text" font-weight="bold" font-size="15">📅 Activity Timeline</text>
+  
+  <!-- Timeline items -->
+  <circle cx="340" cy="555" r="6" fill="#0070d2"/>
+  <line x1="340" y1="561" x2="340" y2="590" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="360" y="560" class="component-text" font-weight="bold">2 hours ago - Case Created</text>
+  <text x="360" y="577" class="label-text">Via: Email | Origin: support@customer.com</text>
+  
+  <circle cx="340" cy="595" r="6" fill="#0070d2"/>
+  <line x1="340" y1="601" x2="340" y2="640" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="360" y="600" class="component-text" font-weight="bold">1 hour 45 min ago - Assigned to You</text>
+  <text x="360" y="617" class="label-text">Auto-assigned based on skills: Technical Support</text>
+  
+  <circle cx="340" cy="645" r="6" fill="#0070d2"/>
+  <line x1="340" y1="651" x2="340" y2="690" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="360" y="650" class="component-text" font-weight="bold">1 hour 30 min ago - Sent Email</text>
+  <text x="360" y="667" class="label-text">Requested additional information from customer</text>
+  
+  <circle cx="340" cy="695" r="6" fill="#0070d2"/>
+  <line x1="340" y1="701" x2="340" y2="730" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="360" y="700" class="component-text" font-weight="bold">45 min ago - Customer Response</text>
+  <text x="360" y="717" class="label-text">Provided error logs and system configuration</text>
+  
+  <circle cx="340" cy="735" r="6" fill="#27ae60"/>
+  <text x="360" y="740" class="component-text" font-weight="bold">Now - Working on Resolution</text>
+  <text x="360" y="757" class="label-text">Analyzing logs, checking known issues database</text>
+  
+  <!-- Add comment/action box -->
+  <rect x="330" y="780" width="750" height="50" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="3"/>
+  <text x="345" y="810" class="label-text">💬 Type your comment or update here...</text>
+  
+  <!-- Right Sidebar - Utility Bar -->
+  <rect x="1110" y="200" width="240" height="650" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="2" rx="5"/>
+  <rect x="1110" y="200" width="240" height="40" fill="#34495e" rx="5"/>
+  <text x="1230" y="225" text-anchor="middle" class="section-title">Utility Bar</text>
+  
+  <!-- Knowledge Articles Widget -->
+  <rect x="1120" y="250" width="220" height="140" fill="#ffffff" stroke="#0070d2" stroke-width="1" rx="3"/>
+  <text x="1230" y="275" text-anchor="middle" class="component-text" font-weight="bold">📚 Suggested Articles</text>
+  <text x="1130" y="300" class="label-text">• Update Installation Guide</text>
+  <text x="1130" y="320" class="label-text">• Error Code ERR_1045</text>
+  <text x="1130" y="340" class="label-text">• Rollback Procedures</text>
+  <rect x="1130" y="355" width="200" height="25" fill="#0070d2" rx="3"/>
+  <text x="1230" y="372" text-anchor="middle" class="section-title" font-size="11">View All Articles</text>
+  
+  <!-- Notes Widget -->
+  <rect x="1120" y="405" width="220" height="120" fill="#ffffff" stroke="#f39c12" stroke-width="1" rx="3"/>
+  <text x="1230" y="430" text-anchor="middle" class="component-text" font-weight="bold">📝 Notes</text>
+  <text x="1130" y="455" class="label-text" font-size="11">Quick notes from call:</text>
+  <text x="1130" y="472" class="label-text" font-size="11">- Customer in EST timezone</text>
+  <text x="1130" y="489" class="label-text" font-size="11">- Critical for business ops</text>
+  <text x="1130" y="506" class="label-text" font-size="11">- Available until 6 PM</text>
+  
+  <!-- Softphone Widget -->
+  <rect x="1120" y="540" width="220" height="100" fill="#ffffff" stroke="#27ae60" stroke-width="1" rx="3"/>
+  <text x="1230" y="565" text-anchor="middle" class="component-text" font-weight="bold">📞 Softphone</text>
+  <text x="1230" y="590" text-anchor="middle" class="component-text">(555) 123-4567</text>
+  <rect x="1140" y="605" width="80" height="25" fill="#27ae60" rx="3"/>
+  <text x="1180" y="622" text-anchor="middle" class="section-title" font-size="11">Call</text>
+  <rect x="1230" y="605" width="80" height="25" fill="#95a5a6" rx="3"/>
+  <text x="1270" y="622" text-anchor="middle" class="section-title" font-size="11">SMS</text>
+  
+  <!-- Recent Items Widget -->
+  <rect x="1120" y="655" width="220" height="185" fill="#ffffff" stroke="#95a5a6" stroke-width="1" rx="3"/>
+  <text x="1230" y="680" text-anchor="middle" class="component-text" font-weight="bold">🕐 Recent Items</text>
+  <text x="1130" y="705" class="label-text">Case #12342</text>
+  <text x="1130" y="722" class="label-text">Contact: Jane Doe</text>
+  <text x="1130" y="739" class="label-text">Account: Tech Innovators</text>
+  <text x="1130" y="756" class="label-text">Knowledge Article #456</text>
+  <text x="1130" y="773" class="label-text">Case #12340</text>
+  
+  <!-- Footer - Status Bar -->
+  <rect x="50" y="860" width="1300" height="30" fill="#34495e" rx="5"/>
+  <text x="100" y="880" class="section-title" font-size="12">Agent: John Agent | Status: Online | Queue: Support-Tier2 | Capacity: 3/5</text>
+  <text x="1250" y="880" text-anchor="end" class="section-title" font-size="11">Help | Settings</text>
+</svg>

@@ -1,0 +1,111 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="450" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#032e61">
+    Salesforce Relationship Types
+  </text>
+  
+  <!-- Lookup Relationship -->
+  <g id="lookup">
+    <rect x="50" y="60" width="800" height="150" fill="#3498db" opacity="0.1" stroke="#3498db" stroke-width="2" rx="8"/>
+    <text x="450" y="90" font-size="20" font-weight="bold" text-anchor="middle" fill="#2980b9">
+      Lookup Relationship (Loosely Coupled)
+    </text>
+    
+    <!-- Parent Object -->
+    <rect x="100" y="120" width="150" height="70" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="175" y="145" font-size="16" font-weight="bold" text-anchor="middle" fill="#032e61">Parent Object</text>
+    <text x="175" y="170" font-size="13" text-anchor="middle" fill="#2c3e50">(Account)</text>
+    
+    <!-- Lookup Arrow -->
+    <path d="M 250 155 L 350 155" stroke="#2980b9" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    <text x="300" y="145" font-size="12" text-anchor="middle" fill="#2980b9">Optional Link</text>
+    
+    <!-- Child Object -->
+    <rect x="350" y="120" width="150" height="70" fill="#3498db" opacity="0.3" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="425" y="145" font-size="16" font-weight="bold" text-anchor="middle" fill="#032e61">Child Object</text>
+    <text x="425" y="170" font-size="13" text-anchor="middle" fill="#2c3e50">(Contact)</text>
+    
+    <!-- Characteristics -->
+    <text x="550" y="140" font-size="14" fill="#2c3e50">✓ No cascade delete</text>
+    <text x="550" y="165" font-size="14" fill="#2c3e50">✓ Independent sharing</text>
+    <text x="550" y="190" font-size="14" fill="#2c3e50">✗ No roll-up summaries</text>
+  </g>
+  
+  <!-- Master-Detail Relationship -->
+  <g id="master-detail">
+    <rect x="50" y="230" width="800" height="150" fill="#e74c3c" opacity="0.1" stroke="#e74c3c" stroke-width="2" rx="8"/>
+    <text x="450" y="260" font-size="20" font-weight="bold" text-anchor="middle" fill="#c0392b">
+      Master-Detail Relationship (Tightly Coupled)
+    </text>
+    
+    <!-- Master Object -->
+    <rect x="100" y="290" width="150" height="70" fill="#e74c3c" opacity="0.3" stroke="#c0392b" stroke-width="2" rx="5"/>
+    <text x="175" y="315" font-size="16" font-weight="bold" text-anchor="middle" fill="#032e61">Master Object</text>
+    <text x="175" y="340" font-size="13" text-anchor="middle" fill="#2c3e50">(Invoice)</text>
+    
+    <!-- Master-Detail Arrow -->
+    <path d="M 250 325 L 350 325" stroke="#c0392b" stroke-width="3" fill="none"/>
+    <polygon points="350,325 340,320 340,330" fill="#c0392b"/>
+    <text x="300" y="315" font-size="12" text-anchor="middle" fill="#c0392b">Required Link</text>
+    
+    <!-- Detail Object -->
+    <rect x="350" y="290" width="150" height="70" fill="#e74c3c" opacity="0.3" stroke="#c0392b" stroke-width="2" rx="5"/>
+    <text x="425" y="315" font-size="16" font-weight="bold" text-anchor="middle" fill="#032e61">Detail Object</text>
+    <text x="425" y="340" font-size="13" text-anchor="middle" fill="#2c3e50">(Line Item)</text>
+    
+    <!-- Characteristics -->
+    <text x="550" y="300" font-size="14" fill="#2c3e50">✓ Cascade delete</text>
+    <text x="550" y="325" font-size="14" fill="#2c3e50">✓ Inherit sharing</text>
+    <text x="550" y="350" font-size="14" fill="#2c3e50">✓ Roll-up summaries</text>
+    <text x="550" y="375" font-size="14" fill="#2c3e50">✓ Detail owned by master</text>
+  </g>
+  
+  <!-- Many-to-Many Relationship -->
+  <g id="many-to-many">
+    <rect x="50" y="400" width="800" height="180" fill="#27ae60" opacity="0.1" stroke="#27ae60" stroke-width="2" rx="8"/>
+    <text x="450" y="430" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e8449">
+      Many-to-Many Relationship (Junction Object)
+    </text>
+    
+    <!-- Object 1 -->
+    <rect x="100" y="460" width="150" height="70" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="175" y="485" font-size="16" font-weight="bold" text-anchor="middle" fill="#032e61">Object 1</text>
+    <text x="175" y="510" font-size="13" text-anchor="middle" fill="#2c3e50">(Student)</text>
+    
+    <!-- Arrow to Junction -->
+    <path d="M 250 495 L 330 495" stroke="#1e8449" stroke-width="3" fill="none"/>
+    <polygon points="330,495 320,490 320,500" fill="#1e8449"/>
+    <text x="290" y="485" font-size="11" text-anchor="middle" fill="#1e8449">Master-Detail</text>
+    
+    <!-- Junction Object -->
+    <rect x="330" y="460" width="150" height="70" fill="#f39c12" opacity="0.4" stroke="#d68910" stroke-width="2" rx="5"/>
+    <text x="405" y="485" font-size="16" font-weight="bold" text-anchor="middle" fill="#032e61">Junction</text>
+    <text x="405" y="510" font-size="13" text-anchor="middle" fill="#2c3e50">(Enrollment)</text>
+    
+    <!-- Arrow to Object 2 -->
+    <path d="M 480 495 L 560 495" stroke="#1e8449" stroke-width="3" fill="none"/>
+    <polygon points="560,495 550,490 550,500" fill="#1e8449"/>
+    <text x="520" y="485" font-size="11" text-anchor="middle" fill="#1e8449">Master-Detail</text>
+    
+    <!-- Object 2 -->
+    <rect x="560" y="460" width="150" height="70" fill="#27ae60" opacity="0.3" stroke="#1e8449" stroke-width="2" rx="5"/>
+    <text x="635" y="485" font-size="16" font-weight="bold" text-anchor="middle" fill="#032e61">Object 2</text>
+    <text x="635" y="510" font-size="13" text-anchor="middle" fill="#2c3e50">(Class)</text>
+    
+    <!-- Characteristics -->
+    <text x="100" y="555" font-size="14" fill="#2c3e50">• Junction object has 2 master-detail relationships</text>
+    <text x="100" y="575" font-size="14" fill="#2c3e50">• Enables complex many-to-many associations</text>
+  </g>
+  
+  <!-- Additional Relationship Types -->
+  <g id="other-types">
+    <rect x="50" y="600" width="800" height="80" fill="#9b59b6" opacity="0.1" stroke="#8e44ad" stroke-width="2" rx="8"/>
+    <text x="450" y="625" font-size="18" font-weight="bold" text-anchor="middle" fill="#7d3c98">
+      Other Relationship Types
+    </text>
+    <text x="100" y="650" font-size="14" fill="#2c3e50">
+      <tspan x="100" dy="0">• External Lookup: Connect to external data sources via Salesforce Connect</tspan>
+      <tspan x="100" dy="20">• Hierarchical: Self-referencing relationships (User and Account objects only)</tspan>
+    </text>
+  </g>
+</svg>

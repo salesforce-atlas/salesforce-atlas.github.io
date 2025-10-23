@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Salesforce Platform Development &amp; Integration (PDI) Architecture
+  </text>
+  
+  <!-- Main Platform Layer -->
+  <rect x="50" y="80" width="1100" height="550" fill="#3498db" stroke="#2980b9" stroke-width="3" rx="10"/>
+  <text x="600" y="110" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="white">
+    Salesforce Platform
+  </text>
+  
+  <!-- Development Section -->
+  <rect x="80" y="140" width="520" height="220" fill="white" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="340" y="165" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Platform Development
+  </text>
+  
+  <!-- Declarative -->
+  <rect x="100" y="180" width="230" height="160" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="215" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    Declarative
+  </text>
+  <text x="215" y="230" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Lightning App Builder
+  </text>
+  <text x="215" y="250" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Flow Builder
+  </text>
+  <text x="215" y="270" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Custom Objects
+  </text>
+  <text x="215" y="290" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Formula Fields
+  </text>
+  <text x="215" y="310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Validation Rules
+  </text>
+  
+  <!-- Programmatic -->
+  <rect x="350" y="180" width="230" height="160" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+  <text x="465" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565c0">
+    Programmatic
+  </text>
+  <text x="465" y="230" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Apex (Classes/Triggers)
+  </text>
+  <text x="465" y="250" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Lightning Web Components
+  </text>
+  <text x="465" y="270" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Aura Components
+  </text>
+  <text x="465" y="290" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Visualforce
+  </text>
+  <text x="465" y="310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Custom APIs
+  </text>
+  
+  <!-- Integration Section -->
+  <rect x="620" y="140" width="520" height="220" fill="white" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="880" y="165" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Integration
+  </text>
+  
+  <!-- APIs -->
+  <rect x="640" y="180" width="230" height="160" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="5"/>
+  <text x="755" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e65100">
+    APIs
+  </text>
+  <text x="755" y="230" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • REST API
+  </text>
+  <text x="755" y="250" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • SOAP API
+  </text>
+  <text x="755" y="270" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Bulk API
+  </text>
+  <text x="755" y="290" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Streaming API
+  </text>
+  <text x="755" y="310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Metadata API
+  </text>
+  
+  <!-- Events &amp; Data -->
+  <rect x="890" y="180" width="230" height="160" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5"/>
+  <text x="1005" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">
+    Events &amp; Data
+  </text>
+  <text x="1005" y="230" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Platform Events
+  </text>
+  <text x="1005" y="250" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Change Data Capture
+  </text>
+  <text x="1005" y="270" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Salesforce Connect
+  </text>
+  <text x="1005" y="290" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • External Services
+  </text>
+  <text x="1005" y="310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">
+    • Heroku Connect
+  </text>
+  
+  <!-- Development Tools Layer -->
+  <rect x="80" y="380" width="520" height="230" fill="white" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="340" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Development Tools
+  </text>
+  
+  <rect x="100" y="420" width="150" height="170" fill="#fce4ec" stroke="#e91e63" stroke-width="2" rx="5"/>
+  <text x="175" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#c2185b">
+    IDEs
+  </text>
+  <text x="175" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    VS Code
+  </text>
+  <text x="175" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Developer Console
+  </text>
+  <text x="175" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    IntelliJ IDEA
+  </text>
+  
+  <rect x="270" y="420" width="150" height="170" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2" rx="5"/>
+  <text x="345" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#01579b">
+    CLI Tools
+  </text>
+  <text x="345" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Salesforce CLI
+  </text>
+  <text x="345" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    SFDX
+  </text>
+  <text x="345" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Data Loader
+  </text>
+  
+  <rect x="440" y="420" width="150" height="170" fill="#f1f8e9" stroke="#8bc34a" stroke-width="2" rx="5"/>
+  <text x="515" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#558b2f">
+    Version Control
+  </text>
+  <text x="515" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Git
+  </text>
+  <text x="515" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    GitHub/GitLab
+  </text>
+  <text x="515" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Bitbucket
+  </text>
+  
+  <!-- CI/CD &amp; DevOps Layer -->
+  <rect x="620" y="380" width="520" height="230" fill="white" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="880" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    CI/CD &amp; DevOps
+  </text>
+  
+  <rect x="640" y="420" width="150" height="170" fill="#fff9c4" stroke="#fdd835" stroke-width="2" rx="5"/>
+  <text x="715" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#f57f17">
+    Automation
+  </text>
+  <text x="715" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Jenkins
+  </text>
+  <text x="715" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    GitHub Actions
+  </text>
+  <text x="715" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    CircleCI
+  </text>
+  
+  <rect x="810" y="420" width="150" height="170" fill="#e0f2f1" stroke="#009688" stroke-width="2" rx="5"/>
+  <text x="885" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#004d40">
+    SF DevOps
+  </text>
+  <text x="885" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Copado
+  </text>
+  <text x="885" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Gearset
+  </text>
+  <text x="885" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    AutoRABIT
+  </text>
+  
+  <rect x="980" y="420" width="150" height="170" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="5"/>
+  <text x="1055" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#c62828">
+    Testing
+  </text>
+  <text x="1055" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Apex Tests
+  </text>
+  <text x="1055" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Selenium
+  </text>
+  <text x="1055" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Provar
+  </text>
+  
+  <!-- External Systems -->
+  <rect x="150" y="650" width="200" height="30" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2" rx="5"/>
+  <text x="250" y="670" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    External Systems
+  </text>
+  
+  <rect x="500" y="650" width="200" height="30" fill="#51cf66" stroke="#2f9e44" stroke-width="2" rx="5"/>
+  <text x="600" y="670" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    Mobile Apps
+  </text>
+  
+  <rect x="850" y="650" width="200" height="30" fill="#4dabf7" stroke="#1971c2" stroke-width="2" rx="5"/>
+  <text x="950" y="670" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    Web Applications
+  </text>
+  
+  <!-- Connection arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <line x1="250" y1="650" x2="340" y2="620" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="650" x2="600" y2="620" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="650" x2="880" y2="620" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>

@@ -1,0 +1,334 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    CPQ &amp; Revenue Cloud Object Model
+  </text>
+  
+  <text x="700" y="70" font-size="15" text-anchor="middle" fill="#666">
+    Key Objects and Their Relationships
+  </text>
+  
+  <!-- Legend -->
+  <rect x="50" y="90" width="300" height="80" fill="white" stroke="#999" stroke-width="2" rx="5"/>
+  <text x="200" y="115" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+    Relationship Types
+  </text>
+  <line x1="70" y1="130" x2="130" y2="130" stroke="#1976d2" stroke-width="3"/>
+  <text x="140" y="135" font-size="12" fill="#333">One-to-Many</text>
+  <line x1="70" y1="155" x2="130" y2="155" stroke="#388e3c" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="140" y="160" font-size="12" fill="#333">Lookup/Reference</text>
+  
+  <!-- Sales Objects Section -->
+  <rect x="50" y="200" width="600" height="350" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="8"/>
+  <text x="350" y="230" font-size="18" font-weight="bold" text-anchor="middle" fill="#0d47a1">
+    Sales &amp; Quoting Objects
+  </text>
+  
+  <!-- Account -->
+  <g id="account">
+    <rect x="80" y="260" width="200" height="110" fill="#2196f3" stroke="#0d47a1" stroke-width="2" rx="5"/>
+    <text x="180" y="285" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Account
+    </text>
+    <line x1="90" y1="295" x2="270" y2="295" stroke="white" stroke-width="1"/>
+    <text x="100" y="312" font-size="11" fill="white">• Account Name</text>
+    <text x="100" y="328" font-size="11" fill="white">• Account Type</text>
+    <text x="100" y="344" font-size="11" fill="white">• Industry</text>
+    <text x="100" y="360" font-size="11" fill="white">• Billing Address</text>
+  </g>
+  
+  <!-- Opportunity -->
+  <g id="opportunity">
+    <rect x="320" y="260" width="200" height="110" fill="#2196f3" stroke="#0d47a1" stroke-width="2" rx="5"/>
+    <text x="420" y="285" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Opportunity
+    </text>
+    <line x1="330" y1="295" x2="510" y2="295" stroke="white" stroke-width="1"/>
+    <text x="340" y="312" font-size="11" fill="white">• Opportunity Name</text>
+    <text x="340" y="328" font-size="11" fill="white">• Stage</text>
+    <text x="340" y="344" font-size="11" fill="white">• Close Date</text>
+    <text x="340" y="360" font-size="11" fill="white">• Amount</text>
+  </g>
+  
+  <!-- Quote -->
+  <g id="quote">
+    <rect x="80" y="410" width="200" height="120" fill="#2196f3" stroke="#0d47a1" stroke-width="2" rx="5"/>
+    <text x="180" y="435" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Quote (SBQQ__Quote__c)
+    </text>
+    <line x1="90" y1="445" x2="270" y2="445" stroke="white" stroke-width="1"/>
+    <text x="100" y="462" font-size="11" fill="white">• Quote Number</text>
+    <text x="100" y="478" font-size="11" fill="white">• Status</text>
+    <text x="100" y="494" font-size="11" fill="white">• Expiration Date</text>
+    <text x="100" y="510" font-size="11" fill="white">• Grand Total</text>
+    <text x="100" y="522" font-size="10" fill="white" font-style="italic">→ Primary__c: true</text>
+  </g>
+  
+  <!-- Quote Line -->
+  <g id="quoteline">
+    <rect x="320" y="410" width="200" height="120" fill="#2196f3" stroke="#0d47a1" stroke-width="2" rx="5"/>
+    <text x="420" y="432" font-size="15" font-weight="bold" text-anchor="middle" fill="white">
+      Quote Line
+    </text>
+    <text x="420" y="446" font-size="11" text-anchor="middle" fill="white">
+      (SBQQ__QuoteLine__c)
+    </text>
+    <line x1="330" y1="452" x2="510" y2="452" stroke="white" stroke-width="1"/>
+    <text x="340" y="469" font-size="11" fill="white">• Product</text>
+    <text x="340" y="485" font-size="11" fill="white">• Quantity</text>
+    <text x="340" y="501" font-size="11" fill="white">• Unit Price</text>
+    <text x="340" y="517" font-size="11" fill="white">• Net Price</text>
+  </g>
+  
+  <!-- Product Catalog Section -->
+  <rect x="720" y="200" width="630" height="350" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="8"/>
+  <text x="1035" y="230" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">
+    Product &amp; Pricing Objects
+  </text>
+  
+  <!-- Product -->
+  <g id="product">
+    <rect x="750" y="260" width="200" height="120" fill="#ff9800" stroke="#e65100" stroke-width="2" rx="5"/>
+    <text x="850" y="285" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Product2
+    </text>
+    <line x1="760" y1="295" x2="940" y2="295" stroke="white" stroke-width="1"/>
+    <text x="770" y="312" font-size="11" fill="white">• Product Code</text>
+    <text x="770" y="328" font-size="11" fill="white">• Product Name</text>
+    <text x="770" y="344" font-size="11" fill="white">• Product Family</text>
+    <text x="770" y="360" font-size="11" fill="white">• Active</text>
+    <text x="770" y="372" font-size="10" fill="white" font-style="italic">→ SBQQ__HasConfigurationAttributes__c</text>
+  </g>
+  
+  <!-- Price Book Entry -->
+  <g id="pricebook-entry">
+    <rect x="990" y="260" width="200" height="120" fill="#ff9800" stroke="#e65100" stroke-width="2" rx="5"/>
+    <text x="1090" y="282" font-size="15" font-weight="bold" text-anchor="middle" fill="white">
+      PricebookEntry
+    </text>
+    <line x1="1000" y1="292" x2="1180" y2="292" stroke="white" stroke-width="1"/>
+    <text x="1010" y="309" font-size="11" fill="white">• Product2Id</text>
+    <text x="1010" y="325" font-size="11" fill="white">• Pricebook2Id</text>
+    <text x="1010" y="341" font-size="11" fill="white">• Unit Price</text>
+    <text x="1010" y="357" font-size="11" fill="white">• Active</text>
+    <text x="1010" y="373" font-size="11" fill="white">• Currency</text>
+  </g>
+  
+  <!-- Contracted Price -->
+  <g id="contracted-price">
+    <rect x="750" y="410" width="200" height="120" fill="#ff9800" stroke="#e65100" stroke-width="2" rx="5"/>
+    <text x="850" y="432" font-size="15" font-weight="bold" text-anchor="middle" fill="white">
+      Contracted Price
+    </text>
+    <text x="850" y="446" font-size="11" text-anchor="middle" fill="white">
+      (SBQQ__ContractedPrice__c)
+    </text>
+    <line x1="760" y1="452" x2="940" y2="452" stroke="white" stroke-width="1"/>
+    <text x="770" y="469" font-size="11" fill="white">• Account</text>
+    <text x="770" y="485" font-size="11" fill="white">• Product</text>
+    <text x="770" y="501" font-size="11" fill="white">• Price</text>
+    <text x="770" y="517" font-size="11" fill="white">• Effective Date</text>
+  </g>
+  
+  <!-- Discount Schedule -->
+  <g id="discount-schedule">
+    <rect x="990" y="410" width="200" height="120" fill="#ff9800" stroke="#e65100" stroke-width="2" rx="5"/>
+    <text x="1090" y="432" font-size="15" font-weight="bold" text-anchor="middle" fill="white">
+      Discount Schedule
+    </text>
+    <text x="1090" y="446" font-size="11" text-anchor="middle" fill="white">
+      (SBQQ__DiscountSchedule__c)
+    </text>
+    <line x1="1000" y1="452" x2="1180" y2="452" stroke="white" stroke-width="1"/>
+    <text x="1010" y="469" font-size="11" fill="white">• Quote Line</text>
+    <text x="1010" y="485" font-size="11" fill="white">• Discount Tier</text>
+    <text x="1010" y="501" font-size="11" fill="white">• Lower Bound</text>
+    <text x="1010" y="517" font-size="11" fill="white">• Discount %</text>
+  </g>
+  
+  <!-- Revenue Cloud Objects Section -->
+  <rect x="50" y="590" width="620" height="370" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="8"/>
+  <text x="360" y="620" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">
+    Revenue Cloud Objects
+  </text>
+  
+  <!-- Order -->
+  <g id="order">
+    <rect x="80" y="650" width="200" height="120" fill="#4caf50" stroke="#1b5e20" stroke-width="2" rx="5"/>
+    <text x="180" y="675" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Order
+    </text>
+    <line x1="90" y1="685" x2="270" y2="685" stroke="white" stroke-width="1"/>
+    <text x="100" y="702" font-size="11" fill="white">• Order Number</text>
+    <text x="100" y="718" font-size="11" fill="white">• Account</text>
+    <text x="100" y="734" font-size="11" fill="white">• Status</text>
+    <text x="100" y="750" font-size="11" fill="white">• Effective Date</text>
+    <text x="100" y="762" font-size="10" fill="white" font-style="italic">→ SBQQ__Quote__c</text>
+  </g>
+  
+  <!-- Order Product -->
+  <g id="order-product">
+    <rect x="320" y="650" width="200" height="120" fill="#4caf50" stroke="#1b5e20" stroke-width="2" rx="5"/>
+    <text x="420" y="675" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Order Product
+    </text>
+    <line x1="330" y1="685" x2="510" y2="685" stroke="white" stroke-width="1"/>
+    <text x="340" y="702" font-size="11" fill="white">• Order</text>
+    <text x="340" y="718" font-size="11" fill="white">• Product2</text>
+    <text x="340" y="734" font-size="11" fill="white">• Quantity</text>
+    <text x="340" y="750" font-size="11" fill="white">• Unit Price</text>
+    <text x="340" y="762" font-size="10" fill="white" font-style="italic">→ SBQQ__QuoteLine__c</text>
+  </g>
+  
+  <!-- Asset -->
+  <g id="asset">
+    <rect x="80" y="810" width="200" height="120" fill="#4caf50" stroke="#1b5e20" stroke-width="2" rx="5"/>
+    <text x="180" y="835" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Asset
+    </text>
+    <line x1="90" y1="845" x2="270" y2="845" stroke="white" stroke-width="1"/>
+    <text x="100" y="862" font-size="11" fill="white">• Asset Name</text>
+    <text x="100" y="878" font-size="11" fill="white">• Account</text>
+    <text x="100" y="894" font-size="11" fill="white">• Product2</text>
+    <text x="100" y="910" font-size="11" fill="white">• Quantity</text>
+    <text x="100" y="922" font-size="10" fill="white" font-style="italic">→ Install Date</text>
+  </g>
+  
+  <!-- Subscription -->
+  <g id="subscription">
+    <rect x="320" y="810" width="200" height="120" fill="#4caf50" stroke="#1b5e20" stroke-width="2" rx="5"/>
+    <text x="420" y="832" font-size="15" font-weight="bold" text-anchor="middle" fill="white">
+      Subscription
+    </text>
+    <text x="420" y="846" font-size="11" text-anchor="middle" fill="white">
+      (SBQQ__Subscription__c)
+    </text>
+    <line x1="330" y1="852" x2="510" y2="852" stroke="white" stroke-width="1"/>
+    <text x="340" y="869" font-size="11" fill="white">• Account</text>
+    <text x="340" y="885" font-size="11" fill="white">• Product</text>
+    <text x="340" y="901" font-size="11" fill="white">• Quantity</text>
+    <text x="340" y="917" font-size="11" fill="white">• Subscription Term</text>
+  </g>
+  
+  <!-- Billing Objects Section -->
+  <rect x="720" y="590" width="630" height="370" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="8"/>
+  <text x="1035" y="620" font-size="18" font-weight="bold" text-anchor="middle" fill="#4a148c">
+    Billing &amp; Revenue Objects
+  </text>
+  
+  <!-- Invoice -->
+  <g id="invoice">
+    <rect x="750" y="650" width="200" height="120" fill="#9c27b0" stroke="#4a148c" stroke-width="2" rx="5"/>
+    <text x="850" y="675" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Invoice
+    </text>
+    <line x1="760" y1="685" x2="940" y2="685" stroke="white" stroke-width="1"/>
+    <text x="770" y="702" font-size="11" fill="white">• Invoice Number</text>
+    <text x="770" y="718" font-size="11" fill="white">• Account</text>
+    <text x="770" y="734" font-size="11" fill="white">• Invoice Date</text>
+    <text x="770" y="750" font-size="11" fill="white">• Total Amount</text>
+    <text x="770" y="762" font-size="10" fill="white" font-style="italic">→ Due Date, Status</text>
+  </g>
+  
+  <!-- Invoice Line -->
+  <g id="invoice-line">
+    <rect x="990" y="650" width="200" height="120" fill="#9c27b0" stroke="#4a148c" stroke-width="2" rx="5"/>
+    <text x="1090" y="675" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Invoice Line
+    </text>
+    <line x1="1000" y1="685" x2="1180" y2="685" stroke="white" stroke-width="1"/>
+    <text x="1010" y="702" font-size="11" fill="white">• Invoice</text>
+    <text x="1010" y="718" font-size="11" fill="white">• Order Product</text>
+    <text x="1010" y="734" font-size="11" fill="white">• Unit Price</text>
+    <text x="1010" y="750" font-size="11" fill="white">• Quantity</text>
+    <text x="1010" y="762" font-size="10" fill="white" font-style="italic">→ Line Amount</text>
+  </g>
+  
+  <!-- Revenue Schedule -->
+  <g id="revenue-schedule">
+    <rect x="750" y="810" width="200" height="120" fill="#9c27b0" stroke="#4a148c" stroke-width="2" rx="5"/>
+    <text x="850" y="835" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Revenue Schedule
+    </text>
+    <line x1="760" y1="845" x2="940" y2="845" stroke="white" stroke-width="1"/>
+    <text x="770" y="862" font-size="11" fill="white">• Order Product</text>
+    <text x="770" y="878" font-size="11" fill="white">• Revenue Date</text>
+    <text x="770" y="894" font-size="11" fill="white">• Revenue Amount</text>
+    <text x="770" y="910" font-size="11" fill="white">• Recognition Rule</text>
+  </g>
+  
+  <!-- Payment -->
+  <g id="payment">
+    <rect x="990" y="810" width="200" height="120" fill="#9c27b0" stroke="#4a148c" stroke-width="2" rx="5"/>
+    <text x="1090" y="835" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Payment
+    </text>
+    <line x1="1000" y1="845" x2="1180" y2="845" stroke="white" stroke-width="1"/>
+    <text x="1010" y="862" font-size="11" fill="white">• Invoice</text>
+    <text x="1010" y="878" font-size="11" fill="white">• Payment Amount</text>
+    <text x="1010" y="894" font-size="11" fill="white">• Payment Date</text>
+    <text x="1010" y="910" font-size="11" fill="white">• Payment Method</text>
+    <text x="1010" y="922" font-size="10" fill="white" font-style="italic">→ Status</text>
+  </g>
+  
+  <!-- Relationship Lines -->
+  <defs>
+    <marker id="arrow-one-many" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1976d2"/>
+    </marker>
+    <marker id="arrow-lookup" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#388e3c"/>
+    </marker>
+  </defs>
+  
+  <!-- Account to Opportunity -->
+  <line x1="280" y1="315" x2="320" y2="315" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-one-many)"/>
+  <text x="295" y="308" font-size="10" fill="#1976d2">1:M</text>
+  
+  <!-- Opportunity to Quote -->
+  <path d="M 280 370 L 280 390 L 180 390 L 180 410" stroke="#1976d2" stroke-width="3" fill="none" marker-end="url(#arrow-one-many)"/>
+  <text x="285" y="385" font-size="10" fill="#1976d2">1:M</text>
+  
+  <!-- Quote to Quote Line -->
+  <line x1="280" y1="470" x2="320" y2="470" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-one-many)"/>
+  <text x="295" y="463" font-size="10" fill="#1976d2">1:M</text>
+  
+  <!-- Quote Line to Product -->
+  <line x1="520" y1="470" x2="750" y2="320" stroke="#388e3c" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow-lookup)"/>
+  <text x="620" y="390" font-size="10" fill="#388e3c">Lookup</text>
+  
+  <!-- Quote to Order -->
+  <line x1="180" y1="530" x2="180" y2="650" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-one-many)"/>
+  <text x="190" y="590" font-size="10" fill="#1976d2">1:M</text>
+  
+  <!-- Order to Order Product -->
+  <line x1="280" y1="710" x2="320" y2="710" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-one-many)"/>
+  <text x="295" y="703" font-size="10" fill="#1976d2">1:M</text>
+  
+  <!-- Order Product to Asset -->
+  <path d="M 320 740 L 300 740 L 300 870 L 280 870" stroke="#1976d2" stroke-width="3" fill="none" marker-end="url(#arrow-one-many)"/>
+  <text x="285" y="800" font-size="10" fill="#1976d2">1:1</text>
+  
+  <!-- Order Product to Subscription -->
+  <line x1="420" y1="770" x2="420" y2="810" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-one-many)"/>
+  <text x="430" y="790" font-size="10" fill="#1976d2">1:1</text>
+  
+  <!-- Order Product to Invoice Line -->
+  <line x1="520" y1="710" x2="750" y2="710" stroke="#388e3c" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow-lookup)"/>
+  <text x="620" y="703" font-size="10" fill="#388e3c">Lookup</text>
+  
+  <!-- Invoice to Invoice Line -->
+  <line x1="950" y1="710" x2="990" y2="710" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-one-many)"/>
+  <text x="965" y="703" font-size="10" fill="#1976d2">1:M</text>
+  
+  <!-- Order Product to Revenue Schedule -->
+  <path d="M 420 770 L 420 790 L 750 870" stroke="#1976d2" stroke-width="3" fill="none" marker-end="url(#arrow-one-many)"/>
+  <text x="580" y="820" font-size="10" fill="#1976d2">1:M</text>
+  
+  <!-- Invoice to Payment -->
+  <line x1="950" y1="870" x2="990" y2="870" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-one-many)"/>
+  <text x="965" y="863" font-size="10" fill="#1976d2">1:M</text>
+</svg>

@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <!-- Title -->
+  <text x="700" y="50" font-size="32" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Integration Patterns
+  </text>
+  
+  <!-- Point-to-Point Pattern -->
+  <g>
+    <rect x="50" y="100" width="400" height="240" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2" rx="10"/>
+    <text x="250" y="135" font-size="22" font-weight="bold" text-anchor="middle" fill="#0284C7">
+      Point-to-Point Integration
+    </text>
+    
+    <!-- System A -->
+    <rect x="90" y="170" width="120" height="100" fill="#3B82F6" stroke="#2563EB" stroke-width="2" rx="8"/>
+    <text x="150" y="205" font-size="16" font-weight="bold" text-anchor="middle" fill="white">System A</text>
+    <text x="150" y="230" font-size="12" text-anchor="middle" fill="white">Salesforce</text>
+    <circle cx="150" cy="250" r="8" fill="white" opacity="0.8"/>
+    
+    <!-- System B -->
+    <rect x="290" y="170" width="120" height="100" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2" rx="8"/>
+    <text x="350" y="205" font-size="16" font-weight="bold" text-anchor="middle" fill="white">System B</text>
+    <text x="350" y="230" font-size="12" text-anchor="middle" fill="white">ERP</text>
+    <circle cx="350" cy="250" r="8" fill="white" opacity="0.8"/>
+    
+    <!-- Connection -->
+    <defs>
+      <marker id="arrow1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#059669"/>
+      </marker>
+    </defs>
+    <path d="M 210 220 L 290 220" stroke="#059669" stroke-width="4" fill="none" marker-end="url(#arrow1)"/>
+    <path d="M 290 200 L 210 200" stroke="#059669" stroke-width="4" fill="none" marker-end="url(#arrow1)"/>
+    
+    <!-- Pros/Cons -->
+    <text x="250" y="305" font-size="11" font-weight="bold" text-anchor="middle" fill="#10B981">✓ Simple &amp; Fast</text>
+    <text x="250" y="322" font-size="11" font-weight="bold" text-anchor="middle" fill="#EF4444">✗ Not Scalable</text>
+  </g>
+  
+  <!-- Hub-and-Spoke Pattern -->
+  <g>
+    <rect x="500" y="100" width="400" height="240" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" rx="10"/>
+    <text x="700" y="135" font-size="22" font-weight="bold" text-anchor="middle" fill="#D97706">
+      Hub-and-Spoke Integration
+    </text>
+    
+    <!-- Hub -->
+    <rect x="650" y="200" width="100" height="80" fill="#F59E0B" stroke="#D97706" stroke-width="3" rx="8"/>
+    <text x="700" y="228" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Integration</text>
+    <text x="700" y="248" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Hub</text>
+    <circle cx="700" cy="265" r="5" fill="white"/>
+    
+    <!-- Spoke Systems -->
+    <circle cx="560" cy="180" r="30" fill="#3B82F6" stroke="#2563EB" stroke-width="2"/>
+    <text x="560" y="188" font-size="11" font-weight="bold" text-anchor="middle" fill="white">SF</text>
+    
+    <circle cx="840" cy="180" r="30" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2"/>
+    <text x="840" y="188" font-size="11" font-weight="bold" text-anchor="middle" fill="white">ERP</text>
+    
+    <circle cx="560" cy="280" r="30" fill="#10B981" stroke="#059669" stroke-width="2"/>
+    <text x="560" y="288" font-size="11" font-weight="bold" text-anchor="middle" fill="white">DB</text>
+    
+    <circle cx="840" cy="280" r="30" fill="#EC4899" stroke="#DB2777" stroke-width="2"/>
+    <text x="840" y="288" font-size="11" font-weight="bold" text-anchor="middle" fill="white">API</text>
+    
+    <!-- Connections to hub -->
+    <line x1="585" y1="190" x2="650" y2="220" stroke="#6B7280" stroke-width="3"/>
+    <line x1="815" y1="190" x2="750" y2="220" stroke="#6B7280" stroke-width="3"/>
+    <line x1="585" y1="270" x2="650" y2="260" stroke="#6B7280" stroke-width="3"/>
+    <line x1="815" y1="270" x2="750" y2="260" stroke="#6B7280" stroke-width="3"/>
+    
+    <!-- Pros/Cons -->
+    <text x="700" y="305" font-size="11" font-weight="bold" text-anchor="middle" fill="#10B981">✓ Centralized Control</text>
+    <text x="700" y="322" font-size="11" font-weight="bold" text-anchor="middle" fill="#EF4444">✗ Single Point of Failure</text>
+  </g>
+  
+  <!-- Event-Driven Pattern -->
+  <g>
+    <rect x="950" y="100" width="400" height="240" fill="#ECFDF5" stroke="#10B981" stroke-width="2" rx="10"/>
+    <text x="1150" y="135" font-size="22" font-weight="bold" text-anchor="middle" fill="#059669">
+      Event-Driven Architecture
+    </text>
+    
+    <!-- Event Bus -->
+    <rect x="1050" y="200" width="200" height="60" fill="#10B981" stroke="#059669" stroke-width="3" rx="8"/>
+    <text x="1150" y="225" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Event Bus</text>
+    <text x="1150" y="245" font-size="11" text-anchor="middle" fill="white">(Pub/Sub)</text>
+    
+    <!-- Publishers (top) -->
+    <circle cx="1000" cy="165" r="22" fill="#3B82F6" stroke="#2563EB" stroke-width="2"/>
+    <text x="1000" y="172" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Pub1</text>
+    
+    <circle cx="1150" cy="165" r="22" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2"/>
+    <text x="1150" y="172" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Pub2</text>
+    
+    <circle cx="1300" cy="165" r="22" fill="#EC4899" stroke="#DB2777" stroke-width="2"/>
+    <text x="1300" y="172" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Pub3</text>
+    
+    <!-- Subscribers (bottom) -->
+    <circle cx="1000" cy="295" r="22" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+    <text x="1000" y="302" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Sub1</text>
+    
+    <circle cx="1150" cy="295" r="22" fill="#EF4444" stroke="#DC2626" stroke-width="2"/>
+    <text x="1150" y="302" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Sub2</text>
+    
+    <circle cx="1300" cy="295" r="22" fill="#6366F1" stroke="#4F46E5" stroke-width="2"/>
+    <text x="1300" y="302" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Sub3</text>
+    
+    <!-- Arrows -->
+    <defs>
+      <marker id="arrow-down" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#6B7280"/>
+      </marker>
+    </defs>
+    <path d="M 1000 187 L 1070 200" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arrow-down)"/>
+    <path d="M 1150 187 L 1150 200" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arrow-down)"/>
+    <path d="M 1300 187 L 1230 200" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arrow-down)"/>
+    
+    <path d="M 1070 260 L 1000 273" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arrow-down)"/>
+    <path d="M 1150 260 L 1150 273" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arrow-down)"/>
+    <path d="M 1230 260 L 1300 273" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arrow-down)"/>
+    
+    <!-- Pros/Cons -->
+    <text x="1150" y="325" font-size="11" font-weight="bold" text-anchor="middle" fill="#10B981">✓ Highly Scalable</text>
+  </g>
+  
+  <!-- Detailed Comparison Section -->
+  <g>
+    <rect x="50" y="380" width="1300" height="480" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="2" rx="10"/>
+    <text x="700" y="420" font-size="26" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      Pattern Comparison &amp; Use Cases
+    </text>
+    
+    <!-- Point-to-Point Details -->
+    <g>
+      <rect x="80" y="450" width="380" height="380" fill="white" stroke="#CBD5E1" stroke-width="2" rx="8"/>
+      <text x="270" y="480" font-size="18" font-weight="bold" text-anchor="middle" fill="#0284C7">
+        Point-to-Point
+      </text>
+      
+      <text x="100" y="515" font-size="13" font-weight="bold" fill="#1F2937">Characteristics:</text>
+      <text x="110" y="535" font-size="11" fill="#4B5563">• Direct system connection</text>
+      <text x="110" y="552" font-size="11" fill="#4B5563">• Bi-directional communication</text>
+      <text x="110" y="569" font-size="11" fill="#4B5563">• Real-time synchronization</text>
+      <text x="110" y="586" font-size="11" fill="#4B5563">• Low latency</text>
+      
+      <text x="100" y="615" font-size="13" font-weight="bold" fill="#1F2937">Best For:</text>
+      <text x="110" y="635" font-size="11" fill="#4B5563">• Simple integrations</text>
+      <text x="110" y="652" font-size="11" fill="#4B5563">• 2-3 systems only</text>
+      <text x="110" y="669" font-size="11" fill="#4B5563">• Real-time requirements</text>
+      <text x="110" y="686" font-size="11" fill="#4B5563">• Low volume data</text>
+      
+      <text x="100" y="715" font-size="13" font-weight="bold" fill="#10B981">Advantages:</text>
+      <text x="110" y="735" font-size="11" fill="#059669">✓ Simple implementation</text>
+      <text x="110" y="752" font-size="11" fill="#059669">✓ Low complexity</text>
+      <text x="110" y="769" font-size="11" fill="#059669">✓ Fast performance</text>
+      
+      <text x="100" y="798" font-size="13" font-weight="bold" fill="#EF4444">Disadvantages:</text>
+      <text x="110" y="818" font-size="11" fill="#DC2626">✗ Poor scalability</text>
+    </g>
+    
+    <!-- Hub-and-Spoke Details -->
+    <g>
+      <rect x="490" y="450" width="380" height="380" fill="white" stroke="#CBD5E1" stroke-width="2" rx="8"/>
+      <text x="680" y="480" font-size="18" font-weight="bold" text-anchor="middle" fill="#D97706">
+        Hub-and-Spoke
+      </text>
+      
+      <text x="510" y="515" font-size="13" font-weight="bold" fill="#1F2937">Characteristics:</text>
+      <text x="520" y="535" font-size="11" fill="#4B5563">• Central integration hub</text>
+      <text x="520" y="552" font-size="11" fill="#4B5563">• Data transformation layer</text>
+      <text x="520" y="569" font-size="11" fill="#4B5563">• Orchestration capabilities</text>
+      <text x="520" y="586" font-size="11" fill="#4B5563">• Message routing</text>
+      
+      <text x="510" y="615" font-size="13" font-weight="bold" fill="#1F2937">Best For:</text>
+      <text x="520" y="635" font-size="11" fill="#4B5563">• Multiple system integration</text>
+      <text x="520" y="652" font-size="11" fill="#4B5563">• Complex transformations</text>
+      <text x="520" y="669" font-size="11" fill="#4B5563">• Enterprise service bus</text>
+      <text x="520" y="686" font-size="11" fill="#4B5563">• Centralized governance</text>
+      
+      <text x="510" y="715" font-size="13" font-weight="bold" fill="#10B981">Advantages:</text>
+      <text x="520" y="735" font-size="11" fill="#059669">✓ Easier to add systems</text>
+      <text x="520" y="752" font-size="11" fill="#059669">✓ Centralized control</text>
+      <text x="520" y="769" font-size="11" fill="#059669">✓ Reduced connections</text>
+      
+      <text x="510" y="798" font-size="13" font-weight="bold" fill="#EF4444">Disadvantages:</text>
+      <text x="520" y="818" font-size="11" fill="#DC2626">✗ Single point of failure</text>
+    </g>
+    
+    <!-- Event-Driven Details -->
+    <g>
+      <rect x="900" y="450" width="380" height="380" fill="white" stroke="#CBD5E1" stroke-width="2" rx="8"/>
+      <text x="1090" y="480" font-size="18" font-weight="bold" text-anchor="middle" fill="#059669">
+        Event-Driven
+      </text>
+      
+      <text x="920" y="515" font-size="13" font-weight="bold" fill="#1F2937">Characteristics:</text>
+      <text x="930" y="535" font-size="11" fill="#4B5563">• Pub/Sub messaging</text>
+      <text x="930" y="552" font-size="11" fill="#4B5563">• Asynchronous processing</text>
+      <text x="930" y="569" font-size="11" fill="#4B5563">• Loose coupling</text>
+      <text x="930" y="586" font-size="11" fill="#4B5563">• Event streaming</text>
+      
+      <text x="920" y="615" font-size="13" font-weight="bold" fill="#1F2937">Best For:</text>
+      <text x="930" y="635" font-size="11" fill="#4B5563">• Microservices architecture</text>
+      <text x="930" y="652" font-size="11" fill="#4B5563">• Real-time data streaming</text>
+      <text x="930" y="669" font-size="11" fill="#4B5563">• High-volume events</text>
+      <text x="930" y="686" font-size="11" fill="#4B5563">• Reactive applications</text>
+      
+      <text x="920" y="715" font-size="13" font-weight="bold" fill="#10B981">Advantages:</text>
+      <text x="930" y="735" font-size="11" fill="#059669">✓ Highly scalable</text>
+      <text x="930" y="752" font-size="11" fill="#059669">✓ Loose coupling</text>
+      <text x="930" y="769" font-size="11" fill="#059669">✓ Real-time processing</text>
+      
+      <text x="920" y="798" font-size="13" font-weight="bold" fill="#EF4444">Disadvantages:</text>
+      <text x="930" y="818" font-size="11" fill="#DC2626">✗ Complex debugging</text>
+    </g>
+  </g>
+</svg>

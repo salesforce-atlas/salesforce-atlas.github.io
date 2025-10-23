@@ -1,0 +1,348 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#032D60">
+    Experience Cloud License Types
+  </text>
+  
+  <!-- Customer Community License -->
+  <rect x="50" y="80" width="420" height="340" fill="#E8F4F8" stroke="#00A1E0" stroke-width="3" rx="8"/>
+  <text x="260" y="115" font-size="22" font-weight="bold" text-anchor="middle" fill="#032D60">
+    Customer Community
+  </text>
+  
+  <rect x="80" y="130" width="360" height="50" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="100" y="155" font-size="14" font-weight="bold" fill="#032D60">
+    Target Users:
+  </text>
+  <text x="100" y="173" font-size="12" fill="#54698D">
+    External customers, self-service portals
+  </text>
+  
+  <text x="80" y="205" font-size="14" font-weight="bold" fill="#032D60">
+    Object Access:
+  </text>
+  <text x="85" y="225" font-size="12" fill="#54698D">
+    • Standard objects (limited)
+  </text>
+  <text x="85" y="243" font-size="12" fill="#54698D">
+    • Cases, Knowledge, Accounts
+  </text>
+  <text x="85" y="261" font-size="12" fill="#54698D">
+    • Up to 10 custom objects
+  </text>
+  
+  <text x="80" y="290" font-size="14" font-weight="bold" fill="#032D60">
+    Features:
+  </text>
+  <text x="85" y="310" font-size="12" fill="#54698D">
+    • Self-service case management
+  </text>
+  <text x="85" y="328" font-size="12" fill="#54698D">
+    • Knowledge base access
+  </text>
+  <text x="85" y="346" font-size="12" fill="#54698D">
+    • Community collaboration
+  </text>
+  
+  <rect x="80" y="365" width="360" height="40" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" rx="4"/>
+  <text x="260" y="390" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B5E20">
+    Pricing: $ per member/month
+  </text>
+  
+  <!-- Customer Community Plus License -->
+  <rect x="500" y="80" width="420" height="340" fill="#F4F6F9" stroke="#0176D3" stroke-width="3" rx="8"/>
+  <text x="710" y="115" font-size="22" font-weight="bold" text-anchor="middle" fill="#032D60">
+    Customer Community Plus
+  </text>
+  
+  <rect x="530" y="130" width="360" height="50" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="550" y="155" font-size="14" font-weight="bold" fill="#032D60">
+    Target Users:
+  </text>
+  <text x="550" y="173" font-size="12" fill="#54698D">
+    Advanced customer portals
+  </text>
+  
+  <text x="530" y="205" font-size="14" font-weight="bold" fill="#032D60">
+    Object Access:
+  </text>
+  <text x="535" y="225" font-size="12" fill="#54698D">
+    • All standard objects
+  </text>
+  <text x="535" y="243" font-size="12" fill="#54698D">
+    • Unlimited custom objects
+  </text>
+  <text x="535" y="261" font-size="12" fill="#54698D">
+    • Reports &amp; Dashboards
+  </text>
+  
+  <text x="530" y="290" font-size="14" font-weight="bold" fill="#032D60">
+    Features:
+  </text>
+  <text x="535" y="310" font-size="12" fill="#54698D">
+    • Everything in Customer Community
+  </text>
+  <text x="535" y="328" font-size="12" fill="#54698D">
+    • Workflows and Process Builder
+  </text>
+  <text x="535" y="346" font-size="12" fill="#54698D">
+    • Enhanced object access
+  </text>
+  
+  <rect x="530" y="365" width="360" height="40" fill="#FFE0B2" stroke="#F57C00" stroke-width="2" rx="4"/>
+  <text x="710" y="390" font-size="14" font-weight="bold" text-anchor="middle" fill="#E65100">
+    Pricing: $$ per member/month
+  </text>
+  
+  <!-- Partner Community License -->
+  <rect x="950" y="80" width="420" height="340" fill="#E8F4F8" stroke="#00A1E0" stroke-width="3" rx="8"/>
+  <text x="1160" y="115" font-size="22" font-weight="bold" text-anchor="middle" fill="#032D60">
+    Partner Community
+  </text>
+  
+  <rect x="980" y="130" width="360" height="50" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="1000" y="155" font-size="14" font-weight="bold" fill="#032D60">
+    Target Users:
+  </text>
+  <text x="1000" y="173" font-size="12" fill="#54698D">
+    Channel partners, distributors, resellers
+  </text>
+  
+  <text x="980" y="205" font-size="14" font-weight="bold" fill="#032D60">
+    Object Access:
+  </text>
+  <text x="985" y="225" font-size="12" fill="#54698D">
+    • Sales-focused standard objects
+  </text>
+  <text x="985" y="243" font-size="12" fill="#54698D">
+    • Leads, Opportunities, Campaigns
+  </text>
+  <text x="985" y="261" font-size="12" fill="#54698D">
+    • Unlimited custom objects
+  </text>
+  
+  <text x="980" y="290" font-size="14" font-weight="bold" fill="#032D60">
+    Features:
+  </text>
+  <text x="985" y="310" font-size="12" fill="#54698D">
+    • Deal registration
+  </text>
+  <text x="985" y="328" font-size="12" fill="#54698D">
+    • Lead distribution
+  </text>
+  <text x="985" y="346" font-size="12" fill="#54698D">
+    • Partner relationship management
+  </text>
+  
+  <rect x="980" y="365" width="360" height="40" fill="#FFE0B2" stroke="#F57C00" stroke-width="2" rx="4"/>
+  <text x="1160" y="390" font-size="14" font-weight="bold" text-anchor="middle" fill="#E65100">
+    Pricing: $$ per member/month
+  </text>
+  
+  <!-- External Apps License -->
+  <rect x="50" y="450" width="420" height="320" fill="#F4F6F9" stroke="#0176D3" stroke-width="3" rx="8"/>
+  <text x="260" y="485" font-size="22" font-weight="bold" text-anchor="middle" fill="#032D60">
+    External Apps
+  </text>
+  
+  <rect x="80" y="500" width="360" height="50" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="100" y="525" font-size="14" font-weight="bold" fill="#032D60">
+    Target Users:
+  </text>
+  <text x="100" y="543" font-size="12" fill="#54698D">
+    Custom app users, IoT applications
+  </text>
+  
+  <text x="80" y="575" font-size="14" font-weight="bold" fill="#032D60">
+    Object Access:
+  </text>
+  <text x="85" y="595" font-size="12" fill="#54698D">
+    • Custom objects only
+  </text>
+  <text x="85" y="613" font-size="12" fill="#54698D">
+    • No standard CRM objects
+  </text>
+  <text x="85" y="631" font-size="12" fill="#54698D">
+    • Full API access
+  </text>
+  
+  <text x="80" y="660" font-size="14" font-weight="bold" fill="#032D60">
+    Features:
+  </text>
+  <text x="85" y="680" font-size="12" fill="#54698D">
+    • Custom application development
+  </text>
+  <text x="85" y="698" font-size="12" fill="#54698D">
+    • Platform-as-a-Service
+  </text>
+  <text x="85" y="716" font-size="12" fill="#54698D">
+    • Most affordable per-user option
+  </text>
+  
+  <rect x="80" y="735" width="360" height="40" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" rx="4"/>
+  <text x="260" y="760" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B5E20">
+    Pricing: $ per member/month (lowest)
+  </text>
+  
+  <!-- Guest User License -->
+  <rect x="500" y="450" width="420" height="320" fill="#E8F4F8" stroke="#00A1E0" stroke-width="3" rx="8"/>
+  <text x="710" y="485" font-size="22" font-weight="bold" text-anchor="middle" fill="#032D60">
+    Guest User
+  </text>
+  
+  <rect x="530" y="500" width="360" height="50" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="550" y="525" font-size="14" font-weight="bold" fill="#032D60">
+    Target Users:
+  </text>
+  <text x="550" y="543" font-size="12" fill="#54698D">
+    Unauthenticated visitors, public access
+  </text>
+  
+  <text x="530" y="575" font-size="14" font-weight="bold" fill="#032D60">
+    Object Access:
+  </text>
+  <text x="535" y="595" font-size="12" fill="#54698D">
+    • Very limited read-only access
+  </text>
+  <text x="535" y="613" font-size="12" fill="#54698D">
+    • Designated objects only
+  </text>
+  <text x="535" y="631" font-size="12" fill="#54698D">
+    • Public pages and forms
+  </text>
+  
+  <text x="530" y="660" font-size="14" font-weight="bold" fill="#032D60">
+    Features:
+  </text>
+  <text x="535" y="680" font-size="12" fill="#54698D">
+    • Public content access
+  </text>
+  <text x="535" y="698" font-size="12" fill="#54698D">
+    • Form submissions (e.g., registration)
+  </text>
+  <text x="535" y="716" font-size="12" fill="#54698D">
+    • Event registration pages
+  </text>
+  
+  <rect x="530" y="735" width="360" height="40" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" rx="4"/>
+  <text x="710" y="760" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B5E20">
+    Pricing: No per-user cost*
+  </text>
+  
+  <!-- License Selection Decision Tree -->
+  <rect x="950" y="450" width="420" height="320" fill="#F4F6F9" stroke="#0176D3" stroke-width="3" rx="8"/>
+  <text x="1160" y="485" font-size="20" font-weight="bold" text-anchor="middle" fill="#032D60">
+    License Selection Guide
+  </text>
+  
+  <text x="970" y="520" font-size="14" font-weight="bold" fill="#032D60">
+    Choose Based On:
+  </text>
+  
+  <rect x="980" y="535" width="360" height="60" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="1000" y="558" font-size="13" font-weight="bold" fill="#032D60">
+    Object Access Requirements
+  </text>
+  <text x="1005" y="577" font-size="11" fill="#54698D">
+    Standard CRM objects? How many custom objects?
+  </text>
+  
+  <rect x="980" y="605" width="360" height="60" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="1000" y="628" font-size="13" font-weight="bold" fill="#032D60">
+    User Type &amp; Use Case
+  </text>
+  <text x="1005" y="647" font-size="11" fill="#54698D">
+    Customers, partners, or custom app users?
+  </text>
+  
+  <rect x="980" y="675" width="360" height="60" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="4"/>
+  <text x="1000" y="698" font-size="13" font-weight="bold" fill="#032D60">
+    Feature Needs
+  </text>
+  <text x="1005" y="717" font-size="11" fill="#54698D">
+    Reports, workflows, automation requirements?
+  </text>
+  
+  <rect x="980" y="745" width="360" height="30" fill="#FFE0B2" stroke="#F57C00" stroke-width="2" rx="4"/>
+  <text x="1160" y="765" font-size="12" font-weight="bold" text-anchor="middle" fill="#E65100">
+    Consult Salesforce Account Team for Pricing
+  </text>
+  
+  <!-- API Limits Comparison -->
+  <rect x="50" y="800" width="1320" height="180" fill="#E8F4F8" stroke="#00A1E0" stroke-width="2" rx="8"/>
+  <text x="700" y="835" font-size="22" font-weight="bold" text-anchor="middle" fill="#032D60">
+    API Limits Comparison
+  </text>
+  
+  <!-- API Table Header -->
+  <rect x="100" y="860" width="240" height="35" fill="#032D60" rx="4"/>
+  <text x="220" y="882" font-size="13" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    License Type
+  </text>
+  
+  <rect x="350" y="860" width="250" height="35" fill="#032D60" rx="4"/>
+  <text x="475" y="882" font-size="13" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    API Calls per 24 Hours
+  </text>
+  
+  <rect x="610" y="860" width="250" height="35" fill="#032D60" rx="4"/>
+  <text x="735" y="882" font-size="13" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    Suitable For
+  </text>
+  
+  <rect x="870" y="860" width="250" height="35" fill="#032D60" rx="4"/>
+  <text x="995" y="882" font-size="13" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    Integration Level
+  </text>
+  
+  <!-- Customer Community Row -->
+  <rect x="100" y="900" width="240" height="35" fill="#FFFFFF" stroke="#0176D3" stroke-width="1"/>
+  <text x="120" y="922" font-size="12" fill="#032D60">
+    Customer Community
+  </text>
+  
+  <rect x="350" y="900" width="250" height="35" fill="#FFFFFF" stroke="#0176D3" stroke-width="1"/>
+  <text x="475" y="922" font-size="12" text-anchor="middle" fill="#54698D">
+    Limited (200 per user)
+  </text>
+  
+  <rect x="610" y="900" width="250" height="35" fill="#FFFFFF" stroke="#0176D3" stroke-width="1"/>
+  <text x="735" y="922" font-size="12" text-anchor="middle" fill="#54698D">
+    Basic integrations
+  </text>
+  
+  <rect x="870" y="900" width="250" height="35" fill="#FFFFFF" stroke="#0176D3" stroke-width="1"/>
+  <text x="995" y="922" font-size="12" text-anchor="middle" fill="#F57C00">
+    Low
+  </text>
+  
+  <!-- Customer Community Plus Row -->
+  <rect x="100" y="940" width="240" height="35" fill="#F4F6F9" stroke="#0176D3" stroke-width="1"/>
+  <text x="120" y="962" font-size="12" fill="#032D60">
+    Customer Community Plus
+  </text>
+  
+  <rect x="350" y="940" width="250" height="35" fill="#F4F6F9" stroke="#0176D3" stroke-width="1"/>
+  <text x="475" y="962" font-size="12" text-anchor="middle" fill="#54698D">
+    Medium (500 per user)
+  </text>
+  
+  <rect x="610" y="940" width="250" height="35" fill="#F4F6F9" stroke="#0176D3" stroke-width="1"/>
+  <text x="735" y="962" font-size="12" text-anchor="middle" fill="#54698D">
+    Moderate integrations
+  </text>
+  
+  <rect x="870" y="940" width="250" height="35" fill="#F4F6F9" stroke="#0176D3" stroke-width="1"/>
+  <text x="995" y="962" font-size="12" text-anchor="middle" fill="#388E3C">
+    Medium
+  </text>
+  
+  <!-- Partner Community / External Apps Row -->
+  <rect x="100" y="905" width="1020" height="1" fill="#0176D3"/>
+  <rect x="100" y="945" width="1020" height="1" fill="#0176D3"/>
+  
+  <!-- Note -->
+  <text x="700" y="995" font-size="11" text-anchor="middle" fill="#54698D">
+    *Guest User license has bandwidth and usage limits. Partner Community &amp; External Apps have higher API limits.
+  </text>
+</svg>

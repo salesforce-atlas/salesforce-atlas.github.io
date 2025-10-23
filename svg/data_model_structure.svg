@@ -1,0 +1,218 @@
+<svg viewBox="0 0 1400 1100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1100" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Marketing Cloud Data Model Structure
+  </text>
+  
+  <!-- Contact Builder Section -->
+  <rect x="50" y="80" width="1300" height="200" fill="#0176d3" fill-opacity="0.1" stroke="#0176d3" stroke-width="2" rx="8"/>
+  <text x="700" y="110" font-size="20" font-weight="bold" text-anchor="middle" fill="#0176d3">
+    Contact Builder - Unified Contact Management
+  </text>
+  
+  <!-- All Contacts (Center) -->
+  <g>
+    <rect x="575" y="140" width="250" height="120" fill="#0176d3" stroke="#014486" stroke-width="3" rx="8"/>
+    <text x="700" y="170" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">All Contacts</text>
+    <text x="700" y="195" font-size="12" text-anchor="middle" fill="#ffffff">Contact Key: CRM_ID</text>
+    <text x="700" y="215" font-size="11" text-anchor="middle" fill="#ffffff">• Multi-channel identity</text>
+    <text x="700" y="233" font-size="11" text-anchor="middle" fill="#ffffff">• Unified customer view</text>
+    <text x="700" y="251" font-size="11" text-anchor="middle" fill="#ffffff">• Relationship hub</text>
+  </g>
+  
+  <!-- All Subscribers (Legacy) -->
+  <g>
+    <rect x="120" y="140" width="200" height="120" fill="#54698d" stroke="#2c3e50" stroke-width="2" rx="8"/>
+    <text x="220" y="170" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">All Subscribers</text>
+    <text x="220" y="190" font-size="11" text-anchor="middle" fill="#ffffff">(Legacy Model)</text>
+    <text x="220" y="212" font-size="10" text-anchor="middle" fill="#ffffff">• List-based</text>
+    <text x="220" y="230" font-size="10" text-anchor="middle" fill="#ffffff">• Email only</text>
+    <text x="220" y="248" font-size="10" text-anchor="middle" fill="#ffffff">• Limited attributes</text>
+  </g>
+  
+  <!-- Contact Attributes -->
+  <g>
+    <rect x="1080" y="140" width="200" height="120" fill="#00a1e0" stroke="#0176d3" stroke-width="2" rx="8"/>
+    <text x="1180" y="165" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Contact</text>
+    <text x="1180" y="183" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Attributes</text>
+    <text x="1180" y="208" font-size="10" text-anchor="middle" fill="#ffffff">• Demographics</text>
+    <text x="1180" y="226" font-size="10" text-anchor="middle" fill="#ffffff">• Preferences</text>
+    <text x="1180" y="244" font-size="10" text-anchor="middle" fill="#ffffff">• Engagement scores</text>
+  </g>
+  
+  <!-- Arrows -->
+  <line x1="320" y1="200" x2="575" y2="200" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-gray)"/>
+  <text x="430" y="190" font-size="11" fill="#7f8c8d">Migrating to</text>
+  
+  <line x1="825" y1="200" x2="1080" y2="200" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="930" y="190" font-size="11" fill="#2c3e50">Links to</text>
+  
+  <!-- Data Extensions Section -->
+  <text x="700" y="330" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Data Extensions - Relational Data Storage
+  </text>
+  
+  <!-- Customer Profile DE -->
+  <g>
+    <rect x="100" y="360" width="280" height="180" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="8"/>
+    <text x="240" y="390" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Customer_Profile</text>
+    <text x="240" y="410" font-size="11" text-anchor="middle" fill="#ffffff">(Sendable Data Extension)</text>
+    
+    <rect x="120" y="425" width="240" height="100" fill="#ffffff" stroke="#8e44ad" stroke-width="1" rx="4"/>
+    <text x="130" y="445" font-size="11" font-weight="bold" fill="#2c3e50">Fields:</text>
+    <text x="130" y="463" font-size="10" fill="#2c3e50">• ContactKey (PK) - CRM_ID</text>
+    <text x="130" y="478" font-size="10" fill="#2c3e50">• SubscriberKey - Email</text>
+    <text x="130" y="493" font-size="10" fill="#2c3e50">• FirstName, LastName</text>
+    <text x="130" y="508" font-size="10" fill="#2c3e50">• CustomerTier, LoyaltyPoints</text>
+  </g>
+  
+  <!-- Purchase History DE -->
+  <g>
+    <rect x="420" y="360" width="280" height="180" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="8"/>
+    <text x="560" y="390" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Purchase_History</text>
+    <text x="560" y="410" font-size="11" text-anchor="middle" fill="#ffffff">(Standard Data Extension)</text>
+    
+    <rect x="440" y="425" width="240" height="100" fill="#ffffff" stroke="#8e44ad" stroke-width="1" rx="4"/>
+    <text x="450" y="445" font-size="11" font-weight="bold" fill="#2c3e50">Fields:</text>
+    <text x="450" y="463" font-size="10" fill="#2c3e50">• OrderID (PK)</text>
+    <text x="450" y="478" font-size="10" fill="#2c3e50">• ContactKey (FK) - CRM_ID</text>
+    <text x="450" y="493" font-size="10" fill="#2c3e50">• OrderDate, TotalAmount</text>
+    <text x="450" y="508" font-size="10" fill="#2c3e50">• ProductCategory</text>
+  </g>
+  
+  <!-- Email Engagement DE -->
+  <g>
+    <rect x="740" y="360" width="280" height="180" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="8"/>
+    <text x="880" y="390" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Email_Engagement</text>
+    <text x="880" y="410" font-size="11" text-anchor="middle" fill="#ffffff">(Standard Data Extension)</text>
+    
+    <rect x="760" y="425" width="240" height="100" fill="#ffffff" stroke="#8e44ad" stroke-width="1" rx="4"/>
+    <text x="770" y="445" font-size="11" font-weight="bold" fill="#2c3e50">Fields:</text>
+    <text x="770" y="463" font-size="10" fill="#2c3e50">• EngagementID (PK)</text>
+    <text x="770" y="478" font-size="10" fill="#2c3e50">• SubscriberKey (FK) - Email</text>
+    <text x="770" y="493" font-size="10" fill="#2c3e50">• EmailName, SendDate</text>
+    <text x="770" y="508" font-size="10" fill="#2c3e50">• Opens, Clicks, Bounces</text>
+  </g>
+  
+  <!-- Product Preferences DE -->
+  <g>
+    <rect x="1060" y="360" width="280" height="180" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="8"/>
+    <text x="1200" y="390" font-size="15" font-weight="bold" text-anchor="middle" fill="#ffffff">Product_Preferences</text>
+    <text x="1200" y="410" font-size="11" text-anchor="middle" fill="#ffffff">(Standard Data Extension)</text>
+    
+    <rect x="1080" y="425" width="240" height="100" fill="#ffffff" stroke="#8e44ad" stroke-width="1" rx="4"/>
+    <text x="1090" y="445" font-size="11" font-weight="bold" fill="#2c3e50">Fields:</text>
+    <text x="1090" y="463" font-size="10" fill="#2c3e50">• PreferenceID (PK)</text>
+    <text x="1090" y="478" font-size="10" fill="#2c3e50">• ContactKey (FK) - CRM_ID</text>
+    <text x="1090" y="493" font-size="10" fill="#2c3e50">• PreferredCategory</text>
+    <text x="1090" y="508" font-size="10" fill="#2c3e50">• EmailFrequency</text>
+  </g>
+  
+  <!-- Relationship Lines -->
+  <line x1="240" y1="260" x2="240" y2="360" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="245" y="310" font-size="10" fill="#2c3e50">1:1</text>
+  
+  <line x1="560" y1="260" x2="560" y2="360" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="565" y="310" font-size="10" fill="#2c3e50">1:N</text>
+  
+  <line x1="880" y1="260" x2="880" y2="360" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="885" y="310" font-size="10" fill="#2c3e50">1:N</text>
+  
+  <line x1="1200" y1="260" x2="1200" y2="360" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1205" y="310" font-size="10" fill="#2c3e50">1:N</text>
+  
+  <!-- SQL Query Activity -->
+  <text x="700" y="600" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Query Activity - Data Transformation
+  </text>
+  
+  <g>
+    <rect x="350" y="630" width="700" height="180" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="8"/>
+    <text x="700" y="665" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">SQL Query: High_Value_Customers</text>
+    
+    <rect x="380" y="685" width="640" height="110" fill="#ffffff" stroke="#e67e22" stroke-width="1" rx="4"/>
+    <text x="390" y="705" font-size="11" font-family="monospace" fill="#2c3e50">SELECT cp.ContactKey, cp.FirstName, cp.LastName,</text>
+    <text x="390" y="725" font-size="11" font-family="monospace" fill="#2c3e50">    SUM(ph.TotalAmount) as TotalSpend,</text>
+    <text x="390" y="745" font-size="11" font-family="monospace" fill="#2c3e50">    COUNT(ph.OrderID) as OrderCount</text>
+    <text x="390" y="765" font-size="11" font-family="monospace" fill="#2c3e50">FROM Customer_Profile cp</text>
+    <text x="390" y="785" font-size="11" font-family="monospace" fill="#2c3e50">JOIN Purchase_History ph ON cp.ContactKey = ph.ContactKey</text>
+  </g>
+  
+  <!-- Arrow from Data Extensions to Query -->
+  <line x1="560" y1="540" x2="600" y2="630" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="240" y1="540" x2="450" y2="630" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Output Segment -->
+  <g>
+    <rect x="425" y="850" width="550" height="120" fill="#2ecc71" stroke="#27ae60" stroke-width="2" rx="8"/>
+    <text x="700" y="885" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Target Segment: VIP_Customers</text>
+    <text x="700" y="910" font-size="12" text-anchor="middle" fill="#ffffff">Output: 15,243 contacts</text>
+    <text x="700" y="930" font-size="12" text-anchor="middle" fill="#ffffff">Criteria: TotalSpend &gt; $1000 AND OrderCount &gt; 5</text>
+    <text x="700" y="950" font-size="11" text-anchor="middle" fill="#ffffff">→ Ready for Email Campaign Send</text>
+  </g>
+  
+  <!-- Arrow from Query to Segment -->
+  <line x1="700" y1="810" x2="700" y2="850" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Key Concepts Box -->
+  <rect x="100" y="1000" width="1240" height="90" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+  <text x="700" y="1030" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Key Data Model Concepts</text>
+  
+  <text x="120" y="1055" font-size="11" fill="#2c3e50">
+    <tspan font-weight="bold">Contact Key:</tspan> Unique identifier linking all customer data (typically CRM ID)
+  </text>
+  <text x="120" y="1075" font-size="11" fill="#2c3e50">
+    <tspan font-weight="bold">Subscriber Key:</tspan> Email-specific identifier for sending (can be email address or ContactKey)
+  </text>
+  
+  <text x="750" y="1055" font-size="11" fill="#2c3e50">
+    <tspan font-weight="bold">Primary Key (PK):</tspan> Unique identifier for each record in a data extension
+  </text>
+  <text x="750" y="1075" font-size="11" fill="#2c3e50">
+    <tspan font-weight="bold">Foreign Key (FK):</tspan> Field that links to another data extension's primary key
+  </text>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 560)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#1a1a1a">Legend:</text>
+    
+    <rect x="0" y="10" width="100" height="40" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="4"/>
+    <text x="50" y="35" font-size="10" font-weight="bold" text-anchor="middle" fill="#ffffff">Data Extension</text>
+    
+    <rect x="0" y="60" width="100" height="40" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="4"/>
+    <text x="50" y="85" font-size="10" font-weight="bold" text-anchor="middle" fill="#ffffff">Query Activity</text>
+    
+    <rect x="0" y="110" width="100" height="40" fill="#2ecc71" stroke="#27ae60" stroke-width="2" rx="4"/>
+    <text x="50" y="135" font-size="10" font-weight="bold" text-anchor="middle" fill="#ffffff">Output Segment</text>
+  </g>
+  
+  <!-- Best Practices Box -->
+  <g transform="translate(1140, 560)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#1a1a1a">Best Practices:</text>
+    
+    <text x="0" y="25" font-size="10" fill="#2c3e50">✓ Use stable, immutable</text>
+    <text x="5" y="40" font-size="10" fill="#2c3e50">contact keys (CRM ID)</text>
+    
+    <text x="0" y="60" font-size="10" fill="#2c3e50">✓ Normalize data across</text>
+    <text x="5" y="75" font-size="10" fill="#2c3e50">multiple tables</text>
+    
+    <text x="0" y="95" font-size="10" fill="#2c3e50">✓ Define clear data</text>
+    <text x="5" y="110" font-size="10" fill="#2c3e50">retention policies</text>
+    
+    <text x="0" y="130" font-size="10" fill="#2c3e50">✓ Document relationships</text>
+    <text x="5" y="145" font-size="10" fill="#2c3e50">and dependencies</text>
+  </g>
+  
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+</svg>

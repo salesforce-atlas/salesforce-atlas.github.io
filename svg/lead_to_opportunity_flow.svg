@@ -1,0 +1,207 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="700" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#1B3B6F">
+    Lead to Opportunity Conversion Flow
+  </text>
+  
+  <!-- Stage 1: Lead Capture -->
+  <rect x="50" y="80" width="270" height="180" fill="#FFF4E6" stroke="#FF9A3C" stroke-width="3" rx="10"/>
+  <text x="185" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#FF9A3C">
+    1. Lead Capture
+  </text>
+  
+  <rect x="70" y="130" width="230" height="120" fill="#FFFFFF" stroke="#FF9A3C" stroke-width="2" rx="5"/>
+  <text x="185" y="155" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Sources:</text>
+  <text x="185" y="175" font-size="12" text-anchor="middle" fill="#4A4A4A">• Web-to-Lead Forms</text>
+  <text x="185" y="192" font-size="12" text-anchor="middle" fill="#4A4A4A">• Email-to-Lead</text>
+  <text x="185" y="209" font-size="12" text-anchor="middle" fill="#4A4A4A">• Manual Entry</text>
+  <text x="185" y="226" font-size="12" text-anchor="middle" fill="#4A4A4A">• Marketing Campaigns</text>
+  <text x="185" y="243" font-size="12" text-anchor="middle" fill="#4A4A4A">• API Integrations</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 320 170 L 390 170" stroke="#1B3B6F" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="355" y="160" font-size="12" font-weight="bold" fill="#1B3B6F">Assign</text>
+  
+  <!-- Stage 2: Lead Assignment -->
+  <rect x="390" y="80" width="270" height="180" fill="#E6F3FF" stroke="#0176D3" stroke-width="3" rx="10"/>
+  <text x="525" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#0176D3">
+    2. Lead Assignment
+  </text>
+  
+  <rect x="410" y="130" width="230" height="120" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="525" y="155" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Methods:</text>
+  <text x="525" y="175" font-size="12" text-anchor="middle" fill="#4A4A4A">• Assignment Rules</text>
+  <text x="525" y="192" font-size="12" text-anchor="middle" fill="#4A4A4A">• Round Robin</text>
+  <text x="525" y="209" font-size="12" text-anchor="middle" fill="#4A4A4A">• Territory-Based</text>
+  <text x="525" y="226" font-size="12" text-anchor="middle" fill="#4A4A4A">• Queue Assignment</text>
+  <text x="525" y="243" font-size="12" text-anchor="middle" fill="#4A4A4A">• Manual Assignment</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M 660 170 L 730 170" stroke="#1B3B6F" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="695" y="160" font-size="12" font-weight="bold" fill="#1B3B6F">Work</text>
+  
+  <!-- Stage 3: Lead Qualification -->
+  <rect x="730" y="80" width="270" height="180" fill="#F0E6FF" stroke="#8B5CF6" stroke-width="3" rx="10"/>
+  <text x="865" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#8B5CF6">
+    3. Lead Qualification
+  </text>
+  
+  <rect x="750" y="130" width="230" height="120" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2" rx="5"/>
+  <text x="865" y="155" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">BANT Criteria:</text>
+  <text x="865" y="175" font-size="12" text-anchor="middle" fill="#4A4A4A">✓ Budget Confirmed</text>
+  <text x="865" y="192" font-size="12" text-anchor="middle" fill="#4A4A4A">✓ Authority Identified</text>
+  <text x="865" y="209" font-size="12" text-anchor="middle" fill="#4A4A4A">✓ Need Validated</text>
+  <text x="865" y="226" font-size="12" text-anchor="middle" fill="#4A4A4A">✓ Timeline Established</text>
+  <text x="865" y="243" font-size="12" text-anchor="middle" fill="#4A4A4A">✓ Lead Score &gt; Threshold</text>
+  
+  <!-- Arrow 3 -->
+  <path d="M 1000 170 L 1070 170" stroke="#1B3B6F" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="1035" y="160" font-size="12" font-weight="bold" fill="#1B3B6F">Convert</text>
+  
+  <!-- Stage 4: Lead Conversion -->
+  <rect x="1070" y="80" width="280" height="180" fill="#FFE6F0" stroke="#DC2626" stroke-width="3" rx="10"/>
+  <text x="1210" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#DC2626">
+    4. Lead Conversion
+  </text>
+  
+  <rect x="1090" y="130" width="240" height="120" fill="#FFFFFF" stroke="#DC2626" stroke-width="2" rx="5"/>
+  <text x="1210" y="155" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Action:</text>
+  <text x="1210" y="175" font-size="12" text-anchor="middle" fill="#4A4A4A">Click "Convert" Button</text>
+  <text x="1210" y="195" font-size="11" font-style="italic" text-anchor="middle" fill="#666">Creates 3 Objects:</text>
+  <text x="1210" y="213" font-size="12" text-anchor="middle" fill="#2E844A">→ Account (Company)</text>
+  <text x="1210" y="230" font-size="12" text-anchor="middle" fill="#2E844A">→ Contact (Person)</text>
+  <text x="1210" y="247" font-size="12" text-anchor="middle" fill="#2E844A">→ Opportunity (Deal)</text>
+  
+  <!-- Conversion Details Section -->
+  <rect x="50" y="320" width="650" height="260" fill="#E8F8E8" stroke="#2E844A" stroke-width="3" rx="10"/>
+  <text x="375" y="355" font-size="20" font-weight="bold" text-anchor="middle" fill="#2E844A">
+    Lead Conversion Mapping
+  </text>
+  
+  <!-- Lead Object -->
+  <rect x="80" y="380" width="250" height="180" fill="#FFFFFF" stroke="#2E844A" stroke-width="2" rx="8"/>
+  <text x="205" y="405" font-size="16" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Lead Fields</text>
+  <line x1="90" y1="415" x2="320" y2="415" stroke="#2E844A" stroke-width="1"/>
+  
+  <text x="95" y="435" font-size="12" fill="#4A4A4A">• First Name</text>
+  <text x="95" y="455" font-size="12" fill="#4A4A4A">• Last Name</text>
+  <text x="95" y="475" font-size="12" fill="#4A4A4A">• Company</text>
+  <text x="95" y="495" font-size="12" fill="#4A4A4A">• Email</text>
+  <text x="95" y="515" font-size="12" fill="#4A4A4A">• Phone</text>
+  <text x="95" y="535" font-size="12" fill="#4A4A4A">• Title</text>
+  <text x="95" y="555" font-size="12" fill="#4A4A4A">• Industry</text>
+  
+  <!-- Arrow showing conversion -->
+  <path d="M 330 470 L 420 470" stroke="#2E844A" stroke-width="3" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="375" y="460" font-size="13" font-weight="bold" fill="#2E844A">Maps to →</text>
+  
+  <!-- Target Objects -->
+  <rect x="420" y="380" width="260" height="180" fill="#FFFFFF" stroke="#2E844A" stroke-width="2" rx="8"/>
+  <text x="550" y="405" font-size="16" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Created Objects</text>
+  <line x1="430" y1="415" x2="670" y2="415" stroke="#2E844A" stroke-width="1"/>
+  
+  <text x="435" y="435" font-size="12" font-weight="bold" fill="#0176D3">Account:</text>
+  <text x="500" y="435" font-size="11" fill="#4A4A4A">Company → Account Name</text>
+  
+  <text x="435" y="460" font-size="12" font-weight="bold" fill="#8B5CF6">Contact:</text>
+  <text x="500" y="460" font-size="11" fill="#4A4A4A">First/Last Name → Contact</text>
+  <text x="500" y="475" font-size="11" fill="#4A4A4A">Email → Contact Email</text>
+  <text x="500" y="490" font-size="11" fill="#4A4A4A">Phone → Contact Phone</text>
+  <text x="500" y="505" font-size="11" fill="#4A4A4A">Title → Contact Title</text>
+  
+  <text x="435" y="530" font-size="12" font-weight="bold" fill="#FF9A3C">Opportunity:</text>
+  <text x="525" y="530" font-size="11" fill="#4A4A4A">(Optional)</text>
+  <text x="500" y="545" font-size="11" fill="#4A4A4A">Company → Opp Name</text>
+  <text x="500" y="560" font-size="11" fill="#4A4A4A">+ Stage, Amount, Date</text>
+  
+  <!-- Lead Status Progression -->
+  <rect x="750" y="320" width="600" height="260" fill="#FFF4E6" stroke="#FF9A3C" stroke-width="3" rx="10"/>
+  <text x="1050" y="355" font-size="20" font-weight="bold" text-anchor="middle" fill="#FF9A3C">
+    Lead Status Progression
+  </text>
+  
+  <!-- Status Flow -->
+  <rect x="780" y="390" width="120" height="50" fill="#E0E0E0" stroke="#666" stroke-width="2" rx="5"/>
+  <text x="840" y="420" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">New</text>
+  
+  <path d="M 900 415 L 940 415" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead-gray)"/>
+  
+  <rect x="940" y="390" width="120" height="50" fill="#FFF4CC" stroke="#FFB020" stroke-width="2" rx="5"/>
+  <text x="1000" y="420" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Working</text>
+  
+  <path d="M 1060 415 L 1100 415" stroke="#FFB020" stroke-width="2" fill="none" marker-end="url(#arrowhead-orange)"/>
+  
+  <rect x="1100" y="390" width="120" height="50" fill="#CCE5FF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="1160" y="420" font-size="14" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Qualified</text>
+  
+  <path d="M 1160 440 L 1160 470" stroke="#2E844A" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+  
+  <rect x="1100" y="470" width="120" height="50" fill="#D4EDDA" stroke="#2E844A" stroke-width="3" rx="5"/>
+  <text x="1160" y="500" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E844A">Converted</text>
+  
+  <!-- Alternative Path -->
+  <path d="M 940 440 L 940 510 L 860 510" stroke="#DC2626" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-red)"/>
+  
+  <rect x="780" y="485" width="80" height="50" fill="#FFE6E6" stroke="#DC2626" stroke-width="2" rx="5"/>
+  <text x="820" y="515" font-size="12" font-weight="bold" text-anchor="middle" fill="#DC2626">Disqualified</text>
+  
+  <text x="890" y="500" font-size="11" font-style="italic" fill="#DC2626">Not Qualified</text>
+  
+  <!-- Activities Box -->
+  <rect x="780" y="550" width="540" height="20" fill="#E6F3FF" stroke="#0176D3" stroke-width="1" rx="3"/>
+  <text x="1050" y="565" font-size="12" font-weight="bold" text-anchor="middle" fill="#0176D3">
+    Activities: Calls, Emails, Meetings, Tasks recorded during qualification
+  </text>
+  
+  <!-- Best Practices -->
+  <rect x="50" y="620" width="1300" height="250" fill="#F0F9FF" stroke="#0176D3" stroke-width="2" rx="10"/>
+  <text x="700" y="655" font-size="20" font-weight="bold" text-anchor="middle" fill="#0176D3">
+    Lead Conversion Best Practices
+  </text>
+  
+  <rect x="80" y="680" width="380" height="165" fill="#FFFFFF" stroke="#0176D3" stroke-width="2" rx="5"/>
+  <text x="270" y="705" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">Before Conversion</text>
+  <text x="95" y="730" font-size="12" fill="#4A4A4A">• Verify all required fields are populated</text>
+  <text x="95" y="750" font-size="12" fill="#4A4A4A">• Check for duplicate accounts/contacts</text>
+  <text x="95" y="770" font-size="12" fill="#4A4A4A">• Complete qualification criteria (BANT)</text>
+  <text x="95" y="790" font-size="12" fill="#4A4A4A">• Document all activities and notes</text>
+  <text x="95" y="810" font-size="12" fill="#4A4A4A">• Set appropriate lead status</text>
+  <text x="95" y="830" font-size="12" fill="#4A4A4A">• Obtain manager approval if required</text>
+  
+  <rect x="490" y="680" width="380" height="165" fill="#FFFFFF" stroke="#2E844A" stroke-width="2" rx="5"/>
+  <text x="680" y="705" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">During Conversion</text>
+  <text x="505" y="730" font-size="12" fill="#4A4A4A">• Link to existing account if applicable</text>
+  <text x="505" y="750" font-size="12" fill="#4A4A4A">• Create opportunity with stage and amount</text>
+  <text x="505" y="770" font-size="12" fill="#4A4A4A">• Set realistic close date</text>
+  <text x="505" y="790" font-size="12" fill="#4A4A4A">• Add products to opportunity if needed</text>
+  <text x="505" y="810" font-size="12" fill="#4A4A4A">• Assign opportunity owner</text>
+  <text x="505" y="830" font-size="12" fill="#4A4A4A">• Transfer activities to new records</text>
+  
+  <rect x="900" y="680" width="420" height="165" fill="#FFFFFF" stroke="#FF9A3C" stroke-width="2" rx="5"/>
+  <text x="1110" y="705" font-size="15" font-weight="bold" text-anchor="middle" fill="#1B3B6F">After Conversion</text>
+  <text x="915" y="730" font-size="12" fill="#4A4A4A">• Update opportunity stage based on current status</text>
+  <text x="915" y="750" font-size="12" fill="#4A4A4A">• Schedule next follow-up activity</text>
+  <text x="915" y="770" font-size="12" fill="#4A4A4A">• Add contact to marketing campaigns</text>
+  <text x="915" y="790" font-size="12" fill="#4A4A4A">• Notify relevant team members</text>
+  <text x="915" y="810" font-size="12" fill="#4A4A4A">• Update forecasting and pipeline reports</text>
+  <text x="915" y="830" font-size="12" fill="#4A4A4A">• Document conversion date for metrics</text>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1B3B6F"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2E844A"/>
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FFB020"/>
+    </marker>
+    <marker id="arrowhead-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#DC2626"/>
+    </marker>
+  </defs>
+</svg>
