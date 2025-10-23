@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  <defs>
+    <linearGradient id="triggerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A1E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0176D3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#032D60" text-anchor="middle">Trigger Framework Architecture</text>
+  <text x="500" y="65" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Best Practice Pattern</text>
+  
+  <!-- Trigger Layer -->
+  <rect x="100" y="100" width="800" height="120" fill="#FF6B35" stroke="#032D60" stroke-width="3" rx="10"/>
+  <text x="500" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Trigger (One Per Object)</text>
+  <text x="120" y="160" font-family="Arial, sans-serif" font-size="14" fill="white">trigger AccountTrigger on Account (before insert, before update,</text>
+  <text x="120" y="180" font-family="Arial, sans-serif" font-size="14" fill="white">                                    after insert, after update, after delete) {</text>
+  <text x="140" y="200" font-family="Arial, sans-serif" font-size="14" fill="white">  new TriggerHandler().run();</text>
+  <text x="120" y="215" font-family="Arial, sans-serif" font-size="14" fill="white">}</text>
+  
+  <!-- Arrow -->
+  <path d="M 500 220 L 500 260" stroke="#032D60" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Trigger Handler Layer -->
+  <rect x="100" y="260" width="800" height="180" fill="url(#triggerGrad)" stroke="#032D60" stroke-width="3" rx="10"/>
+  <text x="500" y="290" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Trigger Handler (Framework)</text>
+  <text x="120" y="320" font-family="Arial, sans-serif" font-size="14" fill="white">• Determines trigger context (BEFORE/AFTER, INSERT/UPDATE/DELETE)</text>
+  <text x="120" y="345" font-family="Arial, sans-serif" font-size="14" fill="white">• Routes to appropriate method:</text>
+  <text x="160" y="370" font-family="Arial, sans-serif" font-size="13" fill="white">- beforeInsert(List&lt;SObject&gt; newList)</text>
+  <text x="160" y="390" font-family="Arial, sans-serif" font-size="13" fill="white">- beforeUpdate(Map&lt;Id, SObject&gt; oldMap, Map&lt;Id, SObject&gt; newMap)</text>
+  <text x="160" y="410" font-family="Arial, sans-serif" font-size="13" fill="white">- afterInsert(Map&lt;Id, SObject&gt; newMap)</text>
+  <text x="160" y="430" font-family="Arial, sans-serif" font-size="13" fill="white">- afterUpdate/afterDelete...</text>
+  
+  <!-- Arrow -->
+  <path d="M 500 440 L 500 480" stroke="#032D60" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Business Logic Layer -->
+  <rect x="100" y="480" width="800" height="160" fill="#4CAF50" stroke="#032D60" stroke-width="3" rx="10"/>
+  <text x="500" y="510" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Business Logic Classes</text>
+  <text x="120" y="540" font-family="Arial, sans-serif" font-size="14" fill="white">• Separated by functionality (AccountValidator, AccountHelper, etc.)</text>
+  <text x="120" y="565" font-family="Arial, sans-serif" font-size="14" fill="white">• Reusable across triggers, flows, and other contexts</text>
+  <text x="120" y="590" font-family="Arial, sans-serif" font-size="14" fill="white">• Contains actual business logic</text>
+  <text x="120" y="615" font-family="Arial, sans-serif" font-size="14" fill="white">• Testable independently</text>
+  
+  <!-- Benefits Box -->
+  <rect x="100" y="670" width="380" height="200" fill="#E8F4F8" stroke="#0176D3" stroke-width="2" rx="10"/>
+  <text x="290" y="700" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#032D60" text-anchor="middle">Benefits</text>
+  <text x="120" y="730" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Single trigger per object</text>
+  <text x="120" y="755" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Avoids recursion issues</text>
+  <text x="120" y="780" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Clear separation of concerns</text>
+  <text x="120" y="805" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Easier to maintain</text>
+  <text x="120" y="830" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Better testability</text>
+  <text x="120" y="855" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Reusable logic</text>
+  
+  <!-- Anti-patterns Box -->
+  <rect x="520" y="670" width="380" height="200" fill="#FFF3E0" stroke="#FF6B35" stroke-width="2" rx="10"/>
+  <text x="710" y="700" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D84315" text-anchor="middle">Avoid These Anti-Patterns</text>
+  <text x="540" y="730" font-family="Arial, sans-serif" font-size="14" fill="#D84315">✗ Multiple triggers per object</text>
+  <text x="540" y="755" font-family="Arial, sans-serif" font-size="14" fill="#D84315">✗ Business logic in triggers</text>
+  <text x="540" y="780" font-family="Arial, sans-serif" font-size="14" fill="#D84315">✗ SOQL/DML in loops in triggers</text>
+  <text x="540" y="805" font-family="Arial, sans-serif" font-size="14" fill="#D84315">✗ Hardcoded IDs</text>
+  <text x="540" y="830" font-family="Arial, sans-serif" font-size="14" fill="#D84315">✗ No recursion prevention</text>
+  <text x="540" y="855" font-family="Arial, sans-serif" font-size="14" fill="#D84315">✗ Complex nested logic</text>
+  
+  <defs>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="11" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#032D60"/>
+    </marker>
+  </defs>
+</svg>

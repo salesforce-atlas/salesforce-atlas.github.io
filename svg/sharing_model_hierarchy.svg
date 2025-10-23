@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1200">
+  <defs>
+    <linearGradient id="secGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A1E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0176D3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="550" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#032D60" text-anchor="middle">Salesforce Sharing Model Hierarchy</text>
+  <text x="550" y="65" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">From Most Restrictive to Least Restrictive</text>
+  
+  <!-- Organization-Wide Defaults (OWD) -->
+  <rect x="150" y="100" width="800" height="120" fill="#D32F2F" stroke="#B71C1C" stroke-width="3" rx="10"/>
+  <text x="550" y="135" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">1. Organization-Wide Defaults (OWD)</text>
+  <text x="170" y="165" font-family="Arial, sans-serif" font-size="14" fill="white"><tspan font-weight="bold">Base level of access</tspan> - Most restrictive setting</text>
+  <text x="170" y="188" font-family="Arial, sans-serif" font-size="13" fill="white">Options: Private | Public Read Only | Public Read/Write | Public Read/Write/Transfer</text>
+  <text x="170" y="208" font-family="Arial, sans-serif" font-size="13" fill="white">• Controls default access for users who don't own the record</text>
+  
+  <!-- Arrow -->
+  <path d="M 550 220 L 550 260" stroke="#032D60" stroke-width="4" fill="none" marker-end="url(#arrowDown)"/>
+  <text x="590" y="245" font-family="Arial, sans-serif" font-size="12" fill="#032D60" font-style="italic">Opens up access →</text>
+  
+  <!-- Role Hierarchy -->
+  <rect x="150" y="260" width="800" height="140" fill="#E64A19" stroke="#BF360C" stroke-width="3" rx="10"/>
+  <text x="550" y="295" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">2. Role Hierarchy</text>
+  <text x="170" y="325" font-family="Arial, sans-serif" font-size="14" fill="white"><tspan font-weight="bold">Automatic access:</tspan> Users above in hierarchy access records of users below</text>
+  <text x="170" y="348" font-family="Arial, sans-serif" font-size="13" fill="white">• CEO can see Sales Rep's records (even if OWD is Private)</text>
+  <text x="170" y="368" font-family="Arial, sans-serif" font-size="13" fill="white">• Grant access using "View All" or "Modify All" at profile/permission set level</text>
+  <text x="170" y="388" font-family="Arial, sans-serif" font-size="13" fill="white">• Can be disabled per object (e.g., for Cases or Opportunities)</text>
+  
+  <!-- Arrow -->
+  <path d="M 550 400 L 550 440" stroke="#032D60" stroke-width="4" fill="none" marker-end="url(#arrowDown)"/>
+  
+  <!-- Sharing Rules -->
+  <rect x="150" y="440" width="800" height="160" fill="#F57C00" stroke="#E65100" stroke-width="3" rx="10"/>
+  <text x="550" y="475" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">3. Sharing Rules</text>
+  <text x="170" y="505" font-family="Arial, sans-serif" font-size="14" fill="white"><tspan font-weight="bold">Criteria-based or ownership-based</tspan> sharing to extend access</text>
+  <text x="170" y="528" font-family="Arial, sans-serif" font-size="13" fill="white">• <tspan font-weight="bold">Owner-based:</tspan> Share records owned by users in Group A with Group B</text>
+  <text x="170" y="548" font-family="Arial, sans-serif" font-size="13" fill="white">• <tspan font-weight="bold">Criteria-based:</tspan> Share records matching criteria (e.g., Industry = 'Tech') with Group B</text>
+  <text x="170" y="568" font-family="Arial, sans-serif" font-size="13" fill="white">• Access levels: Read Only | Read/Write</text>
+  <text x="170" y="588" font-family="Arial, sans-serif" font-size="13" fill="white">• Can only extend access, never restrict it</text>
+  
+  <!-- Arrow -->
+  <path d="M 550 600 L 550 640" stroke="#032D60" stroke-width="4" fill="none" marker-end="url(#arrowDown)"/>
+  
+  <!-- Manual Sharing -->
+  <rect x="150" y="640" width="800" height="140" fill="#FBC02D" stroke="#F57F17" stroke-width="3" rx="10"/>
+  <text x="550" y="675" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">4. Manual Sharing</text>
+  <text x="170" y="705" font-family="Arial, sans-serif" font-size="14" fill="white"><tspan font-weight="bold">Ad-hoc sharing</tspan> by record owner or users above in hierarchy</text>
+  <text x="170" y="728" font-family="Arial, sans-serif" font-size="13" fill="white">• Owner clicks "Sharing" button on record to grant access to specific users/groups</text>
+  <text x="170" y="748" font-family="Arial, sans-serif" font-size="13" fill="white">• Temporary or permanent access</text>
+  <text x="170" y="768" font-family="Arial, sans-serif" font-size="13" fill="white">• Can be done programmatically via Apex sharing</text>
+  
+  <!-- Arrow -->
+  <path d="M 550 780 L 550 820" stroke="#032D60" stroke-width="4" fill="none" marker-end="url(#arrowDown)"/>
+  
+  <!-- Teams -->
+  <rect x="150" y="820" width="380" height="120" fill="#7CB342" stroke="#558B2F" stroke-width="3" rx="10"/>
+  <text x="340" y="855" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">5. Account/Opportunity Teams</text>
+  <text x="170" y="885" font-family="Arial, sans-serif" font-size="13" fill="white">• Define team members with roles</text>
+  <text x="170" y="905" font-family="Arial, sans-serif" font-size="13" fill="white">• Each role has access level</text>
+  <text x="170" y="925" font-family="Arial, sans-serif" font-size="13" fill="white">• Defaults can be set</text>
+  
+  <!-- Apex Sharing -->
+  <rect x="570" y="820" width="380" height="120" fill="#43A047" stroke="#2E7D32" stroke-width="3" rx="10"/>
+  <text x="760" y="855" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">6. Apex Managed Sharing</text>
+  <text x="590" y="885" font-family="Arial, sans-serif" font-size="13" fill="white">• Programmatic sharing via Apex</text>
+  <text x="590" y="905" font-family="Arial, sans-serif" font-size="13" fill="white">• Insert records into Share tables</text>
+  <text x="590" y="925" font-family="Arial, sans-serif" font-size="13" fill="white">• Custom sharing logic</text>
+  
+  <!-- Key Concepts Box -->
+  <rect x="50" y="980" width="500" height="200" fill="#E3F2FD" stroke="#0176D3" stroke-width="3" rx="10"/>
+  <text x="300" y="1010" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#032D60" text-anchor="middle">Key Concepts</text>
+  <text x="70" y="1040" font-family="Arial, sans-serif" font-size="14" fill="#032D60">• <tspan font-weight="bold">Record Ownership:</tspan> Owner has full access</text>
+  <text x="70" y="1065" font-family="Arial, sans-serif" font-size="14" fill="#032D60">• <tspan font-weight="bold">View All/Modify All:</tspan> Bypass all sharing</text>
+  <text x="70" y="1090" font-family="Arial, sans-serif" font-size="14" fill="#032D60">• <tspan font-weight="bold">System Administrator:</tspan> Can view/edit all</text>
+  <text x="70" y="1115" font-family="Arial, sans-serif" font-size="14" fill="#032D60">• <tspan font-weight="bold">Implicit Sharing:</tspan> Parent-child relationships</text>
+  <text x="70" y="1140" font-family="Arial, sans-serif" font-size="14" fill="#032D60">• <tspan font-weight="bold">Groups:</tspan> Public, Private, Queues</text>
+  <text x="70" y="1165" font-family="Arial, sans-serif" font-size="14" fill="#032D60">• <tspan font-weight="bold">Portal Users:</tspan> Different sharing model</text>
+  
+  <!-- Best Practices Box -->
+  <rect x="590" y="980" width="460" height="200" fill="#FFF3E0" stroke="#FF6B35" stroke-width="3" rx="10"/>
+  <text x="820" y="1010" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D84315" text-anchor="middle">Best Practices</text>
+  <text x="610" y="1040" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Start with most restrictive OWD</text>
+  <text x="610" y="1065" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Use role hierarchy for org structure</text>
+  <text x="610" y="1090" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Sharing rules for exceptions</text>
+  <text x="610" y="1115" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Manual sharing for one-off cases</text>
+  <text x="610" y="1140" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Test with different user profiles</text>
+  <text x="610" y="1165" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ Monitor sharing recalculation jobs</text>
+  
+  <!-- Access Levels Legend -->
+  <rect x="50" y="100" width="80" height="840" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5" rx="5"/>
+  <text x="90" y="520" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#666" text-anchor="middle" transform="rotate(-90 90 520)">Restrictive → Open</text>
+  
+  <defs>
+    <marker id="arrowDown" markerWidth="12" markerHeight="12" refX="6" refY="11" orient="auto">
+      <polygon points="0 0, 12 0, 6 12" fill="#032D60"/>
+    </marker>
+  </defs>
+</svg>

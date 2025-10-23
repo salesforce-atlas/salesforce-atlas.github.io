@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400">
+  <defs>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0176D3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A1E0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#032D60" text-anchor="middle">Salesforce Order of Execution</text>
+  <text x="450" y="65" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">When a record is saved</text>
+  
+  <!-- Step boxes -->
+  <!-- Step 1 -->
+  <rect x="50" y="90" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">1.</text>
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="15" fill="white">Loads original record or initializes for new record</text>
+  
+  <!-- Step 2 -->
+  <rect x="50" y="155" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="180" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">2.</text>
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="15" fill="white">Loads new record field values from request and overwrites old values</text>
+  
+  <!-- Step 3 -->
+  <rect x="50" y="220" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">3.</text>
+  <text x="100" y="245" font-family="Arial, sans-serif" font-size="15" fill="white">Executes system validation rules (field format, required fields, etc.)</text>
+  
+  <!-- Step 4 -->
+  <rect x="50" y="285" width="800" height="50" fill="#FF6B35" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="310" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">4.</text>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="15" fill="white">Executes BEFORE triggers</text>
+  
+  <!-- Step 5 -->
+  <rect x="50" y="350" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">5.</text>
+  <text x="100" y="375" font-family="Arial, sans-serif" font-size="15" fill="white">Runs most system validation steps (duplicate rules, etc.)</text>
+  
+  <!-- Step 6 -->
+  <rect x="50" y="415" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">6.</text>
+  <text x="100" y="440" font-family="Arial, sans-serif" font-size="15" fill="white">Executes custom validation rules</text>
+  
+  <!-- Step 7 -->
+  <rect x="50" y="480" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">7.</text>
+  <text x="100" y="505" font-family="Arial, sans-serif" font-size="15" fill="white">Executes duplicate rules (if no errors yet)</text>
+  
+  <!-- Step 8 -->
+  <rect x="50" y="545" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="570" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">8.</text>
+  <text x="100" y="570" font-family="Arial, sans-serif" font-size="15" fill="white">Saves record to database (not committed yet)</text>
+  
+  <!-- Step 9 -->
+  <rect x="50" y="610" width="800" height="50" fill="#FF6B35" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="635" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">9.</text>
+  <text x="100" y="635" font-family="Arial, sans-serif" font-size="15" fill="white">Executes AFTER triggers</text>
+  
+  <!-- Step 10 -->
+  <rect x="50" y="675" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="700" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">10.</text>
+  <text x="100" y="700" font-family="Arial, sans-serif" font-size="15" fill="white">Executes assignment rules</text>
+  
+  <!-- Step 11 -->
+  <rect x="50" y="740" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="765" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">11.</text>
+  <text x="100" y="765" font-family="Arial, sans-serif" font-size="15" fill="white">Executes auto-response rules</text>
+  
+  <!-- Step 12 -->
+  <rect x="50" y="805" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="830" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">12.</text>
+  <text x="100" y="830" font-family="Arial, sans-serif" font-size="15" fill="white">Executes workflow rules</text>
+  
+  <!-- Step 13 -->
+  <rect x="50" y="870" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="895" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">13.</text>
+  <text x="100" y="895" font-family="Arial, sans-serif" font-size="15" fill="white">Executes processes (Flow/Process Builder)</text>
+  
+  <!-- Step 14 -->
+  <rect x="50" y="935" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="960" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">14.</text>
+  <text x="100" y="960" font-family="Arial, sans-serif" font-size="15" fill="white">Executes escalation rules</text>
+  
+  <!-- Step 15 -->
+  <rect x="50" y="1000" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="1025" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">15.</text>
+  <text x="100" y="1025" font-family="Arial, sans-serif" font-size="15" fill="white">Executes entitlement rules</text>
+  
+  <!-- Step 16 -->
+  <rect x="50" y="1065" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="1090" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">16.</text>
+  <text x="100" y="1090" font-family="Arial, sans-serif" font-size="15" fill="white">If workflow field updates → Repeat steps 3-16</text>
+  
+  <!-- Step 17 -->
+  <rect x="50" y="1130" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="1155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">17.</text>
+  <text x="100" y="1155" font-family="Arial, sans-serif" font-size="15" fill="white">Executes roll-up summary field calculations</text>
+  
+  <!-- Step 18 -->
+  <rect x="50" y="1195" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="1220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">18.</text>
+  <text x="100" y="1220" font-family="Arial, sans-serif" font-size="15" fill="white">Executes Criteria Based Sharing evaluation</text>
+  
+  <!-- Step 19 -->
+  <rect x="50" y="1260" width="800" height="50" fill="#4CAF50" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="1285" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">19.</text>
+  <text x="100" y="1285" font-family="Arial, sans-serif" font-size="15" fill="white">Commits all DML operations to database</text>
+  
+  <!-- Step 20 -->
+  <rect x="50" y="1325" width="800" height="50" fill="url(#stepGrad)" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="70" y="1350" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">20.</text>
+  <text x="100" y="1350" font-family="Arial, sans-serif" font-size="15" fill="white">Executes post-commit logic (emails, async Apex)</text>
+  
+  <!-- Connecting arrows -->
+  <path d="M 450 140 L 450 155" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 205 L 450 220" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 270 L 450 285" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 335 L 450 350" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 400 L 450 415" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 465 L 450 480" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 530 L 450 545" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 595 L 450 610" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 660 L 450 675" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 725 L 450 740" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 790 L 450 805" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 855 L 450 870" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 920 L 450 935" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 985 L 450 1000" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 1050 L 450 1065" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 1115 L 450 1130" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 1180 L 450 1195" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 1245 L 450 1260" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 450 1310 L 450 1325" stroke="#032D60" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#032D60"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="1390" width="20" height="20" fill="#FF6B35" stroke="#032D60" stroke-width="1"/>
+  <text x="80" y="1405" font-family="Arial, sans-serif" font-size="12" fill="#666">Trigger Execution</text>
+  
+  <rect x="250" y="1390" width="20" height="20" fill="#4CAF50" stroke="#032D60" stroke-width="1"/>
+  <text x="280" y="1405" font-family="Arial, sans-serif" font-size="12" fill="#666">Database Commit</text>
+</svg>

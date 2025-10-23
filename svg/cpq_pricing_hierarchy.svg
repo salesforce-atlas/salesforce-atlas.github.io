@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <!-- Title -->
+  <text x="450" y="40" font-size="26" font-weight="bold" text-anchor="middle" fill="#003366">
+    CPQ Pricing Hierarchy
+  </text>
+  <text x="450" y="65" font-size="14" text-anchor="middle" fill="#666">
+    Price Calculation Waterfall (Top to Bottom)
+  </text>
+  
+  <!-- Step 1: List Price -->
+  <g id="step1">
+    <rect x="200" y="100" width="500" height="80" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="3"/>
+    <text x="450" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565C0">
+      1. List Price
+    </text>
+    <text x="450" y="155" font-size="13" text-anchor="middle" fill="#333">
+      Base price from Price Book Entry
+    </text>
+    <text x="220" y="175" font-size="12" fill="#666">Starting Point: $100.00</text>
+  </g>
+  <path d="M 450 180 L 450 210" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Step 2: Cost -->
+  <g id="step2">
+    <rect x="200" y="210" width="500" height="70" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+    <text x="450" y="238" font-size="18" font-weight="bold" text-anchor="middle" fill="#6A1B9A">
+      2. Cost (Optional)
+    </text>
+    <text x="450" y="260" font-size="13" text-anchor="middle" fill="#333">
+      Product cost for margin calculations
+    </text>
+    <text x="220" y="275" font-size="12" fill="#666">Cost: $60.00 (60% of list)</text>
+  </g>
+  <path d="M 450 280 L 450 310" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Step 3: Customer Price -->
+  <g id="step3">
+    <rect x="200" y="310" width="500" height="80" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="3"/>
+    <text x="450" y="340" font-size="18" font-weight="bold" text-anchor="middle" fill="#E65100">
+      3. Customer Price
+    </text>
+    <text x="450" y="365" font-size="13" text-anchor="middle" fill="#333">
+      Special negotiated pricing (Contracted Price)
+    </text>
+    <text x="220" y="385" font-size="12" fill="#666">Overrides list price if exists</text>
+    <circle cx="720" cy="350" r="25" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="720" y="360" font-size="16" font-weight="bold" text-anchor="middle" fill="white">✓</text>
+  </g>
+  <path d="M 450 390 L 450 420" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Step 4: Partner Price -->
+  <g id="step4">
+    <rect x="200" y="420" width="500" height="70" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+    <text x="450" y="448" font-size="18" font-weight="bold" text-anchor="middle" fill="#2E7D32">
+      4. Partner Price
+    </text>
+    <text x="450" y="470" font-size="13" text-anchor="middle" fill="#333">
+      Channel/partner-specific pricing
+    </text>
+    <text x="220" y="485" font-size="12" fill="#666">For partner deals only</text>
+  </g>
+  <path d="M 450 490 L 450 520" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Step 5: Price Rules -->
+  <g id="step5">
+    <rect x="200" y="520" width="500" height="100" rx="8" fill="#FFF9C4" stroke="#F9A825" stroke-width="3"/>
+    <text x="450" y="550" font-size="18" font-weight="bold" text-anchor="middle" fill="#F57F17">
+      5. Price Rules
+    </text>
+    <text x="450" y="575" font-size="13" text-anchor="middle" fill="#333">
+      Automated pricing calculations
+    </text>
+    <text x="220" y="595" font-size="12" fill="#666">Volume discounts, promotions, bundles</text>
+    <text x="220" y="612" font-size="12" font-style="italic" fill="#E65100">Result: $100 → $85 (15% volume discount)</text>
+  </g>
+  <path d="M 450 620 L 450 650" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Step 6: Discount Schedule -->
+  <g id="step6">
+    <rect x="200" y="650" width="500" height="100" rx="8" fill="#FCE4EC" stroke="#C2185B" stroke-width="3"/>
+    <text x="450" y="680" font-size="18" font-weight="bold" text-anchor="middle" fill="#AD1457">
+      6. Discount Schedule
+    </text>
+    <text x="450" y="705" font-size="13" text-anchor="middle" fill="#333">
+      Tiered volume-based discounting
+    </text>
+    <text x="220" y="725" font-size="12" fill="#666">Automatic tier-based discount</text>
+    <text x="220" y="742" font-size="12" font-style="italic" fill="#E65100">Result: $85 → $80.75 (5% tier discount)</text>
+  </g>
+  <path d="M 450 750 L 450 780" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Step 7: Manual Discount -->
+  <g id="step7">
+    <rect x="200" y="780" width="500" height="100" rx="8" fill="#E0F2F1" stroke="#00897B" stroke-width="3"/>
+    <text x="450" y="810" font-size="18" font-weight="bold" text-anchor="middle" fill="#00695C">
+      7. Manual Discount
+    </text>
+    <text x="450" y="835" font-size="13" text-anchor="middle" fill="#333">
+      Sales rep applies additional discount
+    </text>
+    <text x="220" y="855" font-size="12" fill="#666">Subject to approval workflows</text>
+    <text x="220" y="872" font-size="12" font-style="italic" fill="#E65100">Result: $80.75 → $76.71 (5% additional)</text>
+  </g>
+  <path d="M 450 880 L 450 910" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Step 8: Final Net Price -->
+  <g id="step8">
+    <rect x="150" y="910" width="600" height="120" rx="8" fill="#1B5E20" stroke="#2E7D32" stroke-width="4"/>
+    <text x="450" y="945" font-size="22" font-weight="bold" text-anchor="middle" fill="white">
+      8. Final Net Price
+    </text>
+    <text x="450" y="975" font-size="16" text-anchor="middle" fill="#C8E6C9">
+      What the customer pays
+    </text>
+    <rect x="320" y="990" width="260" height="35" rx="5" fill="#4CAF50"/>
+    <text x="450" y="1014" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+      $76.71 per unit
+    </text>
+  </g>
+  
+  <!-- Side Panel: Example Calculation -->
+  <g id="example-panel">
+    <rect x="750" y="100" width="130" height="350" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="2"/>
+    <text x="815" y="125" font-size="14" font-weight="bold" text-anchor="middle" fill="#263238">
+      Example
+    </text>
+    <text x="815" y="145" font-size="14" font-weight="bold" text-anchor="middle" fill="#263238">
+      Calculation
+    </text>
+    
+    <line x1="760" y1="155" x2="870" y2="155" stroke="#546E7A" stroke-width="1"/>
+    
+    <text x="760" y="175" font-size="11" fill="#333">List: $100.00</text>
+    <text x="760" y="195" font-size="11" fill="#666">↓</text>
+    <text x="760" y="210" font-size="11" fill="#333">Customer: N/A</text>
+    <text x="760" y="230" font-size="11" fill="#666">↓</text>
+    <text x="760" y="245" font-size="11" fill="#333">Partner: N/A</text>
+    <text x="760" y="265" font-size="11" fill="#666">↓</text>
+    <text x="760" y="280" font-size="11" fill="#E65100">Rule: -15%</text>
+    <text x="760" y="295" font-size="11" font-weight="bold" fill="#333">= $85.00</text>
+    <text x="760" y="315" font-size="11" fill="#666">↓</text>
+    <text x="760" y="330" font-size="11" fill="#E65100">Sched: -5%</text>
+    <text x="760" y="345" font-size="11" font-weight="bold" fill="#333">= $80.75</text>
+    <text x="760" y="365" font-size="11" fill="#666">↓</text>
+    <text x="760" y="380" font-size="11" fill="#E65100">Manual: -5%</text>
+    <text x="760" y="395" font-size="11" font-weight="bold" fill="#333">= $76.71</text>
+    
+    <line x1="760" y1="405" x2="870" y2="405" stroke="#546E7A" stroke-width="2"/>
+    
+    <text x="760" y="425" font-size="12" font-weight="bold" fill="#1B5E20">Final: $76.71</text>
+    <text x="760" y="443" font-size="10" fill="#666">23.29% off</text>
+  </g>
+  
+  <!-- Key Points Box -->
+  <g id="keypoints">
+    <rect x="50" y="520" width="130" height="260" rx="8" fill="#FFF8E1" stroke="#F57F17" stroke-width="2"/>
+    <text x="115" y="545" font-size="14" font-weight="bold" text-anchor="middle" fill="#F57F17">
+      Key Points
+    </text>
+    <line x1="60" y1="552" x2="170" y2="552" stroke="#F57F17" stroke-width="1"/>
+    
+    <text x="60" y="575" font-size="10" fill="#333">✓ Sequential order</text>
+    <text x="60" y="595" font-size="10" fill="#333">✓ Each step builds</text>
+    <text x="64" y="610" font-size="10" fill="#333">on previous</text>
+    <text x="60" y="630" font-size="10" fill="#333">✓ Customer price</text>
+    <text x="64" y="645" font-size="10" fill="#333">overrides list</text>
+    <text x="60" y="665" font-size="10" fill="#333">✓ Price rules apply</text>
+    <text x="64" y="680" font-size="10" fill="#333">before discounts</text>
+    <text x="60" y="700" font-size="10" fill="#333">✓ Manual discount</text>
+    <text x="64" y="715" font-size="10" fill="#333">applies last</text>
+    <text x="60" y="735" font-size="10" fill="#333">✓ Final = Net Price</text>
+    <text x="60" y="755" font-size="10" fill="#333">✓ May require</text>
+    <text x="64" y="770" font-size="10" fill="#333">approvals</text>
+  </g>
+  
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1976D2"/>
+    </marker>
+  </defs>
+  
+  <!-- Footer -->
+  <text x="450" y="1075" font-size="13" text-anchor="middle" fill="#666" font-style="italic">
+    Each step in the hierarchy adjusts the price for the final customer cost
+  </text>
+</svg>

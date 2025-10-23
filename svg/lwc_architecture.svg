@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 950">
+  <defs>
+    <linearGradient id="lwcGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A1E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0176D3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="550" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#032D60" text-anchor="middle">Lightning Web Components Architecture</text>
+  
+  <!-- LWC Component Structure -->
+  <rect x="50" y="80" width="450" height="360" fill="#E8F4F8" stroke="#0176D3" stroke-width="3" rx="10"/>
+  <text x="275" y="110" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#032D60" text-anchor="middle">LWC Component Structure</text>
+  
+  <!-- HTML Template -->
+  <rect x="80" y="130" width="390" height="80" fill="#FF9800" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="275" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">HTML Template (.html)</text>
+  <text x="95" y="180" font-family="Arial, sans-serif" font-size="13" fill="white">• UI Structure</text>
+  <text x="95" y="200" font-family="Arial, sans-serif" font-size="13" fill="white">• Data Binding: {property}</text>
+  
+  <!-- JavaScript Controller -->
+  <rect x="80" y="225" width="390" height="100" fill="#4CAF50" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="275" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">JavaScript Controller (.js)</text>
+  <text x="95" y="275" font-family="Arial, sans-serif" font-size="13" fill="white">• Component logic</text>
+  <text x="95" y="295" font-family="Arial, sans-serif" font-size="13" fill="white">• @api, @track, @wire decorators</text>
+  <text x="95" y="315" font-family="Arial, sans-serif" font-size="13" fill="white">• Lifecycle hooks</text>
+  
+  <!-- CSS Styles -->
+  <rect x="80" y="340" width="390" height="80" fill="#9C27B0" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="275" y="365" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">CSS Styles (.css)</text>
+  <text x="95" y="390" font-family="Arial, sans-serif" font-size="13" fill="white">• Component-specific styles</text>
+  <text x="95" y="410" font-family="Arial, sans-serif" font-size="13" fill="white">• Scoped to component</text>
+  
+  <!-- Meta XML -->
+  <rect x="550" y="80" width="500" height="120" fill="#607D8B" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="800" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Configuration (.js-meta.xml)</text>
+  <text x="570" y="140" font-family="Arial, sans-serif" font-size="13" fill="white">• API version</text>
+  <text x="570" y="160" font-family="Arial, sans-serif" font-size="13" fill="white">• Targets (lightning__AppPage, lightning__RecordPage, etc.)</text>
+  <text x="570" y="180" font-family="Arial, sans-serif" font-size="13" fill="white">• isExposed, design parameters</text>
+  
+  <!-- Web Standards -->
+  <rect x="550" y="220" width="500" height="220" fill="url(#lwcGrad)" stroke="#032D60" stroke-width="3" rx="10"/>
+  <text x="800" y="250" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Built on Web Standards</text>
+  <text x="570" y="280" font-family="Arial, sans-serif" font-size="14" fill="white">• Native JavaScript (ES6+)</text>
+  <text x="570" y="305" font-family="Arial, sans-serif" font-size="14" fill="white">• Web Components standards</text>
+  <text x="570" y="330" font-family="Arial, sans-serif" font-size="14" fill="white">• Shadow DOM</text>
+  <text x="570" y="355" font-family="Arial, sans-serif" font-size="14" fill="white">• Custom Elements</text>
+  <text x="570" y="380" font-family="Arial, sans-serif" font-size="14" fill="white">• Templates</text>
+  <text x="570" y="405" font-family="Arial, sans-serif" font-size="14" fill="white">• Modules (import/export)</text>
+  <text x="570" y="430" font-family="Arial, sans-serif" font-size="14" fill="white">• Decorators (@api, @track, @wire)</text>
+  
+  <!-- Data Services -->
+  <rect x="50" y="470" width="1000" height="140" fill="#E8F4F8" stroke="#0176D3" stroke-width="3" rx="10"/>
+  <text x="550" y="500" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#032D60" text-anchor="middle">Data Services &amp; Communication</text>
+  
+  <!-- Lightning Data Service -->
+  <rect x="80" y="520" width="220" height="70" fill="#00A1E0" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="190" y="545" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Lightning Data Service</text>
+  <text x="95" y="565" font-family="Arial, sans-serif" font-size="12" fill="white">• lightning-record-*</text>
+  <text x="95" y="582" font-family="Arial, sans-serif" font-size="12" fill="white">• Caching &amp; sharing</text>
+  
+  <!-- Apex -->
+  <rect x="330" y="520" width="220" height="70" fill="#00A1E0" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="440" y="545" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Apex Controllers</text>
+  <text x="345" y="565" font-family="Arial, sans-serif" font-size="12" fill="white">• @wire</text>
+  <text x="345" y="582" font-family="Arial, sans-serif" font-size="12" fill="white">• Imperative calls</text>
+  
+  <!-- Platform Events -->
+  <rect x="580" y="520" width="200" height="70" fill="#00A1E0" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="680" y="545" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Platform Events</text>
+  <text x="595" y="565" font-family="Arial, sans-serif" font-size="12" fill="white">• Publish/Subscribe</text>
+  <text x="595" y="582" font-family="Arial, sans-serif" font-size="12" fill="white">• emp/subscribe</text>
+  
+  <!-- Lightning Message Service -->
+  <rect x="810" y="520" width="220" height="70" fill="#00A1E0" stroke="#032D60" stroke-width="2" rx="8"/>
+  <text x="920" y="545" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Message Service</text>
+  <text x="825" y="565" font-family="Arial, sans-serif" font-size="12" fill="white">• Component comms</text>
+  <text x="825" y="582" font-family="Arial, sans-serif" font-size="12" fill="white">• lightning/messageService</text>
+  
+  <!-- Key Features -->
+  <rect x="50" y="640" width="480" height="280" fill="#FFF3E0" stroke="#FF6B35" stroke-width="3" rx="10"/>
+  <text x="290" y="670" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D84315" text-anchor="middle">Key Features</text>
+  <text x="70" y="700" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Faster performance</tspan> (native browser APIs)</text>
+  <text x="70" y="730" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Standards-based</tspan> (modern JavaScript)</text>
+  <text x="70" y="760" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Easier to learn</tspan> (familiar web stack)</text>
+  <text x="70" y="790" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Better tooling</tspan> (VS Code, browser DevTools)</text>
+  <text x="70" y="820" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Composition</tspan> (build from smaller components)</text>
+  <text x="70" y="850" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Reactivity</tspan> (automatic UI updates)</text>
+  <text x="70" y="880" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Security</tspan> (Locker Service, CSP)</text>
+  <text x="70" y="910" font-family="Arial, sans-serif" font-size="14" fill="#032D60">✓ <tspan font-weight="bold">Mobile-ready</tspan> (responsive by design)</text>
+  
+  <!-- Lifecycle Hooks -->
+  <rect x="570" y="640" width="480" height="280" fill="#E3F2FD" stroke="#0176D3" stroke-width="3" rx="10"/>
+  <text x="810" y="670" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#032D60" text-anchor="middle">Lifecycle Hooks</text>
+  <text x="590" y="700" font-family="Arial, sans-serif" font-size="14" fill="#032D60"><tspan font-weight="bold">constructor()</tspan> - Component created</text>
+  <text x="590" y="730" font-family="Arial, sans-serif" font-size="14" fill="#032D60"><tspan font-weight="bold">connectedCallback()</tspan> - Inserted into DOM</text>
+  <text x="590" y="760" font-family="Arial, sans-serif" font-size="14" fill="#032D60"><tspan font-weight="bold">renderedCallback()</tspan> - After render</text>
+  <text x="590" y="790" font-family="Arial, sans-serif" font-size="14" fill="#032D60"><tspan font-weight="bold">disconnectedCallback()</tspan> - Removed from DOM</text>
+  <text x="590" y="820" font-family="Arial, sans-serif" font-size="14" fill="#032D60"><tspan font-weight="bold">errorCallback()</tspan> - Error in lifecycle</text>
+  <text x="590" y="850" font-family="Arial, sans-serif" font-size="14" fill="#032D60"><tspan font-weight="bold">render()</tspan> - Conditional rendering</text>
+</svg>
